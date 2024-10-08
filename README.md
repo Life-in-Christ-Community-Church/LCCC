@@ -1,1 +1,1 @@
-# Life In Church Community Church
+# Life in Christ Community Church

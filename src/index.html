@@ -2,22 +2,43 @@
 <html lang="en">
 
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <!-- FAVICON -->
+    <link rel="icon" href="./public/lccc-logo-curated.svg" type="image/svg"> 
+    <!-- STYLES -->
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/logo-hexagon.css">
+    <!-- TITLE -->
     <title>Life in Christ Community Church</title>
 </head>
 
 <body data-router="wrapper">
     <!-- HEADER AND NAVBAR -->
-    <header class="flex fixed w-full border-2 border-green-500 bg-blue-500 h-20 justify-center align-center">
-        <nav class="flex w-80 justify-center items-center border-red-500 border-2 h-20">
-            <ul class="flex border-2 border-yellow-500 w-full justify-between">
-                <li class=""><a href="">About</a></li>
-                <li class=""><a href="">Sermons</a></li>
-                <li class=""><a href="">Live</a></li>
-                <li class=""><a href="">Give</a></li>
+    <header class="flex fixed w-full bg-gray-200 h-20 justify-center align-center p-2">
+        <nav class="flex justify-center items-center w-80">
+            <ul class="flex w-full justify-around">
+                <li class=""><a href="">ABOUT</a></li>
+                <li class=""><a href="">SERMONS</a></li>
+            </ul>
+        </nav>
+
+        <!-- LOGO -->
+        <div class="flex w-44 justify-center">
+            <div class="block w-24">
+                <img 
+                src="./public/lccc-logo-white.svg" 
+                alt="Logo Life in Christ Community Church"
+                class=""
+                >
+            </div>
+        </div>
+
+        <nav class="flex justify-center items-center w-80">
+            <ul class="flex w-full justify-around">
+                <li class=""><a href="">LIVE</a></li>
+                <li class=""><a href="">GIVE</a></li>
             </ul>
         </nav>
     </header>

@@ -43,8 +43,25 @@
     <!-- MAIN AREA -->
     <main data-router="container" data-router-namespace="home">
         <!-- BANNER SLIDE -->
-        <div class="flex h-screen border-2 border-green-500">
-            <img src="./public/img/banner1.jpg" alt="">
+        <!-- Slider main container -->
+        <div class="swiper h-screen">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./public/img/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./public/img/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./public/img/banner3.jpg" alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev p-6"></div>
+            <div class="swiper-button-next p-6"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
 
         <section>
@@ -56,7 +73,9 @@
 
     <!-- FOOTER -->
     <footer class="flex-1 w-full">
-        <section class="flex w-full h-96 bg-[#b2998a] justify-around">
+        <section class="flex w-full h-96 bg-[#b2998a] justify-around relative bg-no-repeat bg-contain bg-fixed" style="background-image: url(./public/lccc-logo-outline-softbrown.svg); 
+        background-position: 60vw 100px; background-size: 800px auto;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
             <div class="flex justify-around items-center" style="width: 60%;">
                 <div class="flex items-center">
                     <address class="not-italic text-gray-800">
@@ -65,7 +84,7 @@
                     </address>
                 </div>
                 <div class="flex w-96 h-64 bg-[#cdc3bd]">
-    
+
                 </div>
             </div>
         </section>
@@ -75,6 +94,7 @@
     </footer>
 
     <script src="./assets/js/barba.js" type="module"></script>
+    <script src="./assets/js/swiper.js" type="module"></script>
     <script src="./main.js" type="module"></script>
     <script src="./assets/js/gsap.js" type="module"></script>
     <script src="./assets/js/three.js" type="module"></script>

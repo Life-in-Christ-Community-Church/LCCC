@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
-    <link rel="icon" href="./public/lccc-logo-curated.svg" type="image/svg"> 
+    <link rel="icon" href="./public/lccc-logo-curated.svg" type="image/svg">
     <!-- STYLES -->
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/logo-hexagon.css">
@@ -16,7 +16,8 @@
 
 <body data-router="wrapper">
     <!-- HEADER AND NAVBAR -->
-    <header class="flex fixed w-full h-20 z-50 justify-center align-center p-2 shadow-md text-sm text-gray-700 bg-white">
+    <header
+        class="flex fixed w-full h-20 z-50 justify-center align-center p-2 shadow-md text-sm text-gray-700 bg-white">
         <nav class="flex justify-center items-center w-44">
             <ul class="flex w-full justify-around">
                 <li class=""><a href="">ABOUT</a></li>
@@ -27,11 +28,7 @@
         <!-- LOGO -->
         <div class="flex w-40 justify-center">
             <div class="block w-24">
-                <img 
-                src="./public/lccc-logo-white-bolder.svg" 
-                alt="Logo Life in Christ Community Church"
-                class=""
-                >
+                <img src="./public/lccc-logo-white-bolder.svg" alt="Logo Life in Christ Community Church" class="">
             </div>
         </div>
 
@@ -46,25 +43,32 @@
     <!-- MAIN AREA -->
     <main data-router="container" data-router-namespace="home">
         <!-- BANNER SLIDE -->
-         <div class="flex h-screen border-2 border-green-500">
-            <img 
-            src="./public/img/banner1.jpg" 
-            alt=""
-            >
-         </div>
+        <div class="flex h-screen border-2 border-green-500">
+            <img src="./public/img/banner1.jpg" alt="">
+        </div>
 
-         <section>
-            <div class="flex border-2 border-red-500 h-96">
+        <section>
+            <div class="flex h-96">
 
             </div>
-         </section>
+        </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="flex-1 w-full">
-        <div class="flex w-full h-96 bg-[#b2998a]">
-
-        </div>
+        <section class="flex w-full h-96 bg-[#b2998a] justify-around">
+            <div class="flex justify-around items-center" style="width: 60%;">
+                <div class="flex items-center">
+                    <address class="not-italic text-gray-800">
+                        <h6>Life in Christ Community Church</h6>
+                        <p>Kruisweg 14 <br /> 2665 HB, Bleiswijk <br /> Zuid-Holland </p>
+                    </address>
+                </div>
+                <div class="flex w-96 h-64 bg-[#cdc3bd]">
+    
+                </div>
+            </div>
+        </section>
         <div class="flex w-ful justify-center bg-[#232d3f]">
             <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church </p>
         </div>
@@ -81,7 +85,7 @@
 
 
 <!-- COLORS -->
- <!-- 
+<!-- 
     Brown Beige: #b2998a
     Beige: #cdc3bd
     White Beige: #e5e0d6

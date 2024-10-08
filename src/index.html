@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link href="./output.css" rel="stylesheet">
     <title>Life in Christ Community Church</title>
 </head>
-<body>
-    
+
+<body data-router="wrapper">
+    <!-- HEADER AND NAVBAR -->
+    <header class="flex fixed w-full border-2 border-green-500 bg-blue-500 h-20 justify-center align-center">
+        <nav class="flex w-80 justify-center items-center border-red-500 border-2 h-20">
+            <ul class="flex border-2 border-yellow-500 w-full justify-between">
+                <li class=""><a href="">About</a></li>
+                <li class=""><a href="">Sermons</a></li>
+                <li class=""><a href="">Live</a></li>
+                <li class=""><a href="">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main data-router="container" data-router-namespace="home">
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./assets/js/barba.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="./assets/js/gsap.js" type="module"></script>
+    <script src="./assets/js/three.js" type="module"></script>
+
 </body>
+
 </html>

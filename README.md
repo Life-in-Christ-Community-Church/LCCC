@@ -1,1 +1,1 @@
-# LCCC
+# Life In Church Community Church

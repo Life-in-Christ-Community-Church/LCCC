@@ -44,24 +44,23 @@
     <main data-router="container" data-router-namespace="home">
         <!-- BANNER SLIDE -->
         <!-- Slider main container -->
-        <div class="swiper h-screen">
+        <div class="swiper" style="height: 100dvh;">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="./public/img/banner2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./public/img/banner1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./public/img/banner3.jpg" alt=""></div>
-                ...
+                <div class="swiper-slide" style="background-image: url(./public/img/banner2.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./public/img/banner1.jpg);"></div>
+                <div class="swiper-slide" style="background-image: url(./public/img/banner3.jpg);"></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev p-6"></div>
-            <div class="swiper-button-next p-6"></div>
+            <div class="swiper-button-prev p-6" style="--swiper-navigation-color: white; opacity: 0.8;"></div>
+            <div class="swiper-button-next p-6" style="--swiper-navigation-color: white; opacity: 0.8;"></div>
 
             <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="swiper-scrollbar" style="--swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.8);"></div>
         </div>
 
         <section>

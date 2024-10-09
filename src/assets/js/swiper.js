@@ -11,10 +11,12 @@ import 'swiper/css/pagination';
 // init Swiper:
 const swiper = new Swiper('.swiper', {
     // Optional parameters
+    speed: 1000,
     direction: 'horizontal',
     loop: true,
-    // cssMode: true,
+   
     effect: "fade",
+    
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,

@@ -11,16 +11,22 @@ import 'swiper/css/pagination';
 // init Swiper:
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    speed: 1000,
+    parallax: true,
+    // speed: 1000,
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
+    reverse: true,
    
     effect: "fade",
-    
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+    mousewheel: {
+        forceToAxis: true,
+        enabled: true,
     },
+    
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
 
     // If we need pagination
     pagination: {

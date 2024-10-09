@@ -44,24 +44,63 @@
     <main data-router="container" data-router-namespace="home">
         <!-- BANNER SLIDE -->
         <!-- Slider main container -->
-        <div class="swiper" style="height: 100dvh;">
-            <!-- Additional required wrapper -->
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; height: 100dvh;" class="swiper mySwiper">
+            <div class="parallax-bg" style="
+                  background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);
+                " data-swiper-parallax="-23%"></div>
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url(./public/img/banner2.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(./public/img/banner1.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(./public/img/banner3.jpg);"></div>
+              <div class="swiper-slide content-end p-[6%] text-gray-100 bg-no-repeat bg-cover bg-center" style="background-image: url(./public/img/banner2.jpg);">
+                <div class="w-[600px] p-6 bg-blue-800/30 rounded-lg">
+                    <div class="title w-[450px] leading-[1]" data-swiper-parallax="-300"><h1 class="text-[3rem]">Life in Christ Community Church</h1></div>
+                    <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
+                    <div class="text" data-swiper-parallax="-100">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                        dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                        laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                        Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                        Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                        ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                        tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(./public/img/banner1.jpg);">
+                <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(./public/img/banner3.jpg);">
+                <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev p-6" style="--swiper-navigation-color: white; opacity: 0.8;"></div>
-            <div class="swiper-button-next p-6" style="--swiper-navigation-color: white; opacity: 0.8;"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar" style="--swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.8);"></div>
-        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
 
         <section>
             <div class="flex h-96">

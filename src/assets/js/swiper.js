@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     parallax: true,
-    // speed: 1000,
+    speed: 800,
     direction: 'horizontal',
     // loop: true,
     reverse: true,

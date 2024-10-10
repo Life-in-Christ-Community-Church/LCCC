@@ -12,28 +12,29 @@ import 'swiper/css/pagination';
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     parallax: true,
-    speed: 800,
+    speed: 2000,
     direction: 'horizontal',
-    // loop: true,
+    loop: true,
     reverse: true,
+    keyboard: true,
    
     effect: "fade",
+
     mousewheel: {
         forceToAxis: true,
         enabled: true,
     },
     
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 10000,
+    },
 
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        type: "bullets",
     },
-    keyboard: true,
 
     // Navigation arrows
     navigation: {

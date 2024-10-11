@@ -50,13 +50,15 @@
         <!-- BANNER SLIDE -->
         <!-- Slider main container -->
         <section>
-            <div class="absolute w-full z-20 bottom-0">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                    <path style="fill: white;" d="M500.2,95.7L0,50v100h1000V50L500.2,95.7z"></path>
-                </svg>
-            </div>
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; height: 100svh;"
+
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; height: 100dvh;"
                 class="swiper mySwiper">
+                <!-- Divider -->
+                <div class="absolute w-full z-20 bottom-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <path style="fill: white;" d="M500.2,95.7L0,50v100h1000V50L500.2,95.7z"></path>
+                    </svg>
+                </div>
                 <div class="parallax-bg" style="
                   background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);
                 " data-swiper-parallax="-23%"></div>
@@ -166,10 +168,68 @@
         </section>
 
         <!-- Section 2 -->
-        <section>
-            <div class="h-96 border-2 border-green-500">
-
+        <section class="flex-1">
+            <div class="text-center text-[2rem] p-6 font-bold text-blue-800">
+                <h3>Weekly Events</h3>
             </div>
+            <div class="flex justify-center items-center gap-16 h-[22rem]">
+                
+                <!-- Box 1 -->
+                <div class="relative w-20 w-[16rem] h-[19rem]  rounded-xl shadow-xl">
+                    <div class="border-2 w-full h-[10rem] rounded-t-xl">
+
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4>
+                            Worship Service
+                        </h4>
+                        <p class="text-blue-800">Every Sunday at 11:00 AM</p>
+                    </div>
+                    <div
+                        class="flex absolute bottom-0 w-full text-center justify-center p-2 text-white bg-blue-500 rounded-b-xl">
+                        <button>
+                            SUNDAY SERVICE
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Box 2 -->
+                <div class="relative w-20 w-[16rem] h-[19rem]  rounded-xl shadow-xl">
+                    <div class="border-2 w-full h-[10rem] rounded-t-xl">
+
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4>
+                            Worship Service
+                        </h4>
+                        <p class="text-blue-800">Every Sunday at 11:00 AM</p>
+                    </div>
+                    <div
+                        class="flex absolute bottom-0 w-full text-center justify-center p-2 text-white bg-blue-500 rounded-b-xl">
+                        <button>
+                            SUNDAY SERVICE
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Box 3 -->
+                <div class="relative w-20 w-[16rem] h-[19rem]  rounded-xl shadow-xl">
+                    <div class="border-2 w-full h-[10rem] rounded-t-xl">
+
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4>
+                            Worship Service
+                        </h4>
+                        <p class="text-blue-800">Every Sunday at 11:00 AM</p>
+                    </div>
+                    <div
+                        class="flex absolute bottom-0 w-full text-center justify-center p-2 text-white bg-blue-500 rounded-b-xl">
+                        <button>
+                            SUNDAY SERVICE
+                        </button>
+                    </div>
+                </div>
         </section>
 
         <!-- Section 3 -->
@@ -185,8 +245,8 @@
                 <h4>CONTACT WITH US</h4>
 
                 <!-- Divider -->
-                <svg width="658" height="12" viewBox="0 0 658 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="m-1 mb-2">
+                <svg viewBox="0 0 658 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-1 mb-2" width="680"
+                    height="13">
                     <g filter="url(#filter0_d_3_10)">
                         <path d="M329.533 3.53553L343.53 17.533L329.533 31.5305L315.536 17.533L329.533 3.53553Z"
                             stroke="white" stroke-width="5" shape-rendering="crispEdges" />

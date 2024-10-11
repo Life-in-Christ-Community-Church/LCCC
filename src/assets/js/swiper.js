@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.firstSwiper', {
     // Optional parameters
     parallax: true,
     speed: 2000,
@@ -17,14 +17,14 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     reverse: true,
     keyboard: true,
-   
+
     effect: "fade",
 
     mousewheel: {
         forceToAxis: true,
         enabled: true,
     },
-    
+
     autoplay: {
         delay: 10000,
     },
@@ -47,3 +47,4 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+

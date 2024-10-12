@@ -1,0 +1,27 @@
+@media only screen and (max-width: 800px) {
+    .parallaxDiv {
+        padding: 30px;
+        width: 100% !important;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        border-radius: 0px;           
+    }
+    
+    .interactionsBanner {
+        display: none !important;
+    }
+
+    .buttonsBanner {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .titleBanner {
+        width: auto;
+
+        h1, h2 {
+            font-size: 2rem !important;
+        }
+    }
+}      

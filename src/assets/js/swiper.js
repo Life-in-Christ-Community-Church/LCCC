@@ -49,7 +49,7 @@ const swiper = new Swiper('.firstSwiper', {
 });
 
 const secondSwiper = new Swiper('.carousel-3D-swiper', {
-    loop: true,
+    loop: false,
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -60,15 +60,46 @@ const secondSwiper = new Swiper('.carousel-3D-swiper', {
         stretch: 0,
         depth: 350,
         modifier: 1,
-        slideShadows: true
+        slideShadows: false
     },
 
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    
+
     pagination: {
         el: ".swiper-pagination"
+    },
+
+    breakpoints: {
+        1040: {
+            loop: false,
+            effect: "coverflow",
+            grabCursor: false,
+            centeredSlides: false,
+            slidesPerView: 3,
+
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 350,
+                modifier: 0,
+                slideShadows: false
+            },
+        }
+    }
+});
+
+window.addEventListener('resize', () => {
+    
+    if (window.innerWidth <= 1040) {
+        
+        console.log("RESIZE LESS")
+        if (window.innerWidth > 1040 && !localStorage.getItem("RELOAD_RESIZE")) {
+            console.log("RESIZE MORE");
+            window.location.reload();
+            localStorage.setItem("RELOAD_RESIZE", "true");
+        }
     }
 });

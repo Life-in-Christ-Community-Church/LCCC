@@ -1,6 +1,7 @@
 @media only screen and (max-width: 800px) {
     .parallaxDiv {
         padding: 30px;
+        /* height: 44%; */
         width: 100% !important;
         position: absolute;
         left: 0;
@@ -18,7 +19,7 @@
     }
 
     .titleBanner {
-        width: auto;
+        width: 97%;
 
         h1, h2 {
             font-size: 2rem !important;

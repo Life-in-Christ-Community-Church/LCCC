@@ -11,7 +11,9 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/logo-hexagon.css">
     <link rel="stylesheet" href="./assets/css/carousel.css">
+    <link rel="stylesheet" href="./assets/css/navbar-responsive.css">
     <link rel="stylesheet" href="./assets/css/banner-responsivity.css">
+    <link rel="stylesheet" href="./assets/css/section2-responsivity.css">
     <!-- TITLE -->
     <title>Life in Christ Community Church</title>
 </head>
@@ -32,7 +34,7 @@
         </nav>
 
         <!-- LOGO -->
-        <div class="flex w-40 justify-center">
+        <div class="flex w-40 justify-center" id="divLogoChurch">
             <div class="block w-24">
                 <img src="./public/lccc-logo-white-bolder.svg" alt="Logo Life in Christ Community Church" class="">
             </div>
@@ -48,6 +50,31 @@
                         href="">GIVE</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Nav -->
+        <h2 class="hiddenNavBar">Life in Christ <br /> <span>Community Church</span></h2>
+        <div id="menuListButton" class="hamburger hiddenNavBar">
+            <svg width="23" height="18" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line line1" d="M0 0H18V2H0V0Z" fill="rgb(31, 44, 143)" />
+                <path class="line line2" d="M0 7H18V9H0V7Z" fill="rgb(31, 44, 143)" />
+                <path class="line line3" d="M0 14H18V16H0V14Z" fill="rgb(31, 44, 143)" />
+            </svg>
+        </div>
+
+        <div class="hiddenNavBar hiddenMenu" id="divMenuList">
+            <nav class="flex w-full" id="navBarToShow">
+                <ul class="flex-col w-full text-center text-lg">
+                    <li class="p-3 hover:bg-blue-100"><a href="">HOME</a></li>
+                    <li class="p-3 hover:bg-blue-100"><a href="">ABOUT</a></li>
+                    <li class="p-3 hover:bg-blue-100"><a href="">LEADERS</a></li>
+                    <li class="p-3 hover:bg-blue-100"><a href="">SERMONS</a></li>
+                    <li class="p-3 hover:bg-blue-100"><a href="">LIVE</a></li>
+                    <li class="p-3 hover:bg-blue-100"><a href="">GIVE</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
     </header>
 
     <!-- MAIN AREA -->
@@ -70,9 +97,9 @@
                 " data-swiper-parallax="-23%"></div>
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide content-end p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
+                    <div class="swiper-slide content-end p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
                         style="background-image: url(./public/img/banner-1.jpg);">
-                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax="-300"
+                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
                             data-swiper-parallax-opacity="0">
 
                             <div class="title titleBanner w-[450px] leading-[1]" data-swiper-parallax="-300"
@@ -89,7 +116,8 @@
                                     Grounded in the 1689 London Baptist Confession of Faith.
                                 </p>
                             </div>
-                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                data-swiper-parallax-opacity="0">
                                 <button
                                     class="bg-blue-600 px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400">About
                                     us</button>
@@ -98,9 +126,9 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="swiper-slide content-start p-[9rem] pt-[11rem] text-gray-100 bg-no-repeat bg-cover bg-center"
+                    <div class="swiper-slide content-start p-[6rem] lg:p-[9rem]  pt-[11rem] text-gray-100 bg-no-repeat bg-cover bg-center"
                         style="background-image: url(./public/img/banner-2.jpg);">
-                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax="-300"
+                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
                             data-swiper-parallax-opacity="0">
 
                             <div class="title titleBanner w-[500px] leading-[1]" data-swiper-parallax="-300"
@@ -119,7 +147,8 @@
                                     apply to us today.
                                 </p>
                             </div>
-                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                data-swiper-parallax-opacity="0">
                                 <button
                                     class="bg-blue-600 px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400">
                                     Sermons
@@ -129,9 +158,9 @@
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="swiper-slide content-center p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
+                    <div class="swiper-slide content-center p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
                         style="background-image: url(./public/img/banner-3.jpg);">
-                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax="-300"
+                        <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
                             data-swiper-parallax-opacity="0">
 
                             <div class="title titleBanner w-[550px] leading-[1]" data-swiper-parallax="-300"
@@ -150,7 +179,8 @@
                                     sessions are online via Teams.
                                 </p>
                             </div>
-                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                            <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                data-swiper-parallax-opacity="0">
                                 <button
                                     class="bg-blue-600 px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400">
                                     Join us via Teams
@@ -174,28 +204,28 @@
 
         <!-- Section 2 -->
         <section class="my-10">
-            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-8">Church Events</h2>
-            <section class="carousel-3D-swiper-section">
+            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-10">Church Events</h2>
+            <div class="carousel-3D-swiper-section">
                 <!-- Slider main container -->
                 <div class="carousel-3D-swiper">
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper" style="max-width: 1200px;">
+                    <div class="swiper-wrapper gap-10" style="max-width: 1200px;">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/aboutus.jpg" alt="">
                             </div>
-                            <div class="text-[1.1rem] text-center bg-white">
+                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
                                 <h3 class="p-6">Learn what we believe about God, <br /> salvation, and Christian living.
                                 </h3>
                                 <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">ABOUT</button>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/mathew.jpg" alt="">
                             </div>
-                            <div class="text-[1.1rem] text-center bg-white">
+                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
                                 <div class="p-6">
                                     <h3>Worship Service</h3>
                                     <p class="text-blue-600">Every Sunday at 11:00 AM</p>
@@ -203,47 +233,11 @@
                                 <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">SUNDAY SERVICE</button>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/biblestudy.jpg" alt="">
                             </div>
-                            <div class="text-[1.1rem] text-center bg-white">
-                                <div class="p-6">
-                                    <h3>Bible Study</h3>
-                                    <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
-                                </div>
-                                <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">BIBLE STUDY</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="aspect-video">
-                                <img class="aspect-video rounded-t-xl" src="./public/img/biblestudy.jpg" alt="">
-                            </div>
-                            <div class="text-[1.1rem] text-center bg-white">
-                                <div class="p-6">
-                                    <h3>Bible Study</h3>
-                                    <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
-                                </div>
-                                <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">BIBLE STUDY</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="aspect-video">
-                                <img class="aspect-video rounded-t-xl" src="./public/img/biblestudy.jpg" alt="">
-                            </div>
-                            <div class="text-[1.1rem] text-center bg-white">
-                                <div class="p-6">
-                                    <h3>Bible Study</h3>
-                                    <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
-                                </div>
-                                <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">BIBLE STUDY</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="aspect-video">
-                                <img class="aspect-video rounded-t-xl" src="./public/img/biblestudy.jpg" alt="">
-                            </div>
-                            <div class="text-[1.1rem] text-center bg-white">
+                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
                                 <div class="p-6">
                                     <h3>Bible Study</h3>
                                     <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
@@ -255,12 +249,13 @@
                     <!-- pagination -->
                     <div class="swiper-pagination" style="bottom: -50px;"></div>
                 </div>
-            </section>
+            </div>
         </section>
 
 
         <!-- Section 3 -->
         <section>
+            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-10">Church Events</h2>
             <div class="h-96">
 
             </div>
@@ -400,12 +395,17 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="./assets/js/barba.js" type="module"></script>
-    <script src="./assets/js/responsive.js" type="module"></script>
     <script src="./assets/js/swiper.js" type="module"></script>
     <script src="./main.js" type="module"></script>
     <script src="./assets/js/gsap.js" type="module"></script>
     <script src="./assets/js/three.js" type="module"></script>
+
+    <!-- Responsive Scripts -->
+    <script src="./assets/js/responsive.js" type="module"></script>
+    <script src="./assets/js/section2-responsivity.js" type="module"></script>
+
 
 </body>
 

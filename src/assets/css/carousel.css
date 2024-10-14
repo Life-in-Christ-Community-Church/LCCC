@@ -9,7 +9,7 @@
 	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
-	min-height: 500px;
+	min-height: 390px;
 }
 
 .carousel-3D-swiper .swiper-slide {
@@ -82,8 +82,14 @@
 	background: rgb(0, 132, 255);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1040px) {
     .carousel-3D-swiper-section .swiper-pagination-bullet {
       display: none;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .carousel-3D-swiper-section {
+        min-height: 440px !important;
     }
 }

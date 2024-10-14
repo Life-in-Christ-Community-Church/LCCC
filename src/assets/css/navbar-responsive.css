@@ -1,0 +1,99 @@
+.hamburger {
+    cursor: pointer;
+    position: relative;
+}
+
+.line {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    transform-origin: center;
+}
+
+.line1, .line3 {
+    transform-origin: 50% 50%;
+}
+
+.open .line1 {
+    transform: rotate(45deg) translate(0, 7px); 
+}
+
+.open .line2 {
+    transform: rotate(45deg) translate(0, 0px);
+}
+
+.open .line3 {
+    transform: rotate(-45deg) translate(0, -7px); 
+}
+
+
+@media only screen and (min-width: 780px) {
+    .hiddenNavBar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    header nav {
+        display: none !important;
+    }
+
+    #navBarToShow {
+        display: flex !important;
+    }
+    
+    header {
+        justify-content: flex-start !important;
+        padding: 0 !important;
+    }
+
+    #divLogoChurch {
+        justify-content: flex-start;
+        width: 75px;
+        display: flex;
+        margin-left: 5px;
+    }
+    
+    #divLogoChurch div {
+        display: flex;
+        justify-content: center;
+    }
+
+    header h2 {
+        align-self:  center;
+        font-size: 1.3rem;
+        color: rgb(40, 93, 186);
+        
+        span {
+            color: rgb(31, 44, 143);
+        }
+    }
+
+    #menuListButton {
+        margin-right: 25px;
+        align-self: center;
+        position: absolute;
+        right: 0;
+    }
+
+    #menuListButton:hover {
+        cursor: pointer;
+    }
+
+    .hiddenMenu {
+        display: flex;
+        position: fixed;
+        width: 70% !important;
+        background-color: white !important;
+        height: 100%;
+        right: 0;
+        top: 80px;
+        z-index: 20;
+        transform: translateX(120%);
+        transition: transform .5s ease;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+}
+

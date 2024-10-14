@@ -1,0 +1,25 @@
+@media only screen and (max-width: 730px) {
+    #contactBackground {
+        background-size: auto;
+        background-position: center;
+        background-attachment: local !important;
+    }
+
+    #pContact {
+        margin: 10px 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+    #map {
+        display: flex;
+        height: 400px;
+    }
+
+    #logoBackgroundFooter {
+        background-attachment: local !important;
+        background-position: 30vw 240px !important;
+        background-size: 500px auto;
+    }
+}

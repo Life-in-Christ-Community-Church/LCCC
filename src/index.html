@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/navbar-responsive.css">
     <link rel="stylesheet" href="./assets/css/banner-responsivity.css">
     <link rel="stylesheet" href="./assets/css/section2-responsivity.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- TITLE -->
     <title>Life in Christ Community Church</title>
 </head>
@@ -83,7 +84,6 @@
         <!-- BANNER SLIDE -->
         <!-- Slider main container -->
         <section>
-
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; height: 100dvh;"
                 class="swiper firstSwiper">
                 <!-- Divider -->
@@ -204,14 +204,14 @@
 
         <!-- Section 2 -->
         <section class="my-10">
-            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-10">Church Events</h2>
+            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-10">News & Events</h2>
             <div class="carousel-3D-swiper-section">
                 <!-- Slider main container -->
                 <div class="carousel-3D-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper gap-10" style="max-width: 1200px;">
                         <!-- Slides -->
-                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
+                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/aboutus.jpg" alt="">
                             </div>
@@ -221,7 +221,7 @@
                                 <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">ABOUT</button>
                             </div>
                         </div>
-                        <div class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
+                        <div class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/mathew.jpg" alt="">
                             </div>
@@ -233,7 +233,7 @@
                                 <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">SUNDAY SERVICE</button>
                             </div>
                         </div>
-                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-2xl rounded-b-2xl">
+                        <div class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
                             <div class="aspect-video">
                                 <img class="aspect-video rounded-t-xl" src="./public/img/biblestudy.jpg" alt="">
                             </div>
@@ -254,31 +254,38 @@
 
 
         <!-- Section 3 -->
-        <section>
-            <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-2 pb-10">Church Events</h2>
-            <div class="h-96">
-
+        <section class="flex justify-center align-center" style="background: url(./public/img/paper.png);">
+            <!-- <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-8 pb-10 ">Church Events</h2> -->
+            <div class="h-auto p-12 flex gap-8 items-center">
+                    <div id="player" class="flex bg-white w-[600px] h-[400px]">   
+                    </div>
+                    <div id="youtube-iframe" class="flex flex-col w-[350px] h-[400px] gap-8 justify-around">   
+                        <div id="player2" class="flex bg-white w-full h-[45%] ">   
+                        </div>
+                        <div id="player3" class="flex bg-white w-full h-[45%] ">   
+                        </div>
+                    </div>
+                    
             </div>
         </section>
 
-        <!-- Section 3: City Landscape -->
+        <!-- Section 4: City Landscape -->
         <section class="flex justify-center items-center">
-            <div class="absolute z-50 text-white text-center">
+            <div class="absolute z-50 text-white text-center flex-col justify-center">
                 <h4>CONTACT WITH US</h4>
 
                 <!-- Divider -->
-                <svg viewBox="0 0 658 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-1 mb-2">
-                    <g filter="url(#filter0_d_3_10)">
-                        <path d="M329.533 3.53553L343.53 17.533L329.533 31.5305L315.536 17.533L329.533 3.53553Z"
-                            stroke="white" stroke-width="5" shape-rendering="crispEdges" />
-                    </g>
-                    <line x1="0.992138" y1="18.5" x2="318.992" y2="17.5" stroke="white" stroke-width="5" />
-                    <line x1="339.992" y1="17.5" x2="657.992" y2="16.5" stroke="white" stroke-width="5" />
+                <svg class="flex h-[12px] w-full mb-2" viewBox="0 0 658 36" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M329.533 3.53553L343.53 17.533L329.533 31.5305L315.536 17.533L329.533 3.53553Z"
+                        stroke="white" stroke-width="5" />
+                    <path d="M0.992126 18.5L318.992 17.5" stroke="white" stroke-width="5" />
+                    <path d="M339.992 17.5L657.992 16.5" stroke="white" stroke-width="5" />
                 </svg>
 
-
                 <!-- Contact -->
-                <p class="text-[1.4rem] text-gray-100 mb-6">If you are interested in attending our service or have any
+                <p id="pContact" class="text-[1.4rem] text-gray-100 mb-6">If you are interested in attending our service
+                    or have any
                     inquiries,
                     <br />
                     please do not hesitate to contact us. We look forward to assisting you.
@@ -287,7 +294,8 @@
                     CONTACT
                 </button>
             </div>
-            <div class="flex p-[12rem] w-full text-gray-100 bg-no-repeat bg-cover bg-center filter brightness-[0.4] contrast-[0.6]"
+            <div id="contactBackground"
+                class="flex p-[12rem] w-full text-gray-100 bg-no-repeat bg-cover bg-center filter brightness-[0.4] contrast-[0.6]"
                 style="background-image: url(./public/img/thehague.jpg); background-attachment: fixed;">
             </div>
         </section>
@@ -295,11 +303,13 @@
 
     <!-- FOOTER -->
     <footer class="flex-1 w-full sticky">
-        <section
-            class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
-            style="background-image: url(./public/lccc-logo-outline-softbrown.svg); 
+        <div 
+        id="logoBackgroundFooter"
+        class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
+        style="background-image: url(./public/lccc-logo-outline-softbrown.svg); 
         background-position: 70vw 300px; background-size: 600px auto;
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;"
+        >
 
 
             <!-- Div Info -->
@@ -331,7 +341,7 @@
                         <div class="not-italic text-gray-800">
                             <h6>CONTACT</h6>
                             <div class="mt-2 text-[0.9rem]">
-                                <p>(+31) 626 27 18 91 <br /> email@church.com</p>
+                                <p>(+31) 626 27 18 91 <br />email@church.com</p>
                             </div>
                         </div>
                     </div>
@@ -370,7 +380,8 @@
             </div>
 
             <!-- Div Map -->
-            <div class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10" style="border: 4px solid rgba(255,255,255,1);">
+            <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10"
+                style="border: 4px solid rgba(255,255,255,1);">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -378,16 +389,16 @@
             </div>
 
             <!-- Gradient background -->
-            <!-- <div class="w-[90%] absolute right-0 h-full z-0" style="
+            <div class="w-[90%] absolute right-0 h-full z-0" style="
             display: block;
             position: absolute;
             bottom: 0;
             background: radial-gradient(farthest-side at 100% 100%, #00e5ff, rgba(242, 93, 227, 0));
             opacity: .3;
             pointer-events: none;
-            "></div> -->
+            "></div>
 
-        </section>
+        </div>
 
         <!-- Copyright -->
         <div class="flex w-ful justify-center bg-[#232d3f]">
@@ -401,6 +412,7 @@
     <script src="./main.js" type="module"></script>
     <script src="./assets/js/gsap.js" type="module"></script>
     <script src="./assets/js/three.js" type="module"></script>
+    <script src="./assets/js/youtube.js" type="module"></script>
 
     <!-- Responsive Scripts -->
     <script src="./assets/js/responsive.js" type="module"></script>

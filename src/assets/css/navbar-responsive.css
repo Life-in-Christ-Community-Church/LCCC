@@ -4,7 +4,7 @@
 }
 
 .line {
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 0.6s ease, opacity 0.6s ease;
     transform-origin: center;
 }
 
@@ -88,7 +88,7 @@
         top: 80px;
         z-index: 20;
         transform: translateX(120%);
-        transition: transform .5s ease;
+        transition: transform .5s linear;
     }
 
     .active {

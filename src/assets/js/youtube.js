@@ -16,25 +16,25 @@ const API_KEY = import.meta.env.VITE_YOUTUBE;
 const CHANNEL_ID = "UCzpl6CJP6lo5vjsEAeIHnsg";
 const MAX_RESULTS = 5
 
-async function fetchRecentVideos() {
-//   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}&type=videos`;
+// async function fetchRecentVideos() {
+// //   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}&type=videos`;
   
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Error en la petición: ${response.statusText}`);
-    }
+//   try {
+//     const response = await fetch(url);
+//     if (!response.ok) {
+//       throw new Error(`Error en la petición: ${response.statusText}`);
+//     }
     
-    const data = await response.json();
-    console.log('Videos recientes:', data);
-    return data.items; // Retorna los videos
+//     const data = await response.json();
+//     console.log('Videos recientes:', data);
+//     return data.items; // Retorna los videos
 
-  } catch (error) {
-    console.error('Error al obtener los videos:', error);
-  }
-}
+//   } catch (error) {
+//     console.error('Error al obtener los videos:', error);
+//   }
+// }
 
-fetchRecentVideos();
+// fetchRecentVideos();
 
 // Esta función se llama cuando la API de YouTube está lista
 window.onYouTubeIframeAPIReady = function() {
@@ -42,7 +42,7 @@ window.onYouTubeIframeAPIReady = function() {
     players.push(new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: '4Maxu-_TvmE?si=_XBfT_h8rvFPwzsx',
+        videoId: '4Maxu-_TvmE?si=_XBfT_h8rvFPwzsx&?c',
         playerVars: {
             'autoplay': 0
         },

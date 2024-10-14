@@ -63,11 +63,6 @@ const secondSwiper = new Swiper('.carousel-3D-swiper', {
         slideShadows: false
     },
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
     pagination: {
         el: ".swiper-pagination"
     },
@@ -87,19 +82,6 @@ const secondSwiper = new Swiper('.carousel-3D-swiper', {
                 modifier: 0,
                 slideShadows: false
             },
-        }
-    }
-});
-
-window.addEventListener('resize', () => {
-    
-    if (window.innerWidth <= 1040) {
-        
-        console.log("RESIZE LESS")
-        if (window.innerWidth > 1040 && !localStorage.getItem("RELOAD_RESIZE")) {
-            console.log("RESIZE MORE");
-            window.location.reload();
-            localStorage.setItem("RELOAD_RESIZE", "true");
         }
     }
 });

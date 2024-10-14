@@ -9,5 +9,3 @@ document.querySelector("#menuListButton").addEventListener('click', () => {
     divMenuList.toggle("active");
     menuListButton.toggle("open");
 })
-
-

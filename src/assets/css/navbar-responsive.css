@@ -4,7 +4,7 @@
 }
 
 .line {
-    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition: transform 0.3s ease;
     transform-origin: center;
 }
 
@@ -13,17 +13,28 @@
 }
 
 .open .line1 {
-    transform: rotate(45deg) translate(0, 7px); 
+    transform:  translate(0, 7px); 
 }
 
 .open .line2 {
-    transform: rotate(45deg) translate(0, 0px);
+    transform: translate(0, 0px);
 }
 
 .open .line3 {
-    transform: rotate(-45deg) translate(0, -7px); 
+    transform:  translate(0, -7px); 
 }
 
+.open .rotate1 {
+    transform:  translate(-6px, 4px) rotate(45deg); 
+}
+
+.open .rotate2 {
+    transform:  translate(0px, 0px) rotate(45deg); 
+}
+
+.open .rotate3 {
+    transform:  translate(-5.6px, -5.4px) rotate(-45deg); 
+}
 
 @media only screen and (min-width: 780px) {
     .hiddenNavBar {

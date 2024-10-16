@@ -7,7 +7,7 @@ import { animationEnter, animationLeave } from './animations';
 import { initSwipers } from './swiper';
 import { initResponsiveMenu } from './responsive';
 
-barba.hooks.before(() => {
+barba.hooks.after(() => {
     console.log("after");
     initSwipers();
     initResponsiveMenu();

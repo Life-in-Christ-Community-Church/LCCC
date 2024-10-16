@@ -4,8 +4,6 @@ export const initResponsiveMenu = () => {
     const menuListButton = document.querySelector("#menuListButton")?.classList;
     const divMenuList = document.querySelector("#divMenuList")?.classList;
 
-    if (!menuListButton || !divMenuList) return; // Evita errores si los elementos no están en el DOM
-
     document.querySelector("#menuListButton").addEventListener('click', () => {
         if (menuListButton.contains("open")) {
             // Si el menú está abierto, revertir el rotate primero
@@ -31,3 +29,5 @@ export const initResponsiveMenu = () => {
         }
     });
 };
+
+initResponsiveMenu();

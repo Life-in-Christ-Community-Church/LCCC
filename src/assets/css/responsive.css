@@ -3,7 +3,7 @@
         padding: 2rem 20px;
     }
 
-    #player {
+    #videoLatestSermon {
         height: 300px;
     }
 
@@ -43,7 +43,7 @@
         width: 100%;
     }
 
-    #player {
+    #videoLatestSermon {
         width: 100% !important;
     }
 
@@ -90,7 +90,7 @@
         width: 100%;
     }
 
-    #player {
+    #videoLatestSermon {
         width: 100% !important;
     }
 

@@ -16,9 +16,14 @@ html {
 
 body {
     font-family: Times, 'Times New Roman', 'Georgia', serif;
+    background-color: #232d3f;
 }
 
 main {
     overflow-x: hidden !important;
+}
+
+.wrapper {
+    background-color: white;
 }
 

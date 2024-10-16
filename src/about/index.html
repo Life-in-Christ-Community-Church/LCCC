@@ -113,48 +113,52 @@
         </header>
 
         <!-- MAIN AREA -->
-        <main class="project">
+        <main class="project bg-white">
 
             <!-- BANNER SLIDE -->
             <!-- Slider main container -->
-            <section class="border-2 border-orange-500">
-                <div class="border-2 border-red-500">
+            <section class="">
+                <div class="relative">
                     <!-- Divider -->
-                    <div class="w-full z-20 bottom-0 border-2 border-green-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                            <path style="fill: white;" d="M500.2,95.7L0,50v100h1000V50L500.2,95.7z"></path>
+                    <div class="w-full z-20 bottom-0 absolute transform translate-y-[1px]">
+                        <svg viewBox="0 0 1000 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_2)">
+                                <path d="M500 96L0 50V150H1000V50L500 96Z" fill="white" />
+                                <path d="M0 28L500 96L0 50V28Z" fill="white" fill-opacity="0.5" />
+                                <path d="M1000 28L500 96L1000 50V28Z" fill="white" fill-opacity="0.5" />
+                                <path d="M0 8L500 96L0 28V8Z" fill="white" fill-opacity="0.25" />
+                                <path d="M1000 8L500 96L1000 28V8Z" fill="white" fill-opacity="0.25" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_2">
+                                    <rect width="1000" height="100" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </div>
-                    <div style="background-image: url(../public/img/banner-2.jpg); height: 300px;"
-                        class="border-2 border-yellow-500">
-
+                    <div style="background-image: url(../public/img/sheep-blue.jpg); height: 300px; background-position: center;"
+                        class="">
                     </div>
                 </div>
             </section>
 
             <!-- Section 1 -->
-            <section class="flex justify-center align-center">
-                <!-- <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-8 pb-10 ">Church Events</h2> -->
-                <div class="h-[600px] pb-10 flex gap-8 items-center" id="section3">
-                    <div class="flex-col" id="divLatestSermons">
-                        <h5 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Latest Sermon</h5>
-                        <div id="player" class="flex bg-white w-[600px] h-[400px] mt-4 border-8 border-white"
-                            id="videoLatestSermon">
-                        </div>
-                    </div>
-                    <div id="youtube-iframe" class="flex flex-col">
-                        <h5 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Selected Messages
-                        </h5>
-                        <div class="flex flex-col gap-8  mt-4 h-full justify-center" id="divSelectedMessages">
-                            <div id="player2" class="flex bg-white w-[320px] h-[184px] border-8 border-white">
-                            </div>
-                            <div id="player3" class="flex bg-white w-[320px] h-[184px] border-8 border-white">
-                            </div>
-                        </div>
-                    </div>
+            <section>
+                <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-8 pb-10 w-full">
+                    About Us
+                </h2>
+                <div class="flex h-[600px] border-2 border-blue-500 justify-center">
+                    <div class="flex-col border-2 border-green-500 w-[800px] h-[500px]">
+                        <div class="border-2 border-red-500">
 
+                        </div>
+                        <div class="border-2 border-yellow-500">
+                            
+                        </div>
+                    </div>
                 </div>
             </section>
+
         </main>
 
 

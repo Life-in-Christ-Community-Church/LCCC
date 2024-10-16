@@ -38,13 +38,14 @@ const MAX_RESULTS = 5
 
 // Esta función se llama cuando la API de YouTube está lista
 window.onYouTubeIframeAPIReady = function() {
-    // Crear jugadores para cada video
+
     players.push(new YT.Player('player', {
         height: '390',
         width: '640',
         videoId: '4Maxu-_TvmE?si=_XBfT_h8rvFPwzsx&?c',
         playerVars: {
-            'autoplay': 0
+            'autoplay': 1,
+            'color': 'white', 
         },
         events: {
             'onReady': onPlayerReady,
@@ -57,7 +58,8 @@ window.onYouTubeIframeAPIReady = function() {
         width: '640',
         videoId: 'AZ_gUedNn4Y?si=6Ok2ZBCmhgBTJm_O',
         playerVars: {
-            'autoplay': 0
+            'autoplay': 1,
+            'color': 'white',
         },
         events: {
             'onReady': onPlayerReady,
@@ -70,7 +72,8 @@ window.onYouTubeIframeAPIReady = function() {
         width: '640',
         videoId: 'oC_iqZl-bSU?si=MvcDdWN9w7VbLStV"',
         playerVars: {
-            'autoplay': 0
+            'autoplay': 1,
+            'color': 'white',
         },
         events: {
             'onReady': onPlayerReady,

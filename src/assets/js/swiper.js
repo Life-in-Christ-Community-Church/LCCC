@@ -64,7 +64,8 @@ export const initSwipers = () => {
         },
     
         pagination: {
-            el: ".swiper-pagination"
+            el: ".swiper-pagination",
+            clickable: true,
         },
     
         breakpoints: {
@@ -85,7 +86,6 @@ export const initSwipers = () => {
             }
         }
     });
-
 }
 
-initSwipers();
+// initSwipers();

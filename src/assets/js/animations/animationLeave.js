@@ -4,7 +4,7 @@ const animationLeave = (container) => {
     const main = container.querySelector("main");
     const footer = container.querySelector("footer");
     const sectionBanner = container.querySelector("#sectionBanner")
-    const span = container.querySelector("a.is-active span")
+    const span = container.querySelectorAll("a.is-active span")
     
     const timeline = gsap.timeline({ defaults: { duration: 0.5 } });
 

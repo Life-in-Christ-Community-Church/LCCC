@@ -20,6 +20,7 @@ barba.hooks.after(() => {
 })
 
 barba.init({
+    preventRunning: true,
     schema: {
         prefix: 'data-router',
     },
@@ -27,11 +28,13 @@ barba.init({
         {
             once({next}){
                 animationEnter(next.container);
-                initSwipers();
+                console.log("ONCE TRANSITION")
+                // initSwipers();
                 initResponsiveMenu();
             },
             leave: ({current}) => animationLeave(current.container),
             enter({next}){
+                console.log("ENTER TRANSITION")
                 animationEnter(next.container);
                 window.scrollTo(0, 0)
             },

@@ -7,6 +7,12 @@ import { animationEnter, animationLeave } from './animations';
 import { initSwipers } from './swiper';
 import { initResponsiveMenu } from './responsive';
 
+barba.hooks.once(() => {
+    console.log("once");
+    initSwipers();
+    initResponsiveMenu();
+})
+
 barba.hooks.after(() => {
     console.log("after");
     initSwipers();

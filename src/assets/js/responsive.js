@@ -6,6 +6,8 @@ export const initResponsiveMenu = () => {
 
     document.querySelector("#menuListButton").addEventListener('click', () => {
         if (menuListButton.contains("open")) {
+            console.log("open");
+            
             // Si el menú está abierto, revertir el rotate primero
             document.querySelector(".line1").classList.toggle('rotate1');
             document.querySelector(".line2").classList.toggle('rotate2');
@@ -17,6 +19,8 @@ export const initResponsiveMenu = () => {
                 menuListButton.toggle("open");
             }, 300); // Delay para hacer primero el rotate y luego el translate al cerrar
         } else {
+            console.log("close");
+            
             // Si el menú está cerrado, primero activar el translate y luego el rotate
             divMenuList.toggle("active");
             menuListButton.toggle("open");

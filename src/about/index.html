@@ -20,8 +20,9 @@
 </head>
 
 <body data-router="wrapper">
-    <!-- HEADER AND NAVBAR -->
     <div class="wrapper" data-router="container" data-router-namespace="about">
+
+        <!-- HEADER AND NAVBAR -->
         <header class="flex fixed w-full h-20 justify-center align-center p-2 shadow-md text-sm text-gray-700 bg-white"
             style="z-index: 200;">
             <nav class="flex justify-center items-center w-56">
@@ -257,7 +258,39 @@
                             </div>
 
                             <!-- Mision & Vision -->
-                            <div id="divAbout-1" class="absolute w-full h-full p-8 flex justify-between opacity-1">
+                            <div id="divAbout-2" class="absolute w-full h-full p-8 flex justify-between opacity-0">
+                                <div class="w-[380px] flex-col">
+                                    <h3 class="text-blue-800 text-[1.6rem] mb-3">Mision</h3>
+                                    <p class="text-[1.1rem] text-justify">
+                                        Our Mision is to worship God both together as a church and individually as
+                                        redeemed believers, ministering the Word in dependence on the Holy Spirit.
+                                        Additionally, we aim to grow towards Christian maturity and spread the Gospel
+                                        —the Good News of Jesus Christ— throughout The Netherlands.
+                                    </p>
+                                    <div class="w-full flex h-[220px] bottom-0">
+                                        <div class="flex w-full justify-center items-center">
+                                            <img class="w-[200px] h-[200px]" src="../public/img/bible-png.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[380px] flex-col">
+                                    <h3 class="text-blue-800 text-[1.6rem] mb-3">Vision</h3>
+                                    <p class="text-[1.1rem] text-justify">
+                                        Our vision is to be a community passionate about the glory of God and His
+                                        Gospel, committed to living the present in light of eternity. We strive to be
+                                        the light and salt of the world, reflecting the goodness of God in our lives.
+                                        <br /><br/>
+                                    </p>
+                                    <div class="w-full flex h-[220px]">
+                                        <div class="flex w-full justify-center items-center">
+                                            <img class="w-[200px] h-[200px]" src="../public/img/torch-png.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Church Beliefs -->
+                            <div id="divAbout-3" class="absolute w-full h-full p-8 flex justify-between opacity-1">
                                 <div class="w-[380px] flex-col">
                                     <h3 class="text-blue-800 text-[1.6rem] mb-3">Mision</h3>
                                     <p class="text-[1.1rem] text-justify">
@@ -294,12 +327,10 @@
 
         </main>
 
-
-        <!-- FOOTER -->
         <footer class="flex-1 w-full sticky">
             <div id="logoBackgroundFooter"
                 class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
-                style="background-image: url(../public/lccc-logo-outline-softbrown.svg); 
+                style="background-image: url(./public/lccc-logo-outline-softbrown.svg); 
         background-position: 70vw 300px; background-size: 600px auto;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
 
@@ -397,6 +428,8 @@
                 <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church </p>
             </div>
         </footer>
+
+        <!-- FOOTER -->
 
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>

@@ -40,4 +40,10 @@ barba.init({
             },
         }
     ],
+    views: [
+        {
+            namespace: 'about',
+
+        }
+    ]
 })

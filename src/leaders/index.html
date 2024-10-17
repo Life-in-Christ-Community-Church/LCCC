@@ -21,7 +21,7 @@
 </head>
 
 <body data-router="wrapper">
-    <div class="wrapper" data-router="container" data-router-namespace="about">
+    <div class="wrapper" data-router="container" data-router-namespace="leaders">
 
         <!-- HEADER AND NAVBAR -->
         <header class="flex fixed w-full h-20 justify-center align-center p-2 shadow-md text-sm text-gray-700 bg-white"
@@ -32,17 +32,19 @@
                         <a href="../">HOME</a>
                     </li>
                     <li
-                        class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out relative">
-                        <a class="is-active text-blue-500">
+                        class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
+                        <a href="../about/">
                             ABOUT
-                            <span
+                        </a>
+                    </li>
+                    <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out relative">
+                        <a class="is-active text-blue-500">
+                            LEADERS
+                             <span
                                 class="bg-gradient-to-t from-blue-500/10 absolute flex w-full h-[55px] transform translate-y-[-20px] top-0  scale-150">&nbsp;</span>
                             <span
                                 class="bg-blue-300 absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
                         </a>
-                    </li>
-                    <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
-                        <a href="../leaders/">LEADERS</a>
                     </li>
                 </ul>
             </nav>
@@ -84,12 +86,12 @@
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="../about/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
                                 ABOUT
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="../leaders/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="" class="flex w-full h-full p-3 justify-center liHiddenMenu">
                                 LEADERS
                             </a>
                         </li>

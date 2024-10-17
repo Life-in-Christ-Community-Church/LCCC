@@ -36,7 +36,7 @@ export const initScrollAnchor = () => {
             const targetElement = document.getElementById(targetId);
 
             // Desplazar el div que tiene overflow-y-scroll hacia el objetivo
-            document.getElementsByClassName('scrollableDiv').scrollTo({
+            document.querySelector('.scrollableDiv').scrollTo({
                 top: targetElement.offsetTop,
                 behavior: 'smooth'
             });

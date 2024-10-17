@@ -6,8 +6,7 @@ import { animationEnter, animationLeave } from './animations';
 
 import { initSwipers } from './swiper';
 import { initResponsiveMenu } from './responsive';
-import { initScrollAnchor } from './about-container';
-import { initAboutContainer } from './about-container';
+import { initAboutContainer, initScrollAnchor } from './about-container';
 
 barba.hooks.once(() => {
     console.log("once");
@@ -21,6 +20,7 @@ barba.hooks.after(() => {
     console.log("after");
     initSwipers();
     initResponsiveMenu();
+    initScrollAnchor();
     initAboutContainer();
 })
 

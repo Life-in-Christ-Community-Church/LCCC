@@ -6,22 +6,24 @@ import { animationEnter, animationLeave } from './animations';
 
 import { initSwipers } from './swiper';
 import { initResponsiveMenu } from './responsive';
-import { initAboutContainer, initScrollAnchor } from './about-container';
+import { initAboutContainer, initAboutScrollAnchor, initAboutUrlCheck } from './about-container';
 
 barba.hooks.once(() => {
     console.log("once");
     initSwipers();
     initResponsiveMenu();
-    initScrollAnchor();
+    initAboutScrollAnchor();
     initAboutContainer();
+    initAboutUrlCheck();
 })
 
 barba.hooks.after(() => {
     console.log("after");
     initSwipers();
     initResponsiveMenu();
-    initScrollAnchor();
+    initAboutScrollAnchor();
     initAboutContainer();
+    initAboutUrlCheck();
 })
 
 barba.init({

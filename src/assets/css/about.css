@@ -21,7 +21,7 @@
 /* Firefox */
 .scrollableDiv {
     scrollbar-width: thin;
-    scrollbar-color: #888 rgba(255,255,255,0);
+    scrollbar-color: #888 rgba(255, 255, 255, 0);
 }
 
 /* Internet Explorer */
@@ -33,7 +33,256 @@
     scrollbar-gutter: stable both-edges;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 950px) {
+    #containerAbout {
+        height: 750px;
+        /* border: 2px solid red; */
+    }
 
+    #containerAbout2 {
+        height: 700px;
+        /* border: 2px solid yellow; */
+        width: 95%;
+    }
+
+    #containerAbout3 {
+        height: 600px;
+        /* border: 2px solid green; */
+    }
+
+    #aboutContainerLinks ul {
+        font-size: 0.7rem !important;
+        gap: 1px;
+        text-align: center;
+    }
+
+    #aboutContainerLinks ul li a {
+        padding: 10px 10px;
+        align-self: center;
+    }
+
+    #divAbout-1 {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    #divAbout-1>div:nth-child(1) {
+        width: 100%;
+    }
+
+    /* #divAbout-1>div:nth-child(1) p {
+        text-align: left;
+    } */
+
+    #divAbout-1>div:nth-child(2) {
+        width: 100%;
+    }
+
+    #divAbout-2 {
+        flex-direction: column;
+        padding: 20px 20px;
+        justify-content: start;
+    }
+
+    #hiddenMision {
+        display: flex;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    #divAbout-2>div:nth-child(1) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #divAbout-2>div:nth-child(2) {
+        width: 100%;
+    }
+
+    .deleteDivPicture {
+        display: none;
+    }
+
+    #divAbout-3 {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    #ulBeliefs {
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    #beliefsGod,
+    #beliefsGodFather,
+    #beliefsSon,
+    #beliefsSpirit,
+    #beliefsBible,
+    #beliefsMan,
+    #beliefsSalvation,
+    #beliefsChurch,
+    #beliefsOrdinances,
+    #beliefsLastThings,
+    #beliefsOthers {
+        height: auto;
+    }
+
+    #beliefsGod div,
+    #beliefsGodFather div,
+    #beliefsSon div,
+    #beliefsSpirit div,
+    #beliefsBible div,
+    #beliefsMan div,
+    #beliefsSalvation div,
+    #beliefsChurch div,
+    #beliefsOrdinances div,
+    #beliefsLastThings div,
+    #beliefsOthers div{
+        height: auto;
+        width: 100%;
+    }
+
+    #beliefsGod ul,
+    #beliefsGodFather ul,
+    #beliefsSon ul,
+    #beliefsSpirit ul,
+    #beliefsBible ul,
+    #beliefsMan ul,
+    #beliefsSalvation ul,
+    #beliefsChurch ul,
+    #beliefsOrdinances ul,
+    #beliefsLastThings ul,
+    #beliefsOthers ul{
+        height: auto;
+        padding: 0px 10px;
+    }
+
+
+
+    #divAbout-4 {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+     #divAbout-4>div:nth-child(1) {
+        width: 100%;
+    } 
+
+    #divAbout-4>div:nth-child(1) p {
+        text-align: left;
+    } 
+
+
+    #divAbout-4>div:nth-child(2) {
+        width: 100%;
+        height: 300px;
+        justify-content: flex-end;
+    }
+
+    #divAbout-4>div:nth-child(2)>div {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 300px;
+        height: 500px;
+    }
+
+    #divAbout-4>div:nth-child(2) img {
+        width: 90%;
+        height: 400px;
+    }
+
+    #divAbout-5 {
+        padding: 20px 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #divAbout-5>div:nth-child(2) {
+        width: 100%;
+        height: 300px;
+    }
+
+    #divAbout-5>div:nth-child(2) iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 809px) {
+    #divAbout-1>div:nth-child(2) div {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+
+    #divAbout-1>div:nth-child(2) svg {
+        width: 150px;
+    }
+
+    #divAbout-2>div:nth-child(1) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #divAbout-2>div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #divAbout-4 {
+        flex-direction: column;
+    }
+
+    #divAbout-4>div:nth-child(1) p {
+        text-align: justify;
+    } 
+
+
+    #divAbout-4>div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    #divAbout-4>div:nth-child(2)>div {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 40%;
+        height: 100%;
+    }
+
+    #divAbout-4>div:nth-child(2) img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 631px) {
+    #divAbout-1>div:nth-child(2) div {
+        display: none;
+    }
+
+    #hiddenMision {
+        height: 150px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    #hiddenMision {
+        height: 100px;
+        margin-top: 10px;
+    }
+}
 
 
 

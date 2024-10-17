@@ -149,24 +149,44 @@
                 <h2 class="text-center text-[2.5rem] text-blue-800 font-semibold p-8 pb-10 w-full">
                     About Us
                 </h2>
-                <div class="flex h-[650px] justify-center">
-                    <div class="flex-col w-[900px] h-[550px]">
+                <div class="flex h-[650px] justify-center" id="containerAbout">
+                    <div class="flex-col w-[900px] h-[550px]" id="containerAbout2">
                         <!-- Container Links -->
-                        <div class="flex">
+                        <div class="flex" id="aboutContainerLinks">
                             <ul class="flex gap-[2px] text-[0.9rem]">
-                                <li id="liAbout-1" class="px-4 py-3 bg-gray-100 rounded-t-lg cursor-pointer">THE CHURCH</li>
-                                <li id="liAbout-2" class="px-4 py-3 bg-gray-200 rounded-t-lg cursor-pointer">MISION & VISION</li>
-                                <li id="liAbout-3" class="px-4 py-3 bg-gray-200 rounded-t-lg cursor-pointer">CHURCH BELIEFS</li>
-                                <li id="liAbout-4" class="px-4 py-3 bg-gray-200 rounded-t-lg cursor-pointer">CONFESSION OF FAITH</li>
-                                <li id="liAbout-5" class="px-4 py-3 bg-gray-200 rounded-t-lg cursor-pointer">SCHEDULE</li>
+                                <li id="liAbout-1" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
+                                    <a href="../about/#church" class="px-4 py-3 ">
+                                        THE CHURCH
+                                    </a>
+                                </li>
+                                <li id="liAbout-2" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
+                                    <a href="../about/#mision" class="px-4 py-3 ">
+                                        MISION & VISION
+                                    </a>
+                                </li>
+                                <li id="liAbout-3" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
+                                    <a href="../about/#beliefs" class="px-4 py-3 ">
+                                        CHURCH BELIEFS
+                                    </a>
+                                </li>
+                                <li id="liAbout-4" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
+                                    <a href="../about/#confession" class="px-4 py-3 ">
+                                        CONFESSION OF FAITH
+                                    </a>
+                                </li>
+                                <li id="liAbout-5" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
+                                    <a href="../about/#schedule" class="px-4 py-3 ">
+                                        SCHEDULE
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
                         <!-- Container -->
-                        <div class="h-[480px] bg-gray-100 rounded-b-xl relative">
+                        <div class="h-[480px] bg-gray-100 rounded-b-xl relative" id="containerAbout3">
 
                             <!-- The Church -->
-                            <div id="divAbout-1" class="absolute w-full h-full py-8 pl-8 flex opacity-1">
+                            <div id="divAbout-1" class="absolute w-full h-full py-8 pl-8 flex opacity-0 invisible">
                                 <div class="w-[550px] flex-col ">
                                     <h3 class="text-blue-800 text-[1.6rem] mb-3">Life in Christ Community Church</h3>
                                     <p class="text-[1.1rem] text-justify">Life in Christ Community Church was founded on
@@ -260,7 +280,7 @@
                             </div>
 
                             <!-- Mision & Vision -->
-                            <div id="divAbout-2" class="absolute w-full h-full p-8 flex justify-between opacity-0">
+                            <div id="divAbout-2" class="absolute w-full h-full p-8 flex justify-between opacity-0 invisible">
                                 <div class="w-[380px] flex-col">
                                     <h3 class="text-blue-800 text-[1.6rem] mb-3">Mision</h3>
                                     <p class="text-[1.1rem] text-justify">
@@ -269,7 +289,7 @@
                                         Additionally, we aim to grow towards Christian maturity and spread the Gospel
                                         —the Good News of Jesus Christ— throughout The Netherlands.
                                     </p>
-                                    <div class="w-full flex h-[220px] bottom-0">
+                                    <div class="w-full flex h-[220px] bottom-0 deleteDivPicture">
                                         <div class="flex w-full justify-center items-center">
                                             <img class="w-[200px] h-[200px] opacity-70"
                                                 src="../public/img/bible-png.png" alt="">
@@ -284,22 +304,25 @@
                                         the light and salt of the world, reflecting the goodness of God in our lives.
                                         <br /><br />
                                     </p>
-                                    <div class="w-full flex h-[220px]">
+                                    <div class="w-full flex h-[220px] deleteDivPicture">
                                         <div class="flex w-full justify-center items-center">
                                             <img class="w-[200px] h-[200px] opacity-70"
                                                 src="../public/img/torch-png.png" alt="">
                                         </div>
                                     </div>
+                                    <div class="flex w-full justify-center items-center hidden" id="hiddenMision">
+                                        <img class="w-[200px] h-[200px] opacity-70"
+                                            src="../public/img/bible-png.png" alt="">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Church Beliefs -->
-                            <div id="divAbout-3"
-                                class="scrollableDiv absolute w-[900px] h-full py-8 pl-8 flex-col overflow-y-auto opacity-0 z-20">
+                            <div id="divAbout-3" class="scrollableDiv absolute w-[900px] h-full py-8 pl-8 flex-col overflow-y-auto opacity-0 invisible z-20">
 
                                 <!-- Menu -->
                                 <div class="flex underline text-blue-800">
-                                    <ul class="flex text-[0.9rem] gap-2">
+                                    <ul class="flex text-[0.9rem] gap-2" id="ulBeliefs">
                                         <li><a href="#beliefsGod">God</a></li>
                                         <li><a href="#beliefsGodFather">God the Father</a></li>
                                         <li><a href="#beliefsSon">God the Son</a></li>
@@ -363,7 +386,7 @@
                                                 Earth Creationism.</li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/1.png" alt="" class="filter contrast-0">
                                         </div>
@@ -404,7 +427,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0">
+                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0 deleteDivPicture">
                                         <div class="transform translate-y-[65px] -translate-x-[20px] w-[220px]">
                                             <img src="../public/img/about-img/2.png" alt="" class="filter contrast-0">
                                         </div>
@@ -484,7 +507,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/3.png" alt="" class="filter contrast-0">
                                         </div>
@@ -532,7 +555,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0">
+                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0 deleteDivPicture">
                                         <div class="transform translate-y-[65px] -translate-x-[20px] w-[220px]">
                                             <img src="../public/img/about-img/4.png" alt="" class="filter contrast-0">
                                         </div>
@@ -582,7 +605,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/5.png" alt="" class="filter contrast-0">
                                         </div>
@@ -638,7 +661,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0">
+                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0 deleteDivPicture">
                                         <div class="transform translate-y-[65px] -translate-x-[20px] w-[220px]">
                                             <img src="../public/img/about-img/6.png" alt="" class="filter contrast-0">
                                         </div>
@@ -755,7 +778,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/7.png" alt="" class="filter contrast-0">
                                         </div>
@@ -870,7 +893,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0">
+                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0 deleteDivPicture">
                                         <div class="transform translate-y-[65px] -translate-x-[20px] w-[220px]">
                                             <img src="../public/img/about-img/8.png" alt="" class="filter contrast-0">
                                         </div>
@@ -923,7 +946,7 @@
 
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/9.png" alt="" class="filter contrast-0">
                                         </div>
@@ -1024,7 +1047,7 @@
                                             </p>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0">
+                                    <div class="flex h-full w-[320px] content-center justify-center py-8 px-0 deleteDivPicture">
                                         <div class="transform translate-y-[65px] -translate-x-[20px] w-[220px]">
                                             <img src="../public/img/about-img/10.png" alt="" class="filter contrast-0">
                                         </div>
@@ -1089,7 +1112,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="flex h-full w-[350px] content-center justify-center py-8">
+                                    <div class="flex h-full w-[350px] content-center justify-center py-8 deleteDivPicture">
                                         <div class="transform translate-y-[65px] translate-x-[10px] w-[220px]">
                                             <img src="../public/img/about-img/11.png" alt="" class="filter contrast-0">
                                         </div>
@@ -1099,44 +1122,48 @@
                             </div>
 
                             <!-- Confession of Faith -->
-                            <div id="divAbout-4" class="absolute w-full h-full py-8 pl-8 flex opacity-0">
+                            <div id="divAbout-4" class="absolute w-full h-full py-8 pl-8 flex opacity-0 invisible">
                                 <div class="w-[550px] flex-col ">
-                                    <h3 class="text-blue-800 text-[1.6rem] mb-3">The London Baptist Confession of Faith of 1689
+                                    <h3 class="text-blue-800 text-[1.6rem] mb-3">The London Baptist Confession of Faith
+                                        of 1689
                                     </h3>
                                     <p class="text-[1.1rem] text-justify mb-6">
                                         As an international Baptist Reformed congregation, Life in Christ Community
                                         Church declares that the London Baptist Confession of Faith of 1689 is a
                                         faithful expression of the set of truths that we believe and proclaim.
                                     </p>
-                                    <button class="px-6 py-2 bg-blue-500 text-white rounded-lg">Read the Confession</button>
+                                    <button class="px-6 py-2 bg-blue-500 text-white rounded-lg">Read the
+                                        Confession</button>
                                 </div>
                                 <div class="flex h-full w-[350px] content-center justify-center py-8">
                                     <div class="content-center w-[220px]">
-                                        <img src="../public/img/about-img/lbco.jpg" alt="" class="border-8 border-white shadow-lg">
+                                        <img src="../public/img/about-img/lbco.jpg" alt=""
+                                            class="border-8 border-white shadow-lg">
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Schedule -->
-                            <div id="divAbout-5" class="absolute w-full h-full py-8 pl-8 flex opacity-0">
+                            <div id="divAbout-5" class="absolute w-full h-full py-8 pl-8 flex opacity-0 invisible">
                                 <div class="w-[400px] flex-col ">
                                     <h3 class="text-blue-800 text-[1.6rem] mb-3">Schedule</h3>
                                     <h6 class="text-[1.1rem]">Sunday Church Service:</h6>
                                     <p class="text-[1.1rem] text-justify mb-6">
-                                        - Prayer time: from 10:30 to 11:00 AM<br/>
+                                        - Prayer time: from 10:30 to 11:00 AM<br />
                                         - Service: from 11:00 to 12:30 AM
                                     </p>
                                     <h6 class="text-[1.1rem]">Wednesday Bible Study:</h6>
                                     <p class="text-[1.1rem] text-justify mb-6">
-                                        - From 20:00 to 21:30 PM 
+                                        - From 20:00 to 21:30 PM
                                     </p>
                                 </div>
                                 <div class="flex h-full w-[470px]">
                                     <div class="justify-center items-center w-full flex">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
-                                        style="border:8px solid white;" class="shadow-lg w-[380px] h-[350px]" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
+                                            style="border: 1px solid rgb(206, 206, 206);" class="shadow-lg w-[380px] h-[350px] rounded-3xl"
+                                            allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -1151,7 +1178,7 @@
         <footer class="flex-1 w-full sticky">
             <div id="logoBackgroundFooter"
                 class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
-                style="background-image: url(./public/lccc-logo-outline-softbrown.svg); 
+                style="background-image: url(../public/lccc-logo-outline-softbrown.svg); 
         background-position: 70vw 300px; background-size: 600px auto;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
 
@@ -1225,10 +1252,10 @@
 
                 <!-- Div Map -->
                 <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10"
-                    style="border: 4px solid rgba(255,255,255,1);">
+                    >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="100%" class="rounded-3xl shadow-xl" style="border:1px solid gray;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -1250,7 +1277,6 @@
             </div>
         </footer>
 
-        <!-- FOOTER -->
 
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>

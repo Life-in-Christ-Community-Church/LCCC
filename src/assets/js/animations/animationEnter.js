@@ -7,7 +7,8 @@ const animationEnter = (container) => {
     const span = container.querySelectorAll("a.is-active span")
     const aSpan = container.querySelectorAll("a.is-active")
 
-    const aboutContainer = container.querySelector("#containerAbout");
+    const aboutContainer = container.querySelector("#containerAbout")
+    const construction = container.querySelector(".underConstruction")
 
     const timeline = gsap.timeline({ defaults: { ease: "power1.out", duration: 0.5 } });
 
@@ -18,6 +19,7 @@ const animationEnter = (container) => {
         .from(span, {opacity: 0, scaleX: 0,}, "<")
         .from(aSpan, { color: 'blue' }, "<")
         .from(aboutContainer, {opacity: 0, y: -10, duration: 1}, "<")
+        .from(construction, {opacity: 0, y: -10, duration: 1}, "<")
 
     return timeline;
 }

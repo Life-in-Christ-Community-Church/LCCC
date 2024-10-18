@@ -20,10 +20,10 @@ export const initSwipers = () => {
     
         effect: "fade",
     
-        mousewheel: {
-            forceToAxis: true,
-            enabled: true,
-        },
+        // mousewheel: {
+        //     forceToAxis: true,
+        //     enabled: true,
+        // },
     
         autoplay: {
             delay: 10000,

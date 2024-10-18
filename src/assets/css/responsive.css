@@ -123,13 +123,31 @@
         background-position: center -100px !important;
     }
 
+    .pictureBannersPages-leaders {
+        background-position: center -200px !important;
+    }
+
     .pictureBannersPages-sermons {
         background-position: center -90px !important;
+    }
+
+    .pictureBannersPages-gospel {
+        background-position: center -40px !important;
+    }
+
+    .pictureBannersPages-give {
+        background-position: center -200px !important;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
         .pictureBannersPages-sermons {
             background-position: center -40px !important;
+        }
+        .pictureBannersPages-leaders {
+            background-position: center -100px !important;
+        }
+        .pictureBannersPages-give {
+            background-position: center -100px !important;
         }
     }
 }

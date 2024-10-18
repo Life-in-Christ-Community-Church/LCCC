@@ -3,25 +3,28 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-    root: 'src/', // Carpeta donde se encuentran tus archivos fuente
-    publicDir: '../public', // Carpeta donde se encuentran los archivos estáticos (como _redirects)
+    root: 'src/',
+    publicDir: '../public',
     server: {
-        host: true, // Abre al servidor en la red local y muestra la URL
-        open: !('SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env) // Abre si no es un CodeSandbox
+        host: true,
+        open: !('SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env)
     },
     build: {
-        outDir: '../dist', // Carpeta donde se generan los archivos de salida
-        emptyOutDir: true, // Vacía la carpeta antes de generar nuevos archivos
-        sourcemap: true, // Agrega sourcemap
+        outDir: '../dist',
+        emptyOutDir: true,
+        sourcemap: true,
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'src/index.html'), // Página principal
-                about: resolve(__dirname, 'src/about/index.html'), // Página de About
-                sermons: resolve(__dirname, 'src/sermons/index.html'), // Página de Sermones
+                main: resolve(__dirname, 'src/index.html'),
+                about: resolve(__dirname, 'src/about/index.html'),
+                leaders: resolve(__dirname, 'src/leaders/index.html'),
+                sermons: resolve(__dirname, 'src/sermons/index.html'),
+                gospel: resolve(__dirname, 'src/live/index.html'),
+                give: resolve(__dirname, 'src/give/index.html'),
             }
         }
     },
     plugins: [
-        restart({ restart: ['../static/**',] }) // Reinicia el servidor en cambios de archivos estáticos
+        restart({ restart: ['../static/**'] })
     ],
 });

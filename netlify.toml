@@ -1,9 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "dist"  # Asegúrate de que esto apunte a la carpeta correcta
-  base = "/"
+  command = "vite build"
+  publish = "dist"
 
 [[redirects]]
-  from = "/about/*"
-  to = "/about/index.html"
+  from = "/*"
+  to = "/index.html"
   status = 200

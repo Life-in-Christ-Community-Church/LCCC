@@ -35,7 +35,7 @@ const animationEnter = (container) => {
         .from(aboutContainer, {opacity: 0, y: -10, duration: 1}, "<")
         .from(construction, {opacity: 0, y: -10, duration: 1}, "<")
         .from(divLeaders, {opacity: 0, y: -10, duration: 1}, "<")
-        .from(leaderPicture, {opacity: 0, duration: 0.5}, "<")
+        .from(leaderPicture, {opacity: 0, duration: 1}, "<")
         .from(leaderName, {opacity: 0, x: 30, duration: 1}, "<")
         .from(leaderMinistry, {opacity: 0, x: 30, duration: 1.5}, "<")
         

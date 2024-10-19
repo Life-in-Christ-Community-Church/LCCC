@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
     root: 'src/',
-    publicDir: '../public',
+    publicDir: 'public',
     server: {
         host: true,
         open: !('SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env)

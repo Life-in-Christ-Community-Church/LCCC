@@ -42,6 +42,10 @@
     #pContact {
         margin: 10px 30px;
         margin-bottom: 30px;
+
+        span {
+            display: none;
+        }
     }
 
     #section3 {
@@ -79,15 +83,43 @@
 }
 
 @media only screen and (max-width: 823px) {
+
     #map {
         display: flex;
-        height: 400px;
+        height: 300px;
+        width: 90%;
+        padding-bottom: 30px;
     }
 
     #logoBackgroundFooter {
         background-attachment: local !important;
-        background-position: 30vw 240px !important;
+        background-position: 30vw 305px !important;
         background-size: 500px auto;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #footerInfo {
+        height: 300px;
+        width: 400px;
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        padding: 0;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    #divSocial div p {
+        justify-content: center !important;
+    }
+
+    #divLocationFooter address div h6 {
+        color: rgb(2, 42, 154);
+    }
+
+    #footerInfo div {
+        justify-content: center;
+        padding: 0;
     }
 }
 

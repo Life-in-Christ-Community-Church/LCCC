@@ -742,6 +742,10 @@ video {
   margin-top: 40px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1236,6 +1240,18 @@ video {
 
 .w-\[00px\] {
   width: 00px;
+}
+
+.w-\[11rem\] {
+  width: 11rem;
+}
+
+.w-\[8rem\] {
+  width: 8rem;
+}
+
+.w-\[rem\] {
+  width: rem;
 }
 
 .min-w-\[19rem\] {
@@ -2270,6 +2286,10 @@ main {
 
   .lg\:w-\[9rem\] {
     width: 9rem;
+  }
+
+  .lg\:w-\[10rem\] {
+    width: 10rem;
   }
 
   .lg\:flex-row {

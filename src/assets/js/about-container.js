@@ -23,7 +23,7 @@ export const initAboutContainer = () => {
             })
 
             if (this.getAttribute("id") === "liAbout-3") {
-                document.querySelector(".scrollableDiv").scrollTo(0,0);
+                document.querySelector(".scrollableDivJs").scrollTo(0,0);
             }
         });
     });
@@ -38,7 +38,7 @@ export const initAboutScrollAnchor = () => {
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
 
-            document.querySelector('.scrollableDiv').scrollTo({
+            document.querySelector('.scrollableDivJs').scrollTo({
                 top: targetElement.offsetTop,
                 behavior: 'smooth'
             });
@@ -92,7 +92,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-3").classList.replace("invisible", "visible");
             document.querySelector("#divAbout-3").style.opacity = 1;
         })
-        document.querySelector(".scrollableDiv").scrollTo(0,0);
+        document.querySelector(".scrollableDivJs").scrollTo(0,0);
     }
     if (hash === "#confession") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {

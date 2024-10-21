@@ -151,3 +151,46 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 932px) {
+    #divContainerLeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divContainerLeader div h4 {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        background-color: rgb(255, 255, 255);
+        width: 40%;
+    }
+
+    #leaderMinistry {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        background-color: rgb(255, 255, 255);
+        width: 55%;
+    }
+
+    #divContainerImageLeader {
+        z-index: 10;
+    }
+
+    #divLeaders {
+        width: 90%;
+        margin-top: -25px;
+        z-index: 0;
+        border: 0;
+    }
+
+    #divLeaders p {
+        font-size: 1rem;
+    }
+}

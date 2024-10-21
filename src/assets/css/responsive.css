@@ -173,8 +173,6 @@
         display: block;
         position: absolute;
         bottom: 20px;
-        padding: 0px 0px;
-        margin: 0px 0px;
         background-color: rgb(255, 255, 255);
         width: 55%;
     }
@@ -186,8 +184,19 @@
     #divLeaders {
         width: 90%;
         margin-top: -25px;
+        padding: 30px 30px;
         z-index: 0;
         border: 0;
+    }
+
+    #divLeaders p {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    #divLeaders {
+        width: 93%;
     }
 
     #divLeaders p {

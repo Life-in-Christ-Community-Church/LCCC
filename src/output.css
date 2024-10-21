@@ -2245,6 +2245,12 @@ main {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:bg-gray-100\/60 {
+    background-color: rgb(243 244 246 / 0.6);
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:order-4 {
     order: 4;

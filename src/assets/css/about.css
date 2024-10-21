@@ -218,6 +218,14 @@
         flex-direction: column;
     }
 
+    #divAbout-5>div:nth-child(1) {
+        width: 100%;
+        height: 235px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
     #divAbout-5>div:nth-child(2) {
         width: 100%;
         height: 300px;
@@ -290,6 +298,16 @@
         height: 150px;
         margin-top: 10px;
     }
+
+
+    #divAbout-5>div:nth-child(1) {
+        height: 500px;
+        width: 250px;
+    }
+
+    #divAbout-5>div:nth-child(2) iframe {
+        height: 180px;
+    }
 }
 
 @media only screen and (max-width: 509px) {
@@ -315,9 +333,9 @@
         overflow-y: scroll;
     }
 
-    #divAbout-4 div:nth-child(2) {
+    /* #divAbout-4 div:nth-child(2) {
         display: none;
-    }
+    } */
 }
 
 

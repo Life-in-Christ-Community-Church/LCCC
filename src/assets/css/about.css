@@ -235,6 +235,11 @@
         width: 100%;
         height: 300px;
     }
+
+    .divLoaderMap {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 809px) {
@@ -307,6 +312,10 @@
 
     #divAbout-5>div:nth-child(2) iframe {
         height: 180px;
+    }
+
+    .divLoaderMap {
+        height: 95%;
     }
 }
 

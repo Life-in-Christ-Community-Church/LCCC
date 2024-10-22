@@ -17,6 +17,9 @@ export const initSwipers = () => {
         loop: true,
         reverse: true,
         keyboard: true,
+        cache: true,
+        autoHeight:false, 
+        preloadImages: true,
     
         effect: "fade",
     
@@ -54,6 +57,9 @@ export const initSwipers = () => {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 3,
+        cache: true,
+        autoHeight:false, 
+        preloadImages: false, 
     
         coverflowEffect: {
             rotate: 0,

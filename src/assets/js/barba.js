@@ -9,7 +9,6 @@ import { initResponsiveMenu } from './responsive';
 import { initAboutContainer, initAboutScrollAnchor, initAboutUrlCheck } from './about-container';
 
 barba.hooks.once(() => {
-    console.log("once");
     initSwipers();
     initResponsiveMenu();
     initAboutScrollAnchor();
@@ -18,7 +17,6 @@ barba.hooks.once(() => {
 })
 
 barba.hooks.after(() => {
-    console.log("after");
     initSwipers();
     initResponsiveMenu();
     initAboutScrollAnchor();
@@ -35,13 +33,11 @@ barba.init({
         {
             once({next}){
                 animationEnter(next.container);
-                console.log("ONCE TRANSITION")
                 // initSwipers();
                 initResponsiveMenu();
             },
             leave: ({current}) => animationLeave(current.container),
             enter({next}){
-                console.log("ENTER TRANSITION")
                 animationEnter(next.container);
                 window.scrollTo(0, 0)
             },

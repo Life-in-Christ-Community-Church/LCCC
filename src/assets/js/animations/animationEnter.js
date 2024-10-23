@@ -26,18 +26,28 @@ const animationEnter = (container) => {
 
     const timeline = gsap.timeline({ defaults: { ease: "power1.out", duration: 0.5 } });
 
-    timeline
-        .from(main, { autoAlpha: 0, clearProps: 'all' })
-        .from(footer, { autoAlpha: 0, clearProps: 'all' }, "<")
-        .from(firstDivBanner, { duration: 1, opacity: 0}, "<")
-        .from(span, {opacity: 0, scaleX: 0,}, "<")
-        .from(aSpan, { color: 'blue' }, "<")
-        .from(aboutContainer, {opacity: 0, y: -10, duration: 1}, "<")
-        .from(construction, {opacity: 0, y: -10, duration: 1}, "<")
-        .from(divLeaders, {opacity: 0, y: -10, duration: 1}, "<")
-        .from(leaderPicture, {opacity: 0, duration: 1}, "<")
-        .from(leaderName, {opacity: 0, x: 30, duration: 1}, "<")
-        .from(leaderMinistry, {opacity: 0, x: 30, duration: 1.5}, "<")
+    const animate = (target, props, position) => {
+        try {
+            if (target) {
+                timeline.from(target, { ...props }, position);
+            }
+        } catch (error) {
+            console.warn("No se pudo realizar la animación para el elemento:", target, error);
+        }
+    };
+
+    // Añadir animaciones
+    animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
+    animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
+    animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
+    animate(span, { opacity: 0, scaleX: 0 }, "<");
+    animate(aSpan, { color: 'blue' }, "<");
+    animate(aboutContainer, { opacity: 0, y: -10, duration: 1 }, "<");
+    animate(construction, { opacity: 0, y: -10, duration: 1 }, "<");
+    animate(divLeaders, { opacity: 0, y: -10, duration: 1 }, "<");
+    animate(leaderPicture, { opacity: 0, duration: 1 }, "<");
+    animate(leaderName, { opacity: 0, x: 30, duration: 1 }, "<");
+    animate(leaderMinistry, { opacity: 0, x: 30, duration: 1.5 }, "<");
         
 
     return timeline;

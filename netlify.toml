@@ -2,10 +2,14 @@
   for = "/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    Content-Security-Policy: default-src 'self'; frame-src 'self' https://www.youtube.com https://maps.google.com; script-src 'self' https://www.youtube.com https://maps.google.com; object-src 'none';
-
-[[headers]]
-  for = "*.webp"
+     Content-Security-Policy = """
+      default-src 'self'; 
+      frame-src https://www.youtube.com https://maps.google.com;
+      script-src 'self' https://www.youtube.com https://maps.google.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+    """
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 

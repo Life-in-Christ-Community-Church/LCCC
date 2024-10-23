@@ -2,8 +2,8 @@ import gsap from "gsap";
 
 const animationEnter = (container) => {
     // Global Menu animations
-    const span = container.querySelectorAll("a.is-active span")
-    const aSpan = container.querySelectorAll("a.is-active")
+    const span = container.querySelectorAll("span.is-active span")
+    const aSpan = container.querySelectorAll("span.is-active")
 
     // Global page transition
     const main = container.querySelector("main");

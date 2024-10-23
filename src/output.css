@@ -869,6 +869,10 @@ video {
   width: 10rem;
 }
 
+.w-\[185px\] {
+  width: 185px;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -1108,6 +1112,11 @@ video {
   border-bottom-left-radius: 0.75rem;
 }
 
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1175,11 +1184,6 @@ video {
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-blue-600 {
@@ -1532,24 +1536,20 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in-out {
@@ -1579,70 +1579,30 @@ main {
   background-color: white;
 }
 
-/* LOGO MIDDLE BANNER LCCC */
-
-/* #logoChurchBanner .st0,
-#logoChurchBanner .st1,
-#logoChurchBanner .st2,
-#logoChurchBanner .st3,
-#logoChurchBanner .st4,
-#logoChurchBanner .st5,
-#logoChurchBanner .st6 {
-    transition: fill ease-in-out;
+#footerWALink:hover {
+  svg path:nth-child(1) {
+    fill: rgb(0, 219, 0);
+    transition: fill .1s ease-in-out;
+  }
 }
 
-#logoChurchBanner:hover {
-    .st0 {
-        fill: #1b398b;
-        transition: fill ease-in-out 0.6s;
-    }
-    .st1 {
-        fill: #2449ae;
-        transition: fill ease-in-out 0.5s;
-    }
-    .st2 {
-        fill: #2a67d1;
-        transition: fill ease-in-out 0.4s;
-    }
-    .st3 {
-        fill: #2599e6;
-        transition: fill ease-in-out 0.3s;
-    }
-    .st4 {
-        fill: #43bdf6;
-        transition: fill ease-in-out 0.2s;
-    }
-    .st5 {
-        fill: #8cdaf6;;
-        transition: fill ease-in-out 0.1s;
-    }
-    .st6 {
-        fill: #bce8f6;
-        transition: fill ease-in-out 0s;
-    }
+#footerFBLink:hover {
+  svg path:nth-child(1) {
+    fill: rgb(0, 123, 255);
+    transition: fill .1s ease-in-out;
+  }
 }
 
-#logoChurchBanner .st0 {
-    transition-delay: 0s; 
+#footerYTLink:hover {
+  svg path:nth-child(1) {
+    fill: red;
+    transition: fill .1s ease-in-out;
+  }
 }
-#logoChurchBanner .st1 {
-    transition-delay: 0.1s;
+
+.bannerHeightFirefox {
+  height: calc(var(--vh, 1px) * 100) !important;
 }
-#logoChurchBanner .st2 {
-    transition-delay: 0.2s;
-}
-#logoChurchBanner .st3 {
-    transition-delay: 0.3s;
-}
-#logoChurchBanner .st4 {
-    transition-delay: 0.4s;
-}
-#logoChurchBanner .st5 {
-    transition-delay: 0.5s;
-}
-#logoChurchBanner .st6 {
-    transition-delay: 0.6s;
-} */
 
 /* BANNER PAGES SHIMMER */
 
@@ -1668,7 +1628,7 @@ main {
 }
 
 @media only screen and (max-width: 730px) {
-  .divBannerPages {
+  .divBannerPagesHeight {
     height: 200px;
   }
 }
@@ -1735,11 +1695,6 @@ main {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1800,7 +1755,6 @@ main {
     justify-content: space-around;
   }
 }
-
 
 
   

@@ -29,6 +29,14 @@ export const initResponsiveMenu = () => {
         }
     });
 
+    document.querySelector(".hiddenNavBar").addEventListener('click', () => {
+        divMenuList.remove("active");
+    })
+
+    document.querySelector("#logoChurchBanner").addEventListener('click', () => {
+        divMenuList.remove("active");
+    })
+
     const menuItems = document.querySelectorAll(".liHiddenMenu");
 
     menuItems.forEach(item => {
@@ -41,3 +49,16 @@ export const initResponsiveMenu = () => {
 };
 
 initResponsiveMenu();
+
+
+export const initSetViewportHeight = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    let userAgent = navigator.userAgent;
+
+    if (userAgent.match(/firefox|fxios/i) && /Android|iPhone/i.test(navigator.userAgent)) {
+        document.querySelector('#sectionBanner').classList.add("bannerHeightFirefox")
+        document.querySelector('#divBanner').classList.add("bannerHeightFirefox")
+    };
+};

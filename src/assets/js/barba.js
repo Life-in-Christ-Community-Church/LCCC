@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { animationEnter, animationLeave } from './animations';
 
 import { initSwipers } from './swiper';
-import { initResponsiveMenu } from './responsive';
+import { initResponsiveMenu, initSetViewportHeight } from './responsive';
 import { initAboutContainer, initAboutScrollAnchor, initAboutUrlCheck } from './about-container';
 
 barba.hooks.once(() => {
@@ -14,6 +14,7 @@ barba.hooks.once(() => {
     initAboutScrollAnchor();
     initAboutContainer();
     initAboutUrlCheck();
+    initSetViewportHeight();
 })
 
 barba.hooks.after(() => {
@@ -22,6 +23,7 @@ barba.hooks.after(() => {
     initAboutScrollAnchor();
     initAboutContainer();
     initAboutUrlCheck();
+    initSetViewportHeight();
 })
 
 barba.init({

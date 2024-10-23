@@ -27,70 +27,30 @@ main {
     background-color: white;
 }
 
-
-/* LOGO MIDDLE BANNER LCCC */
-/* #logoChurchBanner .st0,
-#logoChurchBanner .st1,
-#logoChurchBanner .st2,
-#logoChurchBanner .st3,
-#logoChurchBanner .st4,
-#logoChurchBanner .st5,
-#logoChurchBanner .st6 {
-    transition: fill ease-in-out;
-}
-
-#logoChurchBanner:hover {
-    .st0 {
-        fill: #1b398b;
-        transition: fill ease-in-out 0.6s;
-    }
-    .st1 {
-        fill: #2449ae;
-        transition: fill ease-in-out 0.5s;
-    }
-    .st2 {
-        fill: #2a67d1;
-        transition: fill ease-in-out 0.4s;
-    }
-    .st3 {
-        fill: #2599e6;
-        transition: fill ease-in-out 0.3s;
-    }
-    .st4 {
-        fill: #43bdf6;
-        transition: fill ease-in-out 0.2s;
-    }
-    .st5 {
-        fill: #8cdaf6;;
-        transition: fill ease-in-out 0.1s;
-    }
-    .st6 {
-        fill: #bce8f6;
-        transition: fill ease-in-out 0s;
+#footerWALink:hover {
+    svg path:nth-child(1) {
+        fill: rgb(0, 219, 0);
+        transition: fill .1s ease-in-out;
     }
 }
 
-#logoChurchBanner .st0 {
-    transition-delay: 0s; 
+#footerFBLink:hover {
+    svg path:nth-child(1) {
+        fill: rgb(0, 123, 255);
+        transition: fill .1s ease-in-out;
+    }
 }
-#logoChurchBanner .st1 {
-    transition-delay: 0.1s;
+
+#footerYTLink:hover {
+    svg path:nth-child(1) {
+        fill: red;
+        transition: fill .1s ease-in-out;
+    }
 }
-#logoChurchBanner .st2 {
-    transition-delay: 0.2s;
+
+.bannerHeightFirefox {
+    height: calc(var(--vh, 1px) * 100) !important;
 }
-#logoChurchBanner .st3 {
-    transition-delay: 0.3s;
-}
-#logoChurchBanner .st4 {
-    transition-delay: 0.4s;
-}
-#logoChurchBanner .st5 {
-    transition-delay: 0.5s;
-}
-#logoChurchBanner .st6 {
-    transition-delay: 0.6s;
-} */
 
 /* BANNER PAGES SHIMMER */
 .divBannerPages {
@@ -112,7 +72,7 @@ main {
 }
 
 @media only screen and (max-width: 730px) {
-    .divBannerPages {
+    .divBannerPagesHeight {
         height: 200px;
     }
 }
@@ -157,7 +117,6 @@ main {
     box-shadow: 0em -2.6em 0em 0em rgba(255,255,255, 0.2), 1.8em -1.8em 0 0em rgba(255,255,255, 0.2), 2.5em 0em 0 0em rgba(255,255,255, 0.2), 1.75em 1.75em 0 0em rgba(255,255,255, 0.2), 0em 2.5em 0 0em rgba(255,255,255, 0.2), -1.8em 1.8em 0 0em rgba(255,255,255, 0.5), -2.6em 0em 0 0em rgba(255,255,255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
-
 
 
   

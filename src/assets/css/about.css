@@ -299,6 +299,14 @@
         display: none;
     }
 
+    .spanAboutNavVisible {
+        display: none;
+    }
+
+    .spanAboutNavInvisible {
+        display: flex;
+    }
+
     #hiddenMision {
         height: 150px;
         margin-top: 10px;

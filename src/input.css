@@ -48,10 +48,6 @@ main {
     }
 }
 
-.bannerHeightFirefox {
-    height: calc(var(--vh, 1px) * 100) !important;
-}
-
 /* BANNER PAGES SHIMMER */
 .divBannerPages {
     animation: shimmerBanner 1s infinite ease-in-out;

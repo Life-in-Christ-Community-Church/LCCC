@@ -52,13 +52,15 @@ initResponsiveMenu();
 
 
 export const initSetViewportHeight = () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    const sectionBanner = document.querySelector('#sectionBanner');
+    const divBanner = document.querySelector('#divBanner');
 
-    let userAgent = navigator.userAgent;
+    const heightAfterRendering = sectionBanner.getBoundingClientRect().height;
+    console.log('Height of divBannerPages after rendering:', heightAfterRendering);
 
-    if (userAgent.match(/firefox|fxios/i) && /Android|iPhone/i.test(navigator.userAgent)) {
-        document.querySelector('#sectionBanner').classList.add("bannerHeightFirefox")
-        document.querySelector('#divBanner').classList.add("bannerHeightFirefox")
-    };
+    sectionBanner.style.height = `${heightAfterRendering}px`;
+    divBanner.style.height = `${heightAfterRendering}px`;
+
 };
+
+initSetViewportHeight();

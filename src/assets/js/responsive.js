@@ -55,11 +55,13 @@ export const initSetViewportHeight = () => {
     const sectionBanner = document.querySelector('#sectionBanner');
     const divBanner = document.querySelector('#divBanner');
 
-    const heightAfterRendering = sectionBanner.getBoundingClientRect().height;
-    console.log('Height of divBannerPages after rendering:', heightAfterRendering);
-
-    sectionBanner.style.height = `${heightAfterRendering}px`;
-    divBanner.style.height = `${heightAfterRendering}px`;
+    if (sectionBanner && divBanner) {
+        const heightAfterRendering = sectionBanner.getBoundingClientRect().height;
+        console.log('Height of divBannerPages after rendering:', heightAfterRendering);
+    
+        sectionBanner.style.height = `${heightAfterRendering}px`;
+        divBanner.style.height = `${heightAfterRendering}px`;
+    }
 
 };
 

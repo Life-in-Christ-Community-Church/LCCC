@@ -48,7 +48,7 @@
                 <ul class="flex w-full justify-around">
                     <li
                         class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out relative">
-                        <a class="is-active text-blue-500">
+                        <a class="is-active text-blue-500" aria-label="Link to Home Page">
                             HOME
                             <span
                                 class="bg-gradient-to-t from-blue-500/10 absolute flex w-full h-[55px] transform translate-y-[-20px] top-0  scale-150">&nbsp;</span>
@@ -57,10 +57,10 @@
                         </a>
                     </li>
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
-                        <a href="/about/">ABOUT</a>
+                        <a href="/about/" aria-label="Link to About Page">ABOUT</a>
                     </li>
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
-                        <a href="/leaders/">LEADERS</a>
+                        <a href="/leaders/" aria-label="Link to Leaders Page">LEADERS</a>
                     </li>
                 </ul>
             </nav>
@@ -124,11 +124,11 @@
             <nav class="flex justify-center items-center w-56">
                 <ul class="flex w-full justify-around">
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
-                            href="/sermons/">SERMONS</a></li>
+                            href="/sermons/" aria-label="Link to Sermons Page">SERMONS</a></li>
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
-                            href="/live/">GOSPEL</a></li>
+                            href="/live/" aria-label="Link to Gospel Page">GOSPEL</a></li>
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
-                            href="/give/">GIVE</a></li>
+                            href="/give/" aria-label="Link to Give Page">GIVE</a></li>
                 </ul>
             </nav>
 
@@ -147,33 +147,45 @@
                     <ul class="flex-col w-full text-center text-lg">
                         <li class="hover:bg-blue-100 flex">
                             <a href=""
-                                class="flex w-full h-full p-3 justify-center liHiddenMenu bg-blue-100 text-blue-800">
+                                class="flex w-full h-full p-3 justify-center liHiddenMenu bg-blue-100 text-blue-800"
+                                aria-label="Link to Home Page"
+                                >
                                 HOME
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="./about/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="./about/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                            aria-label="Link to About Page"
+                            >
                                 ABOUT
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="./leaders/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="./leaders/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                            aria-label="Link to Leaders Page"
+                            >
                                 LEADERS
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="./sermons/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="./sermons/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                            aria-label="Link to Sermons Page"
+                            >
                                 SERMONS
 
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="./live/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="./live/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                            aria-label="Link to Gospel Page"
+                            >
                                 GOSPEL
                             </a>
                         </li>
                         <li class="hover:bg-blue-100 flex">
-                            <a href="./give/" class="flex w-full h-full p-3 justify-center liHiddenMenu">
+                            <a href="./give/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                            aria-label="Link to Give Page"
+                            >
                                 GIVE
                             </a>
                         </li>
@@ -271,7 +283,7 @@
                                 <div class="title titleBanner w-[550px] leading-[1]" data-swiper-parallax="-300"
                                     data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8"
                                     style="font-family: 'Georgia', Times, serif;">
-                                    <h1 class="text-[3rem]">Wednesday Bible Study</h1>
+                                    <h2 class="text-[3rem]">Wednesday Bible Study</h2>
                                 </div>
                                 <div class="subtitle text-[1.8rem] mb-2 text-gray-400" data-swiper-parallax="-200"
                                     data-swiper-parallax-opacity="0">
@@ -307,7 +319,6 @@
                         </div>
                     </div>
             </section>
-            <script></script>
 
             <!-- Section 2 -->
             <section class="my-10 bg-white">
@@ -333,7 +344,7 @@
                                     <h3 class="p-6">Learn what we believe about God, <br /> salvation, and Christian
                                         living.
                                     </h3>
-                                    <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">ABOUT</button>
+                                    <button class="w-full bg-blue-600 text-white p-3 rounded-b-xl">ABOUT</button>
                                 </div>
                             </div>
                             <div class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
@@ -352,7 +363,7 @@
                                         <h3>Worship Service</h3>
                                         <p class="text-blue-600">Every Sunday at 11:00 AM</p>
                                     </div>
-                                    <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">SUNDAY
+                                    <button class="w-full bg-blue-600 text-white p-3 rounded-b-xl">SUNDAY
                                         SERVICE</button>
                                 </div>
                             </div>
@@ -372,7 +383,7 @@
                                         <h3>Bible Study</h3>
                                         <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
                                     </div>
-                                    <button class="w-full bg-blue-500 text-white p-3 rounded-b-xl">BIBLE STUDY</button>
+                                    <button class="w-full bg-blue-600 text-white p-3 rounded-b-xl">BIBLE STUDY</button>
                                 </div>
                             </div>
                         </div>
@@ -387,32 +398,29 @@
             <section class="flex justify-center align-center" style="background: url(/img/paper.png);">
                 <div class="h-[600px] pb-10 flex gap-8 items-center" id="section3">
                     <div class="flex-col" id="divLatestSermons">
-                        <h5 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Latest Sermon</h5>
+                        <h4 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Latest Sermon</h4>
                         <div class="flex bg-white w-[600px] h-[400px] mt-4 border-8 border-white"
                             id="videoLatestSermon">
                             <iframe class="w-full" src="https://www.youtube.com/embed/LTXC5sR0Vj8?si=4YfGsiZids4A9fIX"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                title="YouTube video player: Latest Sermon" frameborder="0"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
                                 modestbranding="1"></iframe>
                         </div>
                     </div>
                     <div id="youtube-iframe" class="flex flex-col">
-                        <h5 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Selected Messages
-                        </h5>
+                        <h4 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Selected Messages
+                        </h4>
                         <div class="flex flex-col gap-8  mt-4 h-full justify-center" id="divSelectedMessages">
                             <div id="player2" class="flex bg-white w-[320px] h-[184px] border-8 border-white">
                                 <iframe class="w-full" id="youtube-iframe"
                                     src="https://www.youtube.com/embed/JGX-MByxwyo?si=UYlldzsnMjyyeVIk"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    title="YouTube video player: Selected message 1" frameborder="0"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                             <div id="player3" class="flex bg-white w-[320px] h-[184px] border-8 border-white">
                                 <iframe class="w-full"
                                     src="https://www.youtube.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    title="YouTube video player: Selected Message 2" frameborder="0"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -472,7 +480,7 @@
                         <!-- Location -->
                         <div class="flex items-start w-[9rem] lg:w-[13rem]" id="divLocationFooter">
                             <address class="not-italic text-gray-800">
-                                <h6>LOCATION</h6>
+                                <h5>LOCATION</h5>
                                 <div class="mt-2 text-[0.9rem]">
                                     <h6>Life in Christ Community Church</h6>
                                     <p>Kruisweg 14 <br /> 2665 HB, Bleiswijk <br /> Zuid-Holland </p>
@@ -482,7 +490,7 @@
                         <!-- Church Service -->
                         <div class="flex items-start w-[10rem] lg:w-[9rem]" id="divService">
                             <div class="not-italic text-gray-800">
-                                <h6>SERVICE</h6>
+                                <h5>SERVICE</h5>
                                 <div class="mt-2 text-[0.9rem]">
                                     <p>Every Sunday</p>
                                     <p>Prayer: 10:30 AM <br /> Service: 11:00 AM </p>
@@ -493,7 +501,7 @@
                         <!-- Contact Info-->
                         <div class="flex items-start w-[10rem] lg:w-[10rem] order-4">
                             <div class="not-italic text-gray-800">
-                                <h6>CONTACT</h6>
+                                <h5>CONTACT</h5>
                                 <div class="mt-2 text-[0.9rem]">
                                     <p>(+31) 626 27 18 91 <br />lifeinchrist.lccc@gmail.com</p>
                                 </div>
@@ -504,12 +512,13 @@
                         <!-- Social Media -->
                         <div class="flex items-start w-[9rem] lg:order-4" id="divSocial">
                             <div class="not-italic text-gray-800">
-                                <h6>SOCIAL MEDIA</h6>
+                                <h5>SOCIAL MEDIA</h5>
                                 <div class="mt-2 text-[0.9rem]">
                                     <p class="flex align-center">
 
                                         <!-- FB -->
-                                        <a href="https://www.facebook.com/profile.php?id=61567265812457">
+                                        <a href="https://www.facebook.com/profile.php?id=61567265812457"
+                                        aria-label="Link to Facebook Page">
                                             <svg width="20" viewBox="0 0 198 199" fill="none" class="mr-2"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -522,7 +531,8 @@
                                         </a>
 
                                         <!-- YT -->
-                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch">
+                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch"
+                                        aria-label="Link to  Page">
                                             <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -544,6 +554,7 @@
                             <div class="loaderMap"></div>
                         </div>
                             <iframe
+                                title="Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
                                 width="100%" height="100%" style="border:1px solid gray;" class="shadow-xl rounded-3xl"
                                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

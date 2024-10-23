@@ -39,7 +39,7 @@ const MAX_RESULTS = 5
 // Esta función se llama cuando la API de YouTube está lista
 window.onYouTubeIframeAPIReady = function() {
 
-    players.push(new YT.Player('player', {
+    players.push(new YT.Player('videoLatestSermon', {
         height: '390',
         width: '640',
         videoId: '4Maxu-_TvmE?si=_XBfT_h8rvFPwzsx&?c',

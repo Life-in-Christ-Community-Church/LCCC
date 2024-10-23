@@ -1,6 +1,26 @@
 export const initAboutContainer = () => {
     document.querySelectorAll("[id^='liAbout-']").forEach(li => {
         li.addEventListener('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            const divId = li.getAttribute("id");
+
+            if (divId === "liAbout-1") {
+                history.pushState(null, '', '?church');
+            }
+            if (divId === "liAbout-2") {
+                history.pushState(null, '', '?mision');
+            }
+            if (divId === "liAbout-3") {
+                history.pushState(null, '', '?beliefs');
+            }
+            if (divId === "liAbout-4") {
+                history.pushState(null, '', '?confession');
+            }
+            if (divId === "liAbout-5") {
+                history.pushState(null, '', '?schedule');
+            }
+
             document.querySelectorAll("[id^='liAbout-']").forEach(li => {
                 li.classList.replace("bg-gray-100", "bg-gray-200")
             });
@@ -45,9 +65,11 @@ export const initAboutScrollAnchor = () => {
 };
 
 export const initAboutUrlCheck = () => {
-    const hash = window.location.hash;
+    const hash = window.location.search;
+    const search =  window.location.search;
+    console.log(search)
 
-    if (hash === "") {
+    if (search === "") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-1").classList.replace("bg-gray-200", "bg-gray-100");
@@ -58,7 +80,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-1").style.opacity = 1;
         })
     }
-    if (hash === "#church") {
+    if (search === "?church") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-1").classList.replace("bg-gray-200", "bg-gray-100");
@@ -69,7 +91,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-1").style.opacity = 1;
         })
     }
-    if (hash === "#mision") {
+    if (search === "?mision") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-2").classList.replace("bg-gray-200", "bg-gray-100");
@@ -80,7 +102,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-2").style.opacity = 1;
         })
     }
-    if (hash === "#beliefs") {
+    if (search === "?beliefs") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-3").classList.replace("bg-gray-200", "bg-gray-100");
@@ -92,7 +114,7 @@ export const initAboutUrlCheck = () => {
         })
         document.querySelector(".scrollableDivJs").scrollTo(0,0);
     }
-    if (hash === "#confession") {
+    if (search === "?confession") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-4").classList.replace("bg-gray-200", "bg-gray-100");
@@ -103,7 +125,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-4").style.opacity = 1;
         })
     }
-    if (hash === "#schedule") {
+    if (search === "?schedule") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-5").classList.replace("bg-gray-200", "bg-gray-100");

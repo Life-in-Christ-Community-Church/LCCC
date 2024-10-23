@@ -56,6 +56,7 @@
             <!-- LOGO -->
             <div class="flex w-40 justify-center" id="divLogoChurch">
                 <div class="block w-[100px]">
+                    <a href="../" class="flex rounded-3xl hover:cursor-pointer" aria-label="Link to Home" id="logoChurchBanner">
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 600 650" 
@@ -105,6 +106,7 @@
                             <line fill="none" id="svg_23" opacity="0.5" x1="66.5" x2="66.5" y1="87" y2="87"/>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
 
@@ -209,27 +211,27 @@
                         <div class="flex" id="aboutContainerLinks">
                             <ul class="flex gap-[2px] text-[0.9rem]">
                                 <li id="liAbout-1" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
-                                    <a href="../about/#church" class="px-4 py-3 ">
+                                    <a href="../about/?church" class="px-4 py-3 buttonLinkAbout">
                                         THE CHURCH
                                     </a>
                                 </li>
                                 <li id="liAbout-2" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
-                                    <a href="../about/#mision" class="px-4 py-3 ">
+                                    <a href="../about/?mision" class="px-4 py-3 ">
                                         MISION & VISION
                                     </a>
                                 </li>
                                 <li id="liAbout-3" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
-                                    <a href="../about/#beliefs" class="px-4 py-3 ">
+                                    <a href="../about/?beliefs" class="px-4 py-3 ">
                                         CHURCH BELIEFS
                                     </a>
                                 </li>
                                 <li id="liAbout-4" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
-                                    <a href="../about/#confession" class="px-4 py-3 ">
+                                    <a href="../about/?confession" class="px-4 py-3 ">
                                         CONFESSION OF FAITH
                                     </a>
                                 </li>
                                 <li id="liAbout-5" class="flex bg-gray-200 rounded-t-lg cursor-pointer">
-                                    <a href="../about/#schedule" class="px-4 py-3 ">
+                                    <a href="../about/?schedule" class="px-4 py-3 ">
                                         SCHEDULE
                                     </a>
                                 </li>
@@ -1299,7 +1301,8 @@
                                     <p class="flex align-center">
 
                                         <!-- FB -->
-                                        <a href="https://www.facebook.com/profile.php?id=61567265812457" aria-label="Link to Facebook Page">
+                                        <a href="https://www.facebook.com/profile.php?id=61567265812457"
+                                            aria-label="Link to Facebook Page" target="_blank">
                                             <svg width="20" viewBox="0 0 198 199" fill="none" class="mr-2"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -1312,7 +1315,8 @@
                                         </a>
 
                                         <!-- YT -->
-                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch" aria-label="Link to YouTube Page">
+                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch"
+                                            aria-label="Link to  Page" target="_blank">
                                             <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -1330,14 +1334,14 @@
                 <!-- Div Map -->
                 <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10">
                     <div class="rounded-3xl shadow-xl w-full relative" style="border:1px solid gray;">
-                        <div class="absolute w-full h-full content-center items-center justify-center flex bg-green-100/50 rounded-3xl" style="z-index: -1;">
+                        <div class="absolute w-full h-full content-center items-center justify-center flex bg-green-100/50 rounded-3xl"
+                            style="z-index: -1;">
                             <div class="loaderMap"></div>
                         </div>
-                            <iframe
-                                title="Google Maps"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
-                                width="100%" height="100%" style="border:1px solid gray;" class="shadow-xl rounded-3xl"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title="Google Maps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses"
+                            width="100%" height="100%" style="border:1px solid gray;" class="shadow-xl rounded-3xl"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 

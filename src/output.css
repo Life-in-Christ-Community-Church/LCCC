@@ -1538,8 +1538,18 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -1568,6 +1578,71 @@ main {
 .wrapper {
   background-color: white;
 }
+
+/* LOGO MIDDLE BANNER LCCC */
+
+/* #logoChurchBanner .st0,
+#logoChurchBanner .st1,
+#logoChurchBanner .st2,
+#logoChurchBanner .st3,
+#logoChurchBanner .st4,
+#logoChurchBanner .st5,
+#logoChurchBanner .st6 {
+    transition: fill ease-in-out;
+}
+
+#logoChurchBanner:hover {
+    .st0 {
+        fill: #1b398b;
+        transition: fill ease-in-out 0.6s;
+    }
+    .st1 {
+        fill: #2449ae;
+        transition: fill ease-in-out 0.5s;
+    }
+    .st2 {
+        fill: #2a67d1;
+        transition: fill ease-in-out 0.4s;
+    }
+    .st3 {
+        fill: #2599e6;
+        transition: fill ease-in-out 0.3s;
+    }
+    .st4 {
+        fill: #43bdf6;
+        transition: fill ease-in-out 0.2s;
+    }
+    .st5 {
+        fill: #8cdaf6;;
+        transition: fill ease-in-out 0.1s;
+    }
+    .st6 {
+        fill: #bce8f6;
+        transition: fill ease-in-out 0s;
+    }
+}
+
+#logoChurchBanner .st0 {
+    transition-delay: 0s; 
+}
+#logoChurchBanner .st1 {
+    transition-delay: 0.1s;
+}
+#logoChurchBanner .st2 {
+    transition-delay: 0.2s;
+}
+#logoChurchBanner .st3 {
+    transition-delay: 0.3s;
+}
+#logoChurchBanner .st4 {
+    transition-delay: 0.4s;
+}
+#logoChurchBanner .st5 {
+    transition-delay: 0.5s;
+}
+#logoChurchBanner .st6 {
+    transition-delay: 0.6s;
+} */
 
 /* BANNER PAGES SHIMMER */
 
@@ -1646,14 +1721,32 @@ main {
   }
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:bg-blue-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.hover\:outline-blue-200:hover {
+  outline-color: #bfdbfe;
 }
 
 @media (min-width: 1024px) {

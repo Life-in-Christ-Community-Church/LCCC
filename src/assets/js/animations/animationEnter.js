@@ -29,7 +29,7 @@ const animationEnter = (container) => {
     timeline
         .from(main, { autoAlpha: 0, clearProps: 'all' })
         .from(footer, { autoAlpha: 0, clearProps: 'all' }, "<")
-        .from(firstDivBanner, { duration: 1.5, opacity: 0}, "<")
+        .from(firstDivBanner, { duration: 1, opacity: 0}, "<")
         .from(span, {opacity: 0, scaleX: 0,}, "<")
         .from(aSpan, { color: 'blue' }, "<")
         .from(aboutContainer, {opacity: 0, y: -10, duration: 1}, "<")

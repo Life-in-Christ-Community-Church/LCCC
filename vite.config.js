@@ -27,7 +27,7 @@ export default defineConfig({
             output: {
                 manualChunks(id) {
                   if (id.includes('node_modules')) {
-                    return 'vendor'; // Separa el código de dependencias en un archivo 'vendor.js'
+                    return 'vendor';
                   }
                 }
             }

@@ -9,7 +9,6 @@ export const initAboutContainer = () => {
 
 
             const targetId = this.getAttribute('id').substring(8);
-            console.log(targetId);
 
             document.querySelectorAll("[id^='divAbout-']").forEach(div => {
                 if (div.getAttribute("id").endsWith(targetId)) {
@@ -32,7 +31,6 @@ export const initAboutContainer = () => {
 export const initAboutScrollAnchor = () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            console.log("Scroll Anchor click")
             e.preventDefault();
 
             const targetId = this.getAttribute('href').substring(1);
@@ -48,7 +46,7 @@ export const initAboutScrollAnchor = () => {
 
 export const initAboutUrlCheck = () => {
     const hash = window.location.hash;
-    console.log(hash)
+
     if (hash === "") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");

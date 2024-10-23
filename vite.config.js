@@ -12,7 +12,9 @@ export default defineConfig({
     build: {
         outDir: '../dist',
         emptyOutDir: true,
-        sourcemap: true,
+        // sourcemap: true,
+        minify: 'esbuild',
+        brotliSize: true,
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'src/index.html'),
@@ -21,6 +23,13 @@ export default defineConfig({
                 sermons: resolve(__dirname, 'src/sermons/index.html'),
                 gospel: resolve(__dirname, 'src/live/index.html'),
                 give: resolve(__dirname, 'src/give/index.html'),
+            },
+            output: {
+                manualChunks(id) {
+                  if (id.includes('node_modules')) {
+                    return 'vendor'; // Separa el código de dependencias en un archivo 'vendor.js'
+                  }
+                }
             }
         }
     },

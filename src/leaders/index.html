@@ -216,13 +216,18 @@
                     <div class="flex justify-center gap-4 w-[900px]" id="divContainerLeader">
                         <div class="relative flex-col" id="divContainerImageLeader">
                             <div class="h-[250px] w-[270px] absolute justify-center flex" id="leaderPicture">
+                                <div class="flex absolute w-full h-full content-center justify-center">
+                                    <svg id="svgLoaderLeaders" viewBox="25 25 50 50" style="z-index: 0;">
+                                        <circle id="circleLoaderLeaders" r="20" cy="50" cx="50"></circle>
+                                      </svg>
+                                </div>
                                 <img src="/img/Alin1.webp" alt="Portrait picture from Pastor Alin Tase" width="250"
-                                    height="auto">
+                                height="auto" style="z-index: 1;">
                             </div>
                             <div class=" h-[200px] w-[270px] mt-[50px] bg-gradient-to-t from-gray-200 rounded">
                             </div>
-                            <h2 class="text-[1.5rem] mt-2 text-blue-800" id="leaderName">Alin Tase</h2>
-                            <h3 class="text-[0.9rem]" id="leaderMinistry">TEACHING PASTOR</h3>
+                            <h2 class="text-[1.5rem] mt-2 text-blue-800" id="leaderName" style="z-index: 2;">Alin Tase</h2>
+                            <h3 class="text-[0.9rem]" id="leaderMinistry" style="z-index: 3;">TEACHING PASTOR</h3>
                         </div>
                         <div class="bg-gray-100 p-6 w-[600px] mb-20 border-[1px] rounded-xl" id="divLeaders">
                             <p class="text-justify text-[1.1rem]">

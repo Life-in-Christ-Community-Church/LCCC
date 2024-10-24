@@ -10,6 +10,9 @@ const animationEnter = (container) => {
     const footer = container.querySelector("footer");
     const firstDivBanner = container.querySelector("#firstDivBanner")
 
+    // Home animations
+    const sectionBanner = document.querySelector("#sectionBanner");
+
     // About animations
     const aboutContainer = container.querySelector("#containerAbout")
 
@@ -39,6 +42,7 @@ const animationEnter = (container) => {
 
     // Añadir animaciones
     animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
+    animate(sectionBanner, { }, "<")
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
         animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");

@@ -48,6 +48,10 @@ main {
     }
 }
 
+.is-active {
+    cursor: pointer;
+}
+
 /* BANNER PAGES SHIMMER */
 .divBannerPages {
     animation: shimmerBanner 1s infinite ease-in-out;

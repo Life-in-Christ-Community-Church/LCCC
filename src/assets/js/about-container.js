@@ -7,18 +7,23 @@ export const initAboutContainer = () => {
 
             if (divId === "liAbout-1") {
                 history.pushState(null, '', '?church');
+                document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-2") {
                 history.pushState(null, '', '?mision');
+                document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-3") {
                 history.pushState(null, '', '?beliefs');
+                document.querySelector("#arrowBeliefs").classList.replace("hidden", 'flex');
             }
             if (divId === "liAbout-4") {
                 history.pushState(null, '', '?confession');
+                document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-5") {
                 history.pushState(null, '', '?schedule');
+                document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
 
             document.querySelectorAll("[id^='liAbout-']").forEach(li => {
@@ -112,6 +117,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-3").style.opacity = 1;
         })
         document.querySelector(".scrollableDivJs").scrollTo(0,0);
+        document.querySelector("#arrowBeliefs").classList.replace("hidden", 'flex');
     }
     if (search === "?confession") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {

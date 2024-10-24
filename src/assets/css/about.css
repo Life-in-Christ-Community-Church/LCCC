@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,1); /* Color del thumb (barra de desplazamiento) */
+    border-radius: 10px; /* Hacer que el thumb sea redondeado */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.6); /* Color del track (fondo de la barra de desplazamiento) */
+}
+
 /* (Chrome, Safari) */
 .scrollableDiv::-webkit-scrollbar {
     width: 8px;
@@ -33,6 +46,11 @@
     scrollbar-gutter: stable both-edges;
 }
 
+#arrowBeliefs:hover svg path {
+    stroke: rgb(255, 255, 255);
+    transition: stroke .1s ease-in-out;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 950px) {
     #containerAbout {
@@ -43,7 +61,7 @@
     #containerAbout2 {
         height: 700px;
         /* border: 2px solid yellow; */
-        width: 95%;
+        width: 90%;
     }
 
     #containerAbout3 {

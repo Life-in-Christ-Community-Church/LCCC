@@ -7,6 +7,7 @@ import { animationEnter, animationLeave } from './animations';
 import { initSwipers } from './swiper';
 import { initResponsiveMenu, initSetViewportHeight } from './responsive';
 import { initAboutContainer, initAboutScrollAnchor, initAboutUrlCheck } from './about-container';
+import { emailContactAnimation } from './emailContactAnimation';
 
 barba.hooks.once(() => {
     initSwipers();
@@ -15,6 +16,7 @@ barba.hooks.once(() => {
     initAboutContainer();
     initAboutUrlCheck();
     initSetViewportHeight();
+    emailContactAnimation();
 })
 
 barba.hooks.after(() => {
@@ -24,6 +26,7 @@ barba.hooks.after(() => {
     initAboutContainer();
     initAboutUrlCheck();
     initSetViewportHeight();
+    emailContactAnimation();
 })
 
 barba.init({

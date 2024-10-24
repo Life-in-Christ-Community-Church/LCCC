@@ -24,7 +24,8 @@ const animationEnter = (container) => {
 
 
 
-    const timeline = gsap.timeline({ defaults: { ease: "power1.out", duration: 0.5 } });
+    const timeline = gsap.timeline({ defaults: { ease: `power1.out`, duration: 0.5 } });
+
 
     const animate = (target, props, position) => {
         try {
@@ -32,14 +33,16 @@ const animationEnter = (container) => {
                 timeline.from(target, { ...props }, position);
             }
         } catch (error) {
-            console.warn("No se pudo realizar la animación para el elemento:", target, error);
+            console.warn("It was impossible to animate element:", target, error);
         }
     };
 
     // Añadir animaciones
     animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
-    animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
+    if (!/Android|iPhone/i.test(navigator.userAgent)) {
+        animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
+    }
     animate(span, { opacity: 0, scaleX: 0 }, "<");
     animate(aSpan, { color: 'blue' }, "<");
     animate(aboutContainer, { opacity: 0, y: -10, duration: 1 }, "<");

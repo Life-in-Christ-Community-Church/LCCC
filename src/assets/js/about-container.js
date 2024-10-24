@@ -67,7 +67,6 @@ export const initAboutScrollAnchor = () => {
 export const initAboutUrlCheck = () => {
     const hash = window.location.search;
     const search =  window.location.search;
-    console.log(search)
 
     if (search === "") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {

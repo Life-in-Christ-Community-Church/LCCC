@@ -57,7 +57,6 @@ export const initSetViewportHeight = () => {
 
     if (sectionBanner && divBanner) {
         const heightAfterRendering = sectionBanner.getBoundingClientRect().height;
-        console.log('Height of divBannerPages after rendering:', heightAfterRendering);
     
         sectionBanner.style.height = `${heightAfterRendering}px`;
         divBanner.style.height = `${heightAfterRendering}px`;

@@ -59,12 +59,11 @@ export const initSwipers = () => {
         slidesPerView: 3,
         cache: true,
         autoHeight:false, 
-        preloadImages: false, 
-        spaceBetween: -5,
+        preloadImages: false,
     
         coverflowEffect: {
-            rotate: 20,
-            stretch: 0,
+            rotate: 30,
+            stretch: 12,
             depth: 350,
             modifier: 1,
             slideShadows: false

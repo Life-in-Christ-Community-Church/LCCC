@@ -1087,6 +1087,10 @@ video {
   gap: 2px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }

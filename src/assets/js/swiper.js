@@ -60,9 +60,10 @@ export const initSwipers = () => {
         cache: true,
         autoHeight:false, 
         preloadImages: false, 
+        spaceBetween: -5,
     
         coverflowEffect: {
-            rotate: 0,
+            rotate: 20,
             stretch: 0,
             depth: 350,
             modifier: 1,

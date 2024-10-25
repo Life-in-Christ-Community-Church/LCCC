@@ -50,7 +50,6 @@ const animationEnter = (container) => {
     // }
     animate(bannerPages, { opacity: 0, duration: 1.5 }, "<");
     animate(span, { opacity: 0, scaleX: 0 }, "<");
-    animate(aSpan, { color: 'blue' }, "<");
     animate(aboutContainer, { opacity: 0, y: -10, duration: 1 }, "<");
     animate(construction, { opacity: 0, y: -10, duration: 1 }, "<");
     animate(divLeaders, { opacity: 0, y: -10, duration: 1 }, "<");

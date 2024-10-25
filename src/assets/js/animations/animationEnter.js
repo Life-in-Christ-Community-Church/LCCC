@@ -45,9 +45,9 @@ const animationEnter = (container) => {
     // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
     animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
-    // if (!/Android|iPhone/i.test(navigator.userAgent)) {
-    //     animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
-    // }
+    if (!/Android|iPhone/i.test(navigator.userAgent)) {
+        animate(firstDivBanner, { duration: 2, opacity: 0.5 }, "<");
+    }
     animate(bannerPages, { opacity: 0, duration: 1.5 }, "<");
     animate(span, { opacity: 0, scaleX: 0 }, "<");
     animate(aboutContainer, { opacity: 0, y: -10, duration: 1 }, "<");

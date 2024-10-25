@@ -9,6 +9,7 @@ const animationEnter = (container) => {
     const main = container.querySelector("main");
     const footer = container.querySelector("footer");
     const firstDivBanner = container.querySelector("#firstDivBanner")
+    const bannerPages = container.querySelector("#pictureBannersPages");
 
     // Home animations
     const sectionBanner = document.querySelector("#sectionBanner");
@@ -41,12 +42,13 @@ const animationEnter = (container) => {
     };
 
     // Añadir animaciones
-    animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
-    animate(sectionBanner, { }, "<")
+    // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
+    animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
-    if (!/Android|iPhone/i.test(navigator.userAgent)) {
-        animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
-    }
+    // if (!/Android|iPhone/i.test(navigator.userAgent)) {
+    //     animate(firstDivBanner, { duration: 1, opacity: 0 }, "<");
+    // }
+    animate(bannerPages, { opacity: 0, duration: 1.5 }, "<");
     animate(span, { opacity: 0, scaleX: 0 }, "<");
     animate(aSpan, { color: 'blue' }, "<");
     animate(aboutContainer, { opacity: 0, y: -10, duration: 1 }, "<");

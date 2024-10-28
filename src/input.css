@@ -194,5 +194,12 @@ main {
   }
 }
 
+/* Cookies */
+#cookieDiv {
+    transition: all 1s ease;
+    transform: translateY(500px);
+}
 
-  
+.cookieDivClose {
+    transform: translateY(500px);
+}

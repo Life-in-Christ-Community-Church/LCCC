@@ -260,28 +260,30 @@
         <main class="project bg-white">
 
             <!-- COOKIES -->
-            <div id="cookieDiv"
-                class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
+            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
                 style="z-index: 200;">
-                <span class="font-bold text-[1.2rem]">
-                    Cookie consent
+                <span class="font-bold text-[1.1rem]">
+                    COOKIE CONSENT
                 </span>
-                <p class="text-gray-200 mb-8">
-                    We use cookies to enhance your experience on our website. This includes the use of third-party
-                    services such as
-                    <strong>YouTube</strong> and <strong>Google Maps</strong>, which may set cookies to track usage and
-                    improve functionality.
-                    By clicking: "Accept All" you consent to the storage of all cookies on your device.
-                    <a href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">Privacy & Cookie
-                        Policy</a>
-                </p>
-                <div class="flex justify-end text-[1.1rem]">
-                    <button id="reject-cookies"
-                        class="px-10 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500/20 mr-4 hover:outline-blue-200">Reject
-                        All</button>
-                    <button id="accept-cookies"
-                        class="bg-blue-600 px-10 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Accept
-                        All</button>
+                <div id="cookieDivRow" class="flex w-full justify-between items-center">
+                    <div id="cookieDivP" class="flex w-[65%] mr-8">
+                        <p class="text-gray-200 mt-1">
+                            We use cookies to improve your experience, including third-party services like
+                            <strong>YouTube</strong> and <strong>Google Maps</strong>. By clicking "Accept All," you
+                            agree to all cookies.
+                            <a href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">Privacy &
+                                Cookie Policy</a>
+                        </p>
+
+                    </div>
+                    <div id="cookieDivButton" class="flex justify-end text-[1.1rem]">
+                        <button id="reject-cookies"
+                            class=" h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500/20 mr-4 hover:outline-blue-200">Reject
+                            All</button>
+                        <button id="accept-cookies"
+                            class="bg-blue-600 h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Accept
+                            All</button>
+                    </div>
                 </div>
             </div>
 
@@ -895,7 +897,8 @@
 
                 <!-- Div Map -->
                 <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10">
-                    <div id="divMap" class="divMapCookies rounded-3xl shadow-xl w-full relative" style="border:1px solid gray;">
+                    <div id="divMap" class="divMapCookies rounded-3xl shadow-xl w-full relative"
+                        style="border:1px solid gray;">
                         <div class="absolute w-full h-full content-center items-center justify-center flex bg-green-100/50 rounded-3xl"
                             style="z-index: -1;">
                             <div class="loaderMap"></div>
@@ -918,7 +921,8 @@
             <!-- Copyright -->
             <div class="flex w-ful justify-center bg-[#232d3f]">
                 <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church - <a
-                        href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">Privacy & Cookie Policy</a></p>
+                        href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">Privacy & Cookie
+                        Policy</a></p>
             </div>
         </footer>
 

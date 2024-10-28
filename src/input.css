@@ -196,7 +196,7 @@ main {
 
 /* Cookies */
 #cookieDiv {
-    transition: all 1s ease;
+    transition: transform 1s ease;
     transform: translateY(500px);
 }
 

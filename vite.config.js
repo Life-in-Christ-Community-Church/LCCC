@@ -21,7 +21,7 @@ export default defineConfig({
                 about: resolve(__dirname, 'src/about/index.html'),
                 leaders: resolve(__dirname, 'src/leaders/index.html'),
                 sermons: resolve(__dirname, 'src/sermons/index.html'),
-                gospel: resolve(__dirname, 'src/live/index.html'),
+                gospel: resolve(__dirname, 'src/gospel/index.html'),
                 give: resolve(__dirname, 'src/give/index.html'),
             },
             output: {

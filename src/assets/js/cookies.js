@@ -78,7 +78,7 @@ export const initCookies = () => {
         });
 
         if (latestSermon) {
-            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/LTXC5sR0Vj8?si=4YfGsiZids4A9fIX", "YouTube video player: Latest Sermon"));
+            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/Ry6PG4zl7-8?si=Lq7AA_mnt1vYEq81", "YouTube video player: Latest Sermon"));
             message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/JGX-MByxwyo?si=UYlldzsnMjyyeVIk", "YouTube video player: Selected message 1"));
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
@@ -111,7 +111,7 @@ export const initCookies = () => {
         });
 
         if (latestSermon) {
-            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/LTXC5sR0Vj8?si=4YfGsiZids4A9fIX", "YouTube video player: Latest Sermon"));
+            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/Ry6PG4zl7-8?si=Lq7AA_mnt1vYEq81", "YouTube video player: Latest Sermon"));
             message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/JGX-MByxwyo?si=UYlldzsnMjyyeVIk", "YouTube video player: Selected message 1"));
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }

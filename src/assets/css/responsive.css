@@ -125,6 +125,11 @@
         justify-content: center;
         padding: 0;
     }
+
+    .divPrivacy {
+        padding: 40px 30px !important;
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 1035px) {
@@ -159,6 +164,10 @@
     #cookieDivButton {
         width: 100%;
     } 
+
+    .divPrivacy {
+        padding: 40px 100px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {

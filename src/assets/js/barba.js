@@ -10,6 +10,7 @@ import { initAboutContainer, initAboutScrollAnchor, initAboutUrlCheck } from './
 import { emailContactAnimation } from './emailContactAnimation';
 import { animationScroll } from './animations/animationsScroll';
 import { initCookies } from './cookies';
+import { buttonPrivacy } from './buttonPrivacy';
 
 barba.hooks.once(() => {
     initCookies();
@@ -54,4 +55,10 @@ barba.init({
             },
         }
     ],
+    views: [{
+        namespace: 'privacy',
+        beforeEnter(data) {
+            buttonPrivacy();
+        }
+    }]
 })

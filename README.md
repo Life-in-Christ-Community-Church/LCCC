@@ -85,7 +85,7 @@ npm run dev
 [![VITE][Vite.js]][Vite-url]
 [![BARBA][BARBA.js]][BARBA-url]
 [![SWIPER][SWIPER.js]][SWIPER-url]
-[![GSAP][GSAP]][GSAP-url]
+[![GSAP][GSAP.js]][GSAP-url]
 [![JAVASCRIPT][JAVASCRIPT.js]][JAVASCRIPT-url]
 [![CSS][CSS.js]][CSS-url]
 [![HTML5][HTML5.js]][HTML5-url]
@@ -104,7 +104,7 @@ Jonathan Cano -  jonathancanofreta@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Vite]: https://img.shields.io/badge/VITE-20232A?style=for-the-badge&logo=vite&logoColor=yellow
+[Vite.js]: https://img.shields.io/badge/VITE-20232A?style=for-the-badge&logo=vite&logoColor=yellow
 [Vite-url]: https://vite.dev/
 [Barba.js]: https://img.shields.io/badge/BARBA.JS-20232A?style=for-the-badge&logo=&logoColor=yellow
 [Barba-url]: https://barba.js.org/

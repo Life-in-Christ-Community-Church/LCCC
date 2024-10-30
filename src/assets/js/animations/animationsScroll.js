@@ -11,33 +11,39 @@ export const animationScroll = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
-        gsap.from(div1, {
-            scrollTrigger: {
-                trigger: sectionNews,
-                scrub: true,
-                end: "top 200px",
-            },
-            y: 50,
-            duration: 1,
-        })
-        gsap.from(div2, {
-            scrollTrigger: {
-                trigger: sectionNews,
-                scrub: true,
-                end: "top 200px",
-            },
-            y: 100,  // Puedes cambiar esto a cualquier dirección u opción que desees
-            duration: 1,
-        });
-        gsap.from(div3, {
-            scrollTrigger: {
-                trigger: sectionNews,
-                scrub: true,
-                end: "top 200px",
-            },
-            y: 150,  // Puedes cambiar esto a cualquier dirección u opción que desees
-            duration: 1,
-        });
+        if (div1) {
+            gsap.from(div1, {
+                scrollTrigger: {
+                    trigger: sectionNews,
+                    scrub: true,
+                    end: "top 200px",
+                },
+                y: 50,
+                duration: 1,
+            })
+        }
+        if (div2) {
+            gsap.from(div2, {
+                scrollTrigger: {
+                    trigger: sectionNews,
+                    scrub: true,
+                    end: "top 200px",
+                },
+                y: 100,  // Puedes cambiar esto a cualquier dirección u opción que desees
+                duration: 1,
+            });
+        }
+        if (div3) {
+            gsap.from(div3, {
+                scrollTrigger: {
+                    trigger: sectionNews,
+                    scrub: true,
+                    end: "top 200px",
+                },
+                y: 150,  // Puedes cambiar esto a cualquier dirección u opción que desees
+                duration: 1,
+            });
+        }
     }
 
 }

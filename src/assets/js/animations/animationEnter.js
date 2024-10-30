@@ -7,6 +7,7 @@ const animationEnter = (container) => {
 
     // Global page transition
     const main = container.querySelector("main");
+    const mainH1 = container.querySelector("#mainH1");
     const footer = container.querySelector("footer");
     const firstDivBanner = container.querySelector("#firstDivBanner")
     const bannerPages = container.querySelector("#pictureBannersPages");
@@ -22,6 +23,9 @@ const animationEnter = (container) => {
     const leaderPicture = container.querySelector("#leaderPicture")
     const leaderName = container.querySelector("#leaderName")
     const leaderMinistry = container.querySelector("#leaderMinistry")
+
+    // Privacy animations
+    const sectionPrivacy = container.querySelector("#sectionPrivacy");
 
     // Under construction animations
     const construction = container.querySelector(".underConstruction")
@@ -43,6 +47,7 @@ const animationEnter = (container) => {
 
     // Añadir animaciones
     // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
+    animate(mainH1, { opacity: 0 }, "<")
     animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
@@ -56,6 +61,7 @@ const animationEnter = (container) => {
     animate(leaderPicture, { opacity: 0, duration: 1 }, "<");
     animate(leaderName, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(leaderMinistry, { opacity: 0, x: 30, duration: 1.5 }, "<");
+    animate(sectionPrivacy, { opacity: 0 }, "<")
         
 
     return timeline;

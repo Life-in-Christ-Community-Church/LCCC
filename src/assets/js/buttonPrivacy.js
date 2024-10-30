@@ -1,5 +1,4 @@
 export const buttonPrivacy = () => {
-console.log("Hola");
 
     const button = document.querySelector(".checkboxPrivacy");
     const cookieBackground = document.querySelectorAll(".cookieBackground");

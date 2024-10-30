@@ -18,7 +18,6 @@ export const animationScroll = () => {
                 end: "top 200px",
             },
             y: 50,
-            opacity: 0.8,
             duration: 1,
         })
         gsap.from(div2, {
@@ -28,7 +27,6 @@ export const animationScroll = () => {
                 end: "top 200px",
             },
             y: 100,  // Puedes cambiar esto a cualquier dirección u opción que desees
-            opacity: 0.8,
             duration: 1,
         });
         gsap.from(div3, {
@@ -38,7 +36,6 @@ export const animationScroll = () => {
                 end: "top 200px",
             },
             y: 150,  // Puedes cambiar esto a cualquier dirección u opción que desees
-            opacity: 0.8,
             duration: 1,
         });
     }

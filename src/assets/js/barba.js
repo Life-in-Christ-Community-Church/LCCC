@@ -14,26 +14,18 @@ import { buttonPrivacy } from './buttonPrivacy';
 
 barba.hooks.once(() => {
     initCookies();
-    initSwipers();
     initResponsiveMenu();
-    initAboutScrollAnchor();
-    initAboutContainer();
-    initAboutUrlCheck();
     initSetViewportHeight();
-    emailContactAnimation();
     animationScroll();
+    buttonPrivacy();
 })
 
 barba.hooks.after(() => {
     initCookies();
-    initSwipers();
     initResponsiveMenu();
-    initAboutScrollAnchor();
-    initAboutContainer();
-    initAboutUrlCheck();
     initSetViewportHeight();
-    emailContactAnimation();
     animationScroll();
+    buttonPrivacy();
 })
 
 barba.init({
@@ -45,7 +37,6 @@ barba.init({
         {
             once({next}){
                 animationEnter(next.container);
-                // initSwipers();
                 initResponsiveMenu();
             },
             leave: ({current}) => animationLeave(current.container),
@@ -56,9 +47,17 @@ barba.init({
         }
     ],
     views: [{
-        namespace: 'privacy',
+        namespace: 'home',
         beforeEnter(data) {
-            buttonPrivacy();
+            initSwipers();
+            emailContactAnimation();
         }
+    },{
+        namespace: 'about',
+        beforeEnter(data) {
+            initAboutScrollAnchor();
+            initAboutContainer();
+            initAboutUrlCheck();
+        },
     }]
 })

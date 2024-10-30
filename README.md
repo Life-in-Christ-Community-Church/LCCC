@@ -46,15 +46,15 @@ This project represents a thoughtful combination of design and functionality aim
 
 
 - **Informative Hub**: 
-    -Designed as a comprehensive informational resource, the website provides clear and accessible content about the church’s mission, ministries, and community events. Visitors can quickly find service times, learn about church programs, and stay updated on upcoming events, making it a central point for church-related information.
+    - Designed as a comprehensive informational resource, the website provides clear and accessible content about the church’s mission, ministries, and community events. Visitors can quickly find service times, learn about church programs, and stay updated on upcoming events, making it a central point for church-related information.
 - **Smooth Page Transitions**: 
     - Implemented using **Barba.js**, providing a seamless browsing experience that enhances navigation across different sections of the site.
 - **Interactive Sliders**: 
     - Integrated **Swiper.js** for visually appealing and interactive image and content sliders, ideal for showcasing events and important announcements.
 - **Animations and Visual Effects**: 
-    -With **GSAP**, the site features refined animations that create a dynamic and welcoming environment, while ensuring performance remains optimized.
+    - With **GSAP**, the site features refined animations that create a dynamic and welcoming environment, while ensuring performance remains optimized.
 - **Mobile Responsiveness**: 
-    -The layout is fully responsive, providing an optimal experience across devices, whether on desktops, tablets, or smartphones.
+    - The layout is fully responsive, providing an optimal experience across devices, whether on desktops, tablets, or smartphones.
 - **Privacy Policy and Cookie Control**: 
     - The website respects user privacy with a customizable cookie policy, enabling users to control the loading of third-party content, such as YouTube videos and Google Maps. This ensures that users can manage their data privacy preferences while still accessing all available information.
 

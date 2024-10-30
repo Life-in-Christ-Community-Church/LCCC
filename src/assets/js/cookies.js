@@ -12,6 +12,7 @@ export const initCookies = () => {
 
     // Maps divs
     const mapsFooter = document.querySelector("#divMap");
+    const mapsAbout = document.querySelector("#mapsAbout");
 
     // Cookie Background
     function createCookieBackground(rounded, index) {
@@ -47,7 +48,7 @@ export const initCookies = () => {
     }
 
     // Maps iframe function
-    function createMapsIframe(src, title) {
+    function createMapsIframe(src, title, className) {
         const iframe = document.createElement('iframe');
 
         iframe.src = src;
@@ -55,10 +56,15 @@ export const initCookies = () => {
         iframe.frameBorder = "0";
         iframe.referrerPolicy = "no-referrer-when-downgrade";
         iframe.allowFullscreen = true;
-        iframe.classList.add("w-full", "z-10", "shadow-xl", "rounded-3xl");
+        iframe.classList.add("z-10", "shadow-xl", "rounded-3xl");
         iframe.style.border = "1px solid gray";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
+        if (className === 0) {
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+        }
+        if (className === 1) {
+            iframe.classList.add("w-[380px]", "h-[350px]");
+        }
 
         return iframe;
     }
@@ -82,8 +88,13 @@ export const initCookies = () => {
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
 
+        if (mapsAbout) {
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+                "Google Maps", 1));
+        }
+
         mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
-            "Google Maps"));
+            "Google Maps", 0));
 
     });
 
@@ -115,8 +126,14 @@ export const initCookies = () => {
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
 
+        if (mapsAbout) {
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+                "Google Maps", 1));
+        }
+
         mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
-            "Google Maps"));
+            "Google Maps", 0));
+
     } else {
         
         if (sessionStorage.getItem("COOKIES") !== "REJECTED")
@@ -129,6 +146,10 @@ export const initCookies = () => {
             latestSermon.appendChild(createCookieBackground());
             message1.appendChild(createCookieBackground());
             message2.appendChild(createCookieBackground());
+        }
+
+        if (mapsAbout) {
+            mapsAbout.appendChild(createCookieBackground("rounded-3xl"));
         }
 
         mapsFooter.appendChild(createCookieBackground("rounded-3xl", -1));

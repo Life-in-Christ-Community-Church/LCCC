@@ -368,9 +368,22 @@
         overflow-y: scroll;
     }
 
-    /* #divAbout-4 div:nth-child(2) {
-        display: none;
-    } */
+    #aboutContainerLinks {
+        width: 100% !important;
+
+        ul, ul li {
+            width: 100%;
+        }
+
+        ul li a {
+            padding: 10px 0;
+            width: 100%;
+
+            span {
+                justify-content: center !important;
+            }
+        }
+    }
 }
 
 

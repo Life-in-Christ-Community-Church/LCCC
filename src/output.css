@@ -1001,6 +1001,10 @@ video {
   width: auto;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .min-w-\[19rem\] {
   min-width: 19rem;
 }
@@ -2039,6 +2043,10 @@ main {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:flex-1 {

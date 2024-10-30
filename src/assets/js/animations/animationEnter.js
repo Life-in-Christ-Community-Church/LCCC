@@ -37,7 +37,7 @@ const animationEnter = (container) => {
 
     const animate = (target, props, position) => {
         try {
-            if (target) {
+            if (target && target.length !== 0) {
                 timeline.from(target, { ...props }, position);
             }
         } catch (error) {

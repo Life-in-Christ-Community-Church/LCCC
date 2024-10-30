@@ -583,8 +583,11 @@
                                 http://policies.google.com/privacy
                             </a>
                         </li>
-                        <div>
-                            <label class="switchPrivacy">
+                        <!-- Button Cookies -->
+                        <div class="flex justify-end flex-col items-end">
+                            <span>Cookies are currently <span id="cookieCheck" class="font-bold">deactivated</span> on this site.
+                                Press the button to <span id="cookieCheck2">enable</span> cookies:</span>
+                            <label class="switchPrivacy self-center sm:self-auto mt-6 sm:mt-2">
                                 <input class="checkboxPrivacy" type="checkbox">
                                 <span class="sliderPrivacy"></span>
                             </label>
@@ -727,7 +730,8 @@
 
                 <!-- Div Map -->
                 <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10">
-                    <div id="divMap" class="rounded-3xl shadow-xl w-full relative" style="border:1px solid gray;">
+                    <div id="divMap" class="divMapCookies rounded-3xl shadow-xl w-full relative"
+                        style="border:1px solid gray;">
                         <div class="absolute w-full h-full content-center items-center justify-center flex bg-green-100/50 rounded-3xl"
                             style="z-index: -1;">
                             <div class="loaderMap"></div>
@@ -748,10 +752,11 @@
             </div>
 
             <!-- Copyright -->
-            <div class="flex w-ful justify-center bg-[#232d3f]">
-                <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church - <a
-                        href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">Privacy & Cookie
-                        Policy</a></p>
+            <div class="flex w-ful justify-center bg-[#232d3f] text-center">
+                <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church <span class="hidden sm:inline">-</span>
+                    <span class="inline sm:hidden"><br></span> 
+                    <a href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">
+                        Privacy & Cookie Policy</a></p>
             </div>
         </footer>
 

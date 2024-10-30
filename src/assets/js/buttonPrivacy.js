@@ -1,7 +1,8 @@
 export const buttonPrivacy = () => {
 
     const button = document.querySelector(".checkboxPrivacy");
-    const cookieBackground = document.querySelectorAll(".cookieBackground");
+    const cookieCheck = document.querySelector("#cookieCheck");
+    const cookieCheck2 = document.querySelector("#cookieCheck2");
     const mapsFooter = document.querySelector("#divMap");
 
     function createCookieBackground(rounded, index) {
@@ -37,6 +38,9 @@ export const buttonPrivacy = () => {
 
     if (document.cookie.includes("viewed_cookie_policy")) {
         button.checked = true;
+        cookieCheck.innerHTML = "activated";
+        cookieCheck.style.color = "green"
+        cookieCheck2.innerHTML = "disable"
     }
 
     button.addEventListener("click", () => {
@@ -46,18 +50,25 @@ export const buttonPrivacy = () => {
             document.cookie = "viewed_cookie_policy=ACCEPTED; path=/; max-age=" + 60 * 60 * 24 * 365 * 10;
             sessionStorage.removeItem("COOKIES")
 
+            cookieCheck.innerHTML = "activated";
+            cookieCheck.style.color = "green"
+            cookieCheck2.innerHTML = "disable"
+
             mapsFooter.removeChild(mapsFooter.children[1]);
 
             mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
                 "Google Maps"));
-            
+
         } else {
             button.checked = false;
 
             document.cookie = "viewed_cookie_policy=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             sessionStorage.setItem("COOKIES", "REJECTED");
 
-            
+            cookieCheck.innerHTML = "deactivated";
+            cookieCheck.style.color = ""
+            cookieCheck2.innerHTML = "enable"
+
             mapsFooter.removeChild(mapsFooter.children[1]);
             mapsFooter.appendChild(createCookieBackground("rounded-3xl", -1));
 

@@ -37,7 +37,7 @@ barba.init({
         {
             once({next}){
                 animationEnter(next.container);
-                initResponsiveMenu();
+                // initResponsiveMenu();
             },
             leave: ({current}) => animationLeave(current.container),
             enter({next}){

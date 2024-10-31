@@ -102,10 +102,12 @@ export const initCookies = () => {
             "Google Maps", 0));
 
         // Privacy-Page logic
-        button.checked = true;
-        cookieCheck.innerHTML = "activated";
-        cookieCheck.style.color = "green"
-        cookieCheck2.innerHTML = "disable"
+        if (button) {
+            button.checked = true;
+            cookieCheck.innerHTML = "activated";
+            cookieCheck.style.color = "green"
+            cookieCheck2.innerHTML = "disable"
+        }
 
     });
 

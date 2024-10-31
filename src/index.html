@@ -2,6 +2,46 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag with Consent Mode -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V04KENPNM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        gtag('js', new Date());
+        gtag('config', 'G-0V04KENPNM');
+
+        function userConsentGiven() {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+
+        function userConsentDenied() {
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied'
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const acceptCookiesBtn = document.querySelector("#accept-cookies");
+        if (acceptCookiesBtn) {
+            acceptCookiesBtn.addEventListener("click", () => {
+                console.log("Click");
+                userConsentGiven(); // Llama a la función cuando el usuario da consentimiento
+            });
+        }
+    });
+
+    </script>
+
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

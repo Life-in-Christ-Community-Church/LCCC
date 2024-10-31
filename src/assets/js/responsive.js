@@ -46,6 +46,20 @@ export const initResponsiveMenu = () => {
         }
     })
 
+    // Menu closing when clicking logo name
+    document.querySelector(".hiddenNavBar").addEventListener('click', () => {
+        if (menuListButton.contains("open")) {
+            document.querySelector(".line1").classList.toggle('rotate1');
+            document.querySelector(".line2").classList.toggle('rotate2');
+            document.querySelector(".line3").classList.toggle('rotate3');
+            divMenuList.toggle("active");
+
+            setTimeout(() => {
+                menuListButton.toggle("open");
+            }, 300);
+        }
+    })
+
     // Menu closing when clicking Main
     document.querySelector("main").addEventListener('click', () => {
         if (menuListButton.contains("open")) {

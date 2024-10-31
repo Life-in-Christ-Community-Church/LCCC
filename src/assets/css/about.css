@@ -148,7 +148,7 @@
         height: 100px;
         width: 100%;
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 0 10px;
     }
 
     #beliefsGod,
@@ -376,13 +376,21 @@
         }
 
         ul li a {
-            padding: 10px 0;
+            padding: 10px 5px;
             width: 100%;
 
             span {
                 justify-content: center !important;
             }
         }
+    }
+
+    #ulBeliefs {
+        flex-direction: column;
+        height: 170px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 5px 10px;
     }
 }
 

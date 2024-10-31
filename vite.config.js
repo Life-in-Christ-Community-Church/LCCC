@@ -23,6 +23,7 @@ export default defineConfig({
                 sermons: resolve(__dirname, 'src/sermons/index.html'),
                 gospel: resolve(__dirname, 'src/gospel/index.html'),
                 give: resolve(__dirname, 'src/give/index.html'),
+                privacy: resolve(__dirname, 'src/privacy-policy/index.html'),
             },
             output: {
                 manualChunks(id) {

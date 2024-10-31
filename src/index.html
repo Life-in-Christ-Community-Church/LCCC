@@ -34,12 +34,15 @@
         const acceptCookiesBtn = document.querySelector("#accept-cookies");
         if (acceptCookiesBtn) {
             acceptCookiesBtn.addEventListener("click", () => {
-                console.log("Click");
-                userConsentGiven(); // Llama a la función cuando el usuario da consentimiento
+                userConsentGiven();
             });
         }
-    });
 
+        if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
+            console.log("Ok");
+                userConsentGiven(); 
+        }
+    });
     </script>
 
     <!-- META -->

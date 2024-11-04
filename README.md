@@ -17,7 +17,7 @@ The focus of this project was to provide a user-friendly, modern design that enh
 
 
 
-<!-- **Link to live project:** <a href="https://reddit-client-49g.pages.dev/">https://reddit-client-49g.pages.dev/</a><br/> -->
+**Link to live project:** <a href="https://lifeinchrist.nl/">https://lifeinchrist.nl/</a><br/>
 
 
 

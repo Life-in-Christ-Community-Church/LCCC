@@ -204,6 +204,10 @@
         background-position: center -100px !important;
     }
 
+    .pictureBannersPages-anbi {
+        background-position: center -150px !important;
+    }
+
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
         .pictureBannersPages-sermons {
             background-position: center -40px !important;
@@ -216,6 +220,9 @@
         }
         pictureBannersPages-privacy {
             background-position: center -200px !important;
+        }
+        .pictureBannersPages-anbi {
+            background-position: center -100px !important;
         }
     }
 }

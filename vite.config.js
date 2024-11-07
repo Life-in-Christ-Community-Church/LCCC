@@ -24,6 +24,7 @@ export default defineConfig({
                 gospel: resolve(__dirname, 'src/gospel/index.html'),
                 give: resolve(__dirname, 'src/give/index.html'),
                 privacy: resolve(__dirname, 'src/privacy-policy/index.html'),
+                anbi: resolve(__dirname, 'src/anbi/index.html')
             },
             output: {
                 manualChunks(id) {

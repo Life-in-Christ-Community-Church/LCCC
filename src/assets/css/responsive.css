@@ -278,3 +278,33 @@
         font-size: 1rem;
     }
 }
+
+@media only screen and (max-width: 1094px) {
+    .divGospelBlocks {
+        width: 50%;
+    }
+
+    .divGospelImg {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .divGospelBlocks {
+        width: 100%;
+    }
+
+    .divGospelImg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .divGospelBlocks {
+        padding: 10%;
+    }
+
+    .divGospelBlocks p {
+        text-align: left;
+    }
+}

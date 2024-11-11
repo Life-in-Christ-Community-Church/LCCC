@@ -905,6 +905,26 @@ video {
   height: 100px;
 }
 
+.h-\[14px\] {
+  height: 14px;
+}
+
+.h-\[1200px\] {
+  height: 1200px;
+}
+
+.h-\[00px\] {
+  height: 00px;
+}
+
+.h-\[680px\] {
+  height: 680px;
+}
+
+.h-\[1120px\] {
+  height: 1120px;
+}
+
 .w-40 {
   width: 10rem;
 }

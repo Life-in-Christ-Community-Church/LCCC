@@ -1605,6 +1605,10 @@ video {
   --tw-gradient-to: #b2998a var(--tw-gradient-to-position);
 }
 
+.to-white {
+  --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+
 .bg-contain {
   background-size: contain;
 }

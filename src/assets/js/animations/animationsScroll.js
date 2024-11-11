@@ -2,6 +2,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export const animationScroll = () => {
+
+    // Home Page
     const sectionNews = document.querySelector("#sectionNews");
     const divSectionNews = document.querySelector("#divSectionNews");
     const div1 = document.querySelector("#section2Slide1");
@@ -29,7 +31,7 @@ export const animationScroll = () => {
                     scrub: true,
                     end: "top 200px",
                 },
-                y: 100,  // Puedes cambiar esto a cualquier dirección u opción que desees
+                y: 100,  
                 duration: 1,
             });
         }
@@ -40,7 +42,7 @@ export const animationScroll = () => {
                     scrub: true,
                     end: "top 200px",
                 },
-                y: 150,  // Puedes cambiar esto a cualquier dirección u opción que desees
+                y: 150, 
                 duration: 1,
             });
         }

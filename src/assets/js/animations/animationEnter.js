@@ -24,6 +24,13 @@ const animationEnter = (container) => {
     const leaderName = container.querySelector("#leaderName")
     const leaderMinistry = container.querySelector("#leaderMinistry")
 
+    // Gospel animations
+    const divGospel = container.querySelector("#divGospelPage");
+    const gospelFont1 = container.querySelectorAll(".gospelFontAnimateEnter1");
+    const gospelFont2 = container.querySelectorAll(".gospelFontAnimateEnter2");
+    const divGospelImg1 = container.querySelectorAll(".divGospelPageImgAnimate1");
+    const divGospelImg2 = container.querySelectorAll(".divGospelPageImgAnimate2")
+
     // Privacy animations
     const sectionPrivacy = container.querySelector("#sectionPrivacy");
 
@@ -61,6 +68,10 @@ const animationEnter = (container) => {
     animate(leaderPicture, { opacity: 0, duration: 1 }, "<");
     animate(leaderName, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(leaderMinistry, { opacity: 0, x: 30, duration: 1.5 }, "<");
+    animate(gospelFont1, { opacity: 0, x: 30, duration: 1 }, "<");
+    animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");
+    animate(divGospelImg1, { autoAlpha: 0, xPercent: -101, duration: 1.5 }, "<");
+    animate(divGospelImg2, { autoAlpha: 0, xPercent: 101, duration: 1.5 }, "<");
     animate(sectionPrivacy, { opacity: 0 }, "<")
         
 

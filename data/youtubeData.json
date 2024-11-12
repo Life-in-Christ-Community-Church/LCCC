@@ -1,16 +1,25 @@
 {
   "error": {
-    "code": 401,
-    "message": "Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "code": 403,
+    "message": "Requests from referer \u003cempty\u003e are blocked.",
     "errors": [
       {
-        "message": "Invalid Credentials",
+        "message": "Requests from referer \u003cempty\u003e are blocked.",
         "domain": "global",
-        "reason": "authError",
-        "location": "Authorization",
-        "locationType": "header"
+        "reason": "forbidden"
       }
     ],
-    "status": "UNAUTHENTICATED"
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_HTTP_REFERRER_BLOCKED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "youtube.googleapis.com",
+          "consumer": "projects/888202698160"
+        }
+      }
+    ]
   }
 }

@@ -8,6 +8,8 @@ on:
 jobs:
   fetch-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Check out the repo
@@ -27,4 +29,4 @@ jobs:
           git commit -m "Update YouTube data"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

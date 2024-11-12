@@ -19,7 +19,7 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-         curl -H "Authorization: Bearer ${YOUTUBE_API_KEY}" "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=UUB52lQ_buqcN4OPceA-c-Iw" -o data/youtubeData.json
+         curl -H "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=UUB52lQ_buqcN4OPceA-c-Iw&key=${YOUTUBE_API_KEY}" -o data/youtubeData.json
 
       - name: Commit and push changes
         run: |

@@ -1,0 +1,29 @@
+name: Fetch YouTube Data
+
+on:
+  schedule:
+    - cron: '0 0 1,8,15,22 * *' 
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Fetch YouTube Data
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          curl "https://developers.google.com/apis-explorer/#p/youtube/v3/youtube.channels.list?part=contentDetails&id=UCB52lQ_buqcN4OPceA-c-Iw&key=${YOUTUBE_API_KEY}" -o data/youtubeData.json
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/youtubeData.json
+          git commit -m "Update YouTube data"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

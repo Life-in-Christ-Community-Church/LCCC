@@ -1,7 +1,6 @@
 [build]
   functions = "netlify/functions"
 
-
 [[headers]]
   for = "*.jpg"
   [headers.values]

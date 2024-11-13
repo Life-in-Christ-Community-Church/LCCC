@@ -78,8 +78,8 @@ const animationEnter = (container) => {
     animate(sermonsDivSermons, { opacity: 0, duration: 1 }, "<")
     animate(gospelFont1, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");
-    animate(divGospelImg1, { autoAlpha: 0, xPercent: -101 }, "<");
-    animate(divGospelImg2, { autoAlpha: 0, xPercent: 101 }, "<");
+    animate(divGospelImg1, { autoAlpha: 0, xPercent: -101, duration: 1 }, "<");
+    animate(divGospelImg2, { autoAlpha: 0, xPercent: 101, duration: 1 }, "<");
     animate(sectionPrivacy, { opacity: 0 }, "<")
         
 

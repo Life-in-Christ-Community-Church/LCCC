@@ -258,15 +258,20 @@
         width: 100%;
         height: 100%;
     }
-}
 
-@media only screen and (max-width: 809px) {
     #divAbout-1>div:nth-child(2) div {
         justify-content: center;
         width: 100%;
         display: flex;
     }
 
+    #divAbout-1>div:nth-child(2) svg {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 809px) {
+    
     #divAbout-1>div:nth-child(2) svg {
         width: 150px;
     }

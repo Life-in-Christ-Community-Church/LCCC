@@ -51,10 +51,11 @@
     <link rel="stylesheet" href="../assets/css/navbar-responsive.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/sermonPage.css">
 </head>
 
 <body data-router="wrapper">
-    <div class="wrapper" data-router="container" data-router-namespace="leaders">
+    <div class="wrapper" data-router="container" data-router-namespace="sermons">
 
         <!-- HEADER AND NAVBAR -->
         <header class="flex fixed w-full h-20 justify-center align-center p-2 shadow-md text-sm text-gray-700 bg-white"
@@ -313,72 +314,183 @@
                 </h1>
 
                 <!-- Latest Sermon -->
-                <div class="w-full flex-1 justify-items-center pb-[20px]">
-                    <h2 class="text-blue-800 text-[1.5rem] w-[70%] py-[10px]">&nbsp;</h2>
-                    <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[70%] h-[60vh] 
-                    bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+                <div class="w-full flex flex-col items-center pb-[20px]">
+                    <h2 id="sermonsLatestH2"
+                        class="text-blue-900 text-[1.5rem] w-[90%] lg:w-[70%] 2xl:w-[1200px] border-b-[1px] border-blue-700">
+                        &nbsp;</h2>
+                    <div id="sermonsLatestDiv" class="flex border-2 relative mt-[10px] border-blue-200 w-[90%] lg:w-[70%] 2xl:w-[1200px] h-[290px] sm:h-[380px] md:h-[450px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] 
+                    bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                     </div>
                 </div>
 
                 <!-- Sermons -->
-                 <div class="w-full flex justify-center pb-[80px]">
-                    <div class="w-[70%] flex justify-between flex-wrap gap-4">
-                        <div class="min-h-[200px]">
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+                <div class="w-full flex justify-center pb-[80px]">
+                    <div class="w-[90%] lg:w-[70%] 2xl:w-[1200px] flex justify-between flex-wrap gap-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                            <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
-                        <div>
-                            <h3 class="text-blue-800 py-[10px]">&nbsp;</h3>
-                            <div class="underConstruction flex justify-center items-center border-2 border-blue-200 w-[320px] h-[180px] 
-                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center p-4">
+
+                        <div
+                            class="sermonsDivSermon sermonsHover flex flex-col w-[100%] sm:w-[48%] xl:w-[30%] relative overflow-hidden">
+                            <h3 class="text-blue-900 text-[1.1rem] pt-[10px] truncate border-b-[1px] border-blue-800">
+                                &nbsp;</h3>
+                               <div class="firstDivChildSermons flex justify-center mt-[5px] items-center border-2 border-blue-200 w-full min-h-[80%]
+                            bg-blue-100/50 shadow text-[1.5rem] text-blue-800 text-center">
                             </div>
+                            <span class="absolute flex items-center w-full h-[80%] bottom-0" style="z-index: 100;">
+                                <svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="sermonsPlayBtn w-full h-[30%] bottom-0">
+                                    <path
+                                        d="M0.666627 1.6548C0.666627 1.10764 1.28939 0.793462 1.72946 1.11861L14.377 10.4634C14.7377 10.7298 14.7377 11.2692 14.377 11.5357L1.72948 20.8813C1.28941 21.2065 0.666626 20.8923 0.666626 20.3451L0.666627 1.6548Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </span>
+                            <span class="absolute flex nowPlaying hidden" style="z-index: 100;"><p>Video in View</p></span>
                         </div>
+
                     </div>
-                 </div>
+                </div>
 
             </section>
 

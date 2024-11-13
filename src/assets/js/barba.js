@@ -11,6 +11,7 @@ import { emailContactAnimation } from './emailContactAnimation';
 import { animationScroll } from './animations/animationsScroll';
 import { initCookies } from './cookies';
 import { buttonPrivacy } from './buttonPrivacy';
+import { sermonsYT } from './sermonsYT';
 
 barba.hooks.once(() => {
     initCookies();
@@ -59,5 +60,10 @@ barba.init({
             initAboutContainer();
             initAboutUrlCheck();
         },
+    },{
+        namespace: 'sermons',
+        beforeEnter(data) {
+            sermonsYT();
+        }
     }]
 })

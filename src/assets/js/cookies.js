@@ -14,6 +14,10 @@ export const initCookies = () => {
     const mapsFooter = document.querySelector("#divMap");
     const mapsAbout = document.querySelector("#mapsAbout");
 
+    // Sermons Page
+    const sermonsDivLatest = document.querySelector("#sermonsLatestDiv");
+    const sermonsDivSermons = document.querySelectorAll(".sermonsDivSermon")
+
     // Privacy-Policy Page
     const button = document.querySelector(".checkboxPrivacy");
     const cookieCheck = document.querySelector("#cookieCheck");
@@ -107,6 +111,24 @@ export const initCookies = () => {
             cookieCheck.innerHTML = "activated";
             cookieCheck.style.color = "green"
             cookieCheck2.innerHTML = "disable"
+        }
+
+        if (sermonsDivLatest) {
+            fetch('/data/youtubeData.json')
+                .then(response => response.json())
+                .then(data => {
+                    sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    sermonsDivSermons.forEach((div) => {
+                        div.style.pointerEvents = "auto";
+                    })
+                    sermonsDivSermons[0].querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
+                    sermonsDivSermons[0].style.pointerEvents = "none";
+                    sermonsDivSermons[0].classList.remove("sermonsHover");
+                    sermonsDivSermons[0].querySelector(".nowPlaying").style.display = "flex";
+                })
+                .catch(error => {
+                    console.error("Error fetching data", error);
+                });
         }
 
     });

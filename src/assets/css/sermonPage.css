@@ -1,0 +1,48 @@
+.sermonsHover div {
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sermonsHover:hover {
+    cursor: pointer;
+
+    div {
+        filter: brightness(70%);
+    }
+
+    h3 {
+        color: rgb(52, 102, 255);
+    }
+
+    .sermonsPlayBtn {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+.no-hover:hover {
+    filter: none;
+    cursor: default; 
+}
+
+.sermonsPlayBtn {
+    transform: scale(0%);
+    opacity: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.nowPlaying{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    bottom: 0;
+    color: white;
+    filter: brightness(100%) !important;
+}
+
+.nowPlaying p {
+    padding: 4% 8%;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0.8);
+}

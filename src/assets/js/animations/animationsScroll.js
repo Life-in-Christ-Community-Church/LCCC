@@ -18,7 +18,7 @@ export const animationScroll = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    if (!/Android|iPhone/i.test(navigator.userAgent)) {
+    if (!/Android|iPhone|iPad|Tablet/i.test(navigator.userAgent)) {
         if (div1) {
             gsap.from(div1, {
                 scrollTrigger: {
@@ -51,8 +51,10 @@ export const animationScroll = () => {
                 y: 150, 
                 duration: 1,
             });
-        }
-        
+        }   
+    }
+
+    if (!/Android|iPhone/i.test(navigator.userAgent)) {
         if (sermons) {
             gsap.from(sermonsH3, {
                 scrollTrigger: {

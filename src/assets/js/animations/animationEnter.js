@@ -74,7 +74,7 @@ const animationEnter = (container) => {
     animate(leaderName, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(leaderMinistry, { opacity: 0, x: 30, duration: 1.5 }, "<");
     animate(sermonsLatestH2, { opacity: 0, x: 30, duration: 1}, "<");
-    animate(sermonsLatestDiv, { opacity: 0, duration: 1 }, "<");
+    animate(sermonsLatestDiv, { opacity: 0 }, "<");
     animate(sermonsDivSermons, { opacity: 0, duration: 1 }, "<")
     animate(gospelFont1, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");

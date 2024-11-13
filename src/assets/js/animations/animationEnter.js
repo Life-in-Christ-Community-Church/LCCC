@@ -31,6 +31,11 @@ const animationEnter = (container) => {
     const divGospelImg1 = container.querySelectorAll(".divGospelPageImgAnimate1");
     const divGospelImg2 = container.querySelectorAll(".divGospelPageImgAnimate2")
 
+    // Sermons animations
+    const sermonsLatestH2 = container.querySelector("#sermonsLatestH2")
+    const sermonsLatestDiv = container.querySelector("#sermonsLatestDiv")
+    const sermonsDivSermons = container.querySelector("#sermonsDivSermons")
+
     // Privacy animations
     const sectionPrivacy = container.querySelector("#sectionPrivacy");
 
@@ -68,6 +73,9 @@ const animationEnter = (container) => {
     animate(leaderPicture, { opacity: 0, duration: 1 }, "<");
     animate(leaderName, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(leaderMinistry, { opacity: 0, x: 30, duration: 1.5 }, "<");
+    animate(sermonsLatestH2, { opacity: 0, x: 30, duration: 1}, "<");
+    animate(sermonsLatestDiv, { opacity: 0, duration: 1 }, "<");
+    animate(sermonsDivSermons, { opacity: 0, duration: 1 }, "<")
     animate(gospelFont1, { opacity: 0, x: 30, duration: 1 }, "<");
     animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");
     animate(divGospelImg1, { autoAlpha: 0, xPercent: -101, duration: 1.2 }, "<");

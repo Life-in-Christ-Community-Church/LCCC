@@ -92,7 +92,14 @@ export const initCookies = () => {
         });
 
         if (latestSermon) {
-            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/C6iH6r5m9FA", "YouTube video player: Latest Sermon"));
+            fetch('data/youtubeData.json')
+            .then(response => response.json())
+            .then(data => {
+                latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+            })
+            .catch(error => {
+                console.error("Error Fetching Data", error);
+            })
             message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/5dXA1pPNs3Q?si=mrZBpvX5p4t2r2Bi", "YouTube video player: Selected message 1"));
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
@@ -156,7 +163,14 @@ export const initCookies = () => {
         });
 
         if (latestSermon) {
-            latestSermon.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/C6iH6r5m9FA", "YouTube video player: Latest Sermon"));
+            fetch('data/youtubeData.json')
+                .then(response => response.json())
+                .then(data => {
+                    latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                })
+                .catch(error => {
+                    console.error("Error Fetching Data", error);
+                })
             message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/5dXA1pPNs3Q?si=mrZBpvX5p4t2r2Bi", "YouTube video player: Selected message 1"));
             message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }

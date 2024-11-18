@@ -95,7 +95,11 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
             .then(response => response.json())
             .then(data => {
-                latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+                if (firstValidItem) {
+                    latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                }
             })
             .catch(error => {
                 console.error("Error Fetching Data", error);
@@ -124,7 +128,11 @@ export const initCookies = () => {
             fetch('/data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+                    if (firstValidItem) {
+                        sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    }
                     sermonsDivSermons.forEach((div) => {
                         div.style.pointerEvents = "auto";
                     })
@@ -166,7 +174,11 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+                    if (firstValidItem) {
+                        latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    }
                 })
                 .catch(error => {
                     console.error("Error Fetching Data", error);

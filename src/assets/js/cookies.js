@@ -94,18 +94,26 @@ export const initCookies = () => {
         if (latestSermon) {
             fetch('data/youtubeData.json')
             .then(response => response.json())
-            .then(data => {
-                const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
-
+            .then(data => {                 
+                const validItems = data.items.filter(item => !item.snippet.title.includes("Highlight"));
+        
+                const firstValidItem = validItems[0];
+                const secondValidItem = validItems[1];
+                const thirdValidItem = validItems[2];
+    
                 if (firstValidItem) {
                     latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                }
+                if (secondValidItem) {
+                    message1.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${secondValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 1"));
+                }
+                if (thirdValidItem) {
+                    message2.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${thirdValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 2"));
                 }
             })
             .catch(error => {
                 console.error("Error Fetching Data", error);
             })
-            message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/5dXA1pPNs3Q?si=mrZBpvX5p4t2r2Bi", "YouTube video player: Selected message 1"));
-            message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
 
         if (mapsAbout) {
@@ -173,18 +181,26 @@ export const initCookies = () => {
         if (latestSermon) {
             fetch('data/youtubeData.json')
                 .then(response => response.json())
-                .then(data => {
-                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
-
+                .then(data => {            
+                    const validItems = data.items.filter(item => !item.snippet.title.includes("Highlight"));
+        
+                    const firstValidItem = validItems[0];
+                    const secondValidItem = validItems[1];
+                    const thirdValidItem = validItems[2];
+        
                     if (firstValidItem) {
                         latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    }
+                    if (secondValidItem) {
+                        message1.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${secondValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 1"));
+                    }
+                    if (thirdValidItem) {
+                        message2.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${thirdValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 2"));
                     }
                 })
                 .catch(error => {
                     console.error("Error Fetching Data", error);
                 })
-            message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/5dXA1pPNs3Q?si=mrZBpvX5p4t2r2Bi", "YouTube video player: Selected message 1"));
-            message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
         }
 
         if (mapsAbout) {

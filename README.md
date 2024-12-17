@@ -67,6 +67,20 @@ This project represents a thoughtful combination of design and functionality aim
 git clone https://github.com/JonaRhood/LCCC
 ```
 
+2. Replace the current YouTube playlist with the corresponding one:
+    - In the file: `.github/workflows/fetch_youtube_data.yml`, add your playlist ID in the following code:
+```yml
+steps:
+    run: |
+        curl "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=YOUR-PLAYLIST-ID&key=${YOUTUBE_API_KEY}" -o src/public/data/youtubeData.json
+```
+
+3. Add your YouTube API Key to your GitHub repository:
+    - In your new repository on GitHub, go to: Settings > Secrets and variables > Actions > Manage repository secrets
+    (or New repository secret).
+    - Create a new repository secret with the name: YOUTUBE_API_KEY.
+    - Enter your YouTube API key and save the changes.
+
 2. Install NPM packages:
 ```bash
 npm install

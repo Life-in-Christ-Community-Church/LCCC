@@ -348,6 +348,14 @@
     .divLoaderMap {
         height: 95%;
     }
+
+    .giveDivMain {
+        width: 90%;
+        
+        p {
+            text-align: left;
+        }
+    }
 }
 
 @media only screen and (max-width: 509px) {

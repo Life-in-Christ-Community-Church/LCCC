@@ -39,6 +39,9 @@ const animationEnter = (container) => {
     // Privacy animations
     const sectionPrivacy = container.querySelector("#sectionPrivacy");
 
+    // Give animations
+    const sectionGive = container.querySelectorAll(".giveDiv")
+
     // Under construction animations
     const construction = container.querySelector(".underConstruction")
 
@@ -80,7 +83,8 @@ const animationEnter = (container) => {
     animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");
     animate(divGospelImg1, { autoAlpha: 0, xPercent: -101, duration: 1 }, "<");
     animate(divGospelImg2, { autoAlpha: 0, xPercent: 101, duration: 1 }, "<");
-    animate(sectionPrivacy, { opacity: 0 }, "<")
+    animate(sectionPrivacy, { opacity: 0 }, "<");
+    animate(sectionGive, { opacity: 0, y: 10, duration: 1 }, "<")
         
 
     return timeline;

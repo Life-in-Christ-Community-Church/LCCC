@@ -39,7 +39,6 @@
         }
 
         if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
-            console.log("Ok");
                 userConsentGiven(); 
         }
     });
@@ -127,7 +126,7 @@
 
     <!-- IMAGE PRELOADING -->
     <!-- <link rel="preload" href="/lccc-logo-white-bolder.svg" as="image" type="image/svg+xml"> -->
-    <link rel="preload" href="/img/banner-1.webp" as="image" type="image/webp">
+    <link rel="preload" href="/img/reformationWall.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/banner-2-2.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/banner-3.webp" as="image" type="image/webp">
     <!-- <link rel="preload" href="/img/aboutus.webp" as="image" type="image/webp">
@@ -389,8 +388,11 @@
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide content-end p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
-                            style="background-image: url(/img/banner-1.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                            style="
+                                background-image: url(/img/reformationWall.webp);
+                                background-position-y: 80px;
+                            ">
+                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/70 rounded-lg" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0" id="firstDivBanner">
 
                                 <div class="title titleBanner w-[450px] leading-[1]" data-swiper-parallax="-300"
@@ -421,7 +423,7 @@
                         <!-- Slide 2 -->
                         <div class="swiper-slide content-start p-[6rem] lg:p-[9rem]  pt-[11rem] text-gray-100 bg-no-repeat bg-cover bg-center"
                             style="background-image: url(/img/banner-2-2.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/70 rounded-lg" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0">
 
                                 <div class="title titleBanner w-[500px] leading-[1]" data-swiper-parallax="-300"
@@ -455,7 +457,7 @@
                         <!-- Slide 3 -->
                         <div class="swiper-slide content-center p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
                             style="background-image: url(/img/banner-3.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/70 rounded-lg" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0">
 
                                 <div class="title titleBanner w-[550px] leading-[1]" data-swiper-parallax="-300"

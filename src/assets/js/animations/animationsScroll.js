@@ -55,7 +55,7 @@ export const animationScroll = () => {
     }
 
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
-        if (sermons) {
+        if (sermonsH3 && sermons && nowPlaying) {
             gsap.from(sermonsH3, {
                 scrollTrigger: {
                     trigger: sermons,

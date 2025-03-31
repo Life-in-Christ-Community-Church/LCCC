@@ -117,11 +117,11 @@ export const initCookies = () => {
         }
 
         if (mapsAbout) {
-            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11955.20411809946!2d2.3714911999999995!3d41.48691315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf006ea8e271%3A0x11adfc323d3273ec!2sLife%20in%20Christ%20Community%20Church!5e0!3m2!1sen!2ses!4v1732390582513!5m2!1sen!2ses",
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.1122310145856!2d4.404740387441822!3d52.07028317518062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c82c6a04ae4b%3A0x28570e5afa9ec385!2sKlaverveld%205%2C%202492%20MA%20Den%20Haag%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1743438020225!5m2!1ses!2ses",
                 "Google Maps", 1));
         }
 
-        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11955.20411809946!2d2.3714911999999995!3d41.48691315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf006ea8e271%3A0x11adfc323d3273ec!2sLife%20in%20Christ%20Community%20Church!5e0!3m2!1sen!2ses!4v1732390582513!5m2!1sen!2ses",
+        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.1122310145856!2d4.404740387441822!3d52.07028317518062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c82c6a04ae4b%3A0x28570e5afa9ec385!2sKlaverveld%205%2C%202492%20MA%20Den%20Haag%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1743438020225!5m2!1ses!2ses",
             "Google Maps", 0));
 
         // Privacy-Page logic
@@ -204,11 +204,11 @@ export const initCookies = () => {
         }
 
         if (mapsAbout) {
-            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11955.20411809946!2d2.3714911999999995!3d41.48691315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf006ea8e271%3A0x11adfc323d3273ec!2sLife%20in%20Christ%20Community%20Church!5e0!3m2!1sen!2ses!4v1732390582513!5m2!1sen!2ses",
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.1122310145856!2d4.404740387441822!3d52.07028317518062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c82c6a04ae4b%3A0x28570e5afa9ec385!2sKlaverveld%205%2C%202492%20MA%20Den%20Haag%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1743438020225!5m2!1ses!2ses",
                 "Google Maps", 1));
         }
 
-        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11955.20411809946!2d2.3714911999999995!3d41.48691315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cf006ea8e271%3A0x11adfc323d3273ec!2sLife%20in%20Christ%20Community%20Church!5e0!3m2!1sen!2ses!4v1732390582513!5m2!1sen!2ses",
+        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.1122310145856!2d4.404740387441822!3d52.07028317518062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c82c6a04ae4b%3A0x28570e5afa9ec385!2sKlaverveld%205%2C%202492%20MA%20Den%20Haag%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1743438020225!5m2!1ses!2ses",
             "Google Maps", 0));
 
     } else {

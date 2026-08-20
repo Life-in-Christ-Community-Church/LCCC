@@ -745,6 +745,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
@@ -917,6 +921,10 @@ video {
   min-height: 80%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -1033,6 +1041,10 @@ video {
   width: 80%;
 }
 
+.w-\[8rem\] {
+  width: 8rem;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1049,6 +1061,18 @@ video {
   width: 100%;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[160px\] {
+  width: 160px;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
 .min-w-\[19rem\] {
   min-width: 19rem;
 }
@@ -1061,8 +1085,16 @@ video {
   max-width: 19rem;
 }
 
+.max-w-none {
+  max-width: none;
+}
+
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .grow {
@@ -1071,6 +1103,11 @@ video {
 
 .-translate-x-\[20px\] {
   --tw-translate-x: -20px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[35px\] {
+  --tw-translate-x: -35px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1101,6 +1138,16 @@ video {
 
 .translate-y-\[65px\] {
   --tw-translate-y: 65px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[45px\] {
+  --tw-translate-x: -45px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[30px\] {
+  --tw-translate-x: -30px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1194,10 +1241,6 @@ video {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -1225,6 +1268,10 @@ video {
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -1829,6 +1876,16 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2112,6 +2169,18 @@ main {
   background-color: #fff;
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -2189,12 +2258,12 @@ main {
     order: 4;
   }
 
-  .lg\:h-\[500px\] {
-    height: 500px;
+  .lg\:order-5 {
+    order: 5;
   }
 
-  .lg\:w-\[10rem\] {
-    width: 10rem;
+  .lg\:h-\[500px\] {
+    height: 500px;
   }
 
   .lg\:w-\[13rem\] {
@@ -2205,16 +2274,16 @@ main {
     width: 20rem;
   }
 
-  .lg\:w-\[45rem\] {
-    width: 45rem;
-  }
-
   .lg\:w-\[70\%\] {
     width: 70%;
   }
 
   .lg\:w-\[9rem\] {
     width: 9rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:flex-row {
@@ -2239,10 +2308,6 @@ main {
     width: 30%;
   }
 
-  .xl\:w-\[51rem\] {
-    width: 51rem;
-  }
-
   .xl\:w-\[70\%\] {
     width: 70%;
   }
@@ -2250,9 +2315,39 @@ main {
   .xl\:flex-nowrap {
     flex-wrap: nowrap;
   }
+}
 
-  .xl\:justify-around {
-    justify-content: space-around;
+@media (min-width: 1424px) {
+  .min-\[1424px\]\:order-4 {
+    order: 4;
+  }
+
+  .min-\[1424px\]\:order-5 {
+    order: 5;
+  }
+
+  .min-\[1424px\]\:w-\[13rem\] {
+    width: 13rem;
+  }
+
+  .min-\[1424px\]\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .min-\[1424px\]\:w-\[9rem\] {
+    width: 9rem;
+  }
+
+  .min-\[1424px\]\:w-auto {
+    width: auto;
+  }
+
+  .min-\[1424px\]\:flex-row {
+    flex-direction: row;
+  }
+
+  .min-\[1424px\]\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 }
 

@@ -12,6 +12,7 @@ import { animationScroll } from './animations/animationsScroll';
 import { initCookies } from './cookies';
 import { buttonPrivacy } from './buttonPrivacy';
 import { sermonsYT } from './sermonsYT';
+import { initCopyrightYear } from './utils';
 
 barba.hooks.once(() => {
     initCookies();
@@ -19,6 +20,7 @@ barba.hooks.once(() => {
     initSetViewportHeight();
     animationScroll();
     buttonPrivacy();
+    initCopyrightYear();
 })
 
 barba.hooks.after(() => {
@@ -27,6 +29,7 @@ barba.hooks.after(() => {
     initSetViewportHeight();
     animationScroll();
     buttonPrivacy();
+    initCopyrightYear();
 })
 
 barba.init({

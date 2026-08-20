@@ -397,11 +397,11 @@
 
 
                 <!-- Div Info -->
-                <div class="flex flex-col-reverse justify-center items-center lg:flex-row w-[50%] lg:w-[45rem] z-10"
+                <div class="flex flex-col-reverse justify-center items-center min-[1424px]:flex-row w-[50%] min-[1424px]:w-auto z-10"
                     id="footerInfo">
-                    <div class="flex p-5 xl:w-[51rem] xl:justify-around flex-wrap lg:flex-nowrap xl:flex-nowrap gap-5">
+                    <div class="flex p-5 justify-center flex-wrap min-[1424px]:flex-nowrap gap-8">
                         <!-- Location -->
-                        <div class="flex items-start w-[9rem] lg:w-[13rem]" id="divLocationFooter">
+                        <div class="flex items-start w-[9rem] min-[1424px]:w-[13rem]" id="divLocationFooter">
                             <address class="not-italic text-gray-800">
                                 <h5>LOCATION</h5>
                                 <div class="mt-2 text-[0.9rem]">
@@ -411,7 +411,7 @@
                             </address>
                         </div>
                         <!-- Church Service -->
-                        <div class="flex items-start w-[10rem] lg:w-[9rem]" id="divService">
+                        <div class="flex items-start w-[10rem] min-[1424px]:w-[9rem]" id="divService">
                             <div class="not-italic text-gray-800">
                                 <h5>SERVICE</h5>
                                 <div class="mt-2 text-[0.9rem]">
@@ -422,11 +422,11 @@
                         </div>
 
                         <!-- Contact Info-->
-                        <div class="flex items-start w-[10rem] lg:w-[10rem] order-4">
+                        <div class="flex items-start shrink-0 order-4">
                             <div class="not-italic text-gray-800">
                                 <h5>CONTACT</h5>
                                 <div class="mt-2 text-[0.9rem]">
-                                    <p>
+                                    <p class="whitespace-nowrap">
                                         Alin Tase <br />
                                         info.lifeinchrist.lccc@gmail.com
                                     </p>
@@ -436,7 +436,7 @@
 
 
                         <!-- Social Media -->
-                        <div class="flex items-start w-[9rem] lg:order-4" id="divSocial">
+                        <div class="flex items-start w-[9rem] min-[1424px]:order-4" id="divSocial">
                             <div class="not-italic text-gray-800">
                                 <h5>SOCIAL MEDIA</h5>
                                 <div class="mt-2 text-[0.9rem]">
@@ -470,11 +470,26 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Partner -->
+                        <div class="flex items-start w-[8rem] min-[1424px]:order-5 mr-8" id="divPartner">
+                            <div class="not-italic text-gray-800">
+                                <h5>PARTNER</h5>
+                                <div >
+                                    <a href="https://thepillarnetwork.com/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Link to The Pillar Network"
+                                        id="footerPartnerLink" class="inline-block">
+                                        <img src="/pillar_logo.webp" alt="The Pillar Network logo"
+                                            class="w-[200px] max-w-none h-auto cursor-pointer -translate-x-[30px] transition-transform duration-200 ease-in-out" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Div Map -->
-                <div id="map" class="flex w-[50%] lg:w-[20rem] h-64 p-1 z-10">
+                <div id="map" class="flex w-[50%] min-[1424px]:w-[20rem] h-64 p-1 z-10">
                     <div id="divMap" class="divMapCookies rounded-3xl shadow-xl w-full relative"
                         style="border:1px solid gray;">
                         <div class="absolute w-full h-full content-center items-center justify-center flex bg-green-100/50 rounded-3xl"
@@ -498,7 +513,7 @@
 
              <!-- Copyright -->
              <div class="flex w-ful justify-center bg-[#232d3f] text-center">
-                <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Church <span
+                <p class="text-gray-100 p-2">Copyright &copy; 2024<span id="footerYearSuffix">&ndash;2026</span> Life in Christ Church <span
                         class="hidden sm:inline">-</span>
                     <span class="inline sm:hidden"><br></span>
                     <a href="/anbi/" class="underline" aria-label="Link to ANBI">ANBI</a> -

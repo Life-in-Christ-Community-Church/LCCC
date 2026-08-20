@@ -113,12 +113,14 @@
     }
 
     #footerInfo {
-        height: 300px;
+        height: auto;
         width: 400px;
         flex-wrap: wrap !important;
         flex-direction: row !important;
-        padding: 0;
+        padding: 30px 0 30px;
         justify-content: center !important;
+        align-items: flex-start !important;
+        gap: 1.5rem 2rem;
         text-align: center;
     }
 
@@ -135,9 +137,45 @@
         padding: 0;
     }
 
+    /* Partner: keep logo centered and self-contained on small screens */
+    #footerInfo #divPartner {
+        width: auto !important;
+        margin-right: 0 !important;
+        justify-content: center;
+    }
+
+    #footerPartnerLink img {
+        width: 160px;
+        transform: none !important;
+    }
+
     .divPrivacy {
         padding: 40px 30px !important;
         text-align: left;
+    }
+}
+
+/* Footer between the 5-column row (>=1424px) and the stacked map layout (<=823px):
+   map stays on the right, info columns flush-left and tidy */
+@media only screen and (min-width: 824px) and (max-width: 1423px) {
+    #footerInfo {
+        align-items: flex-start !important;
+    }
+
+    #footerInfo > div {
+        width: 100%;
+        justify-content: flex-start !important;
+        align-content: flex-start;
+        gap: 1.5rem 2rem;
+    }
+
+    #footerInfo #divPartner {
+        width: auto !important;
+        margin-right: 0 !important;
+    }
+
+    #footerPartnerLink img {
+        width: 160px;
     }
 }
 

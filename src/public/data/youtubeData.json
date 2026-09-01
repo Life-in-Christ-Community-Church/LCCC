@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "WWXAkTn6ueXhGBR9YNcQeAZTwd4",
-  "nextPageToken": "EAAaHlBUOkNESWlFREkyTlRKQk5FUTRRa1JFT0RjMk5UVQ",
+  "etag": "3HiyFK6Ahip_iAxF3EoguSpb7RA",
+  "nextPageToken": "EAAaHlBUOkNESWlFREJGUkVGRlFqWkJNVEZDT1VZM05VVQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "jxuuRd6c-q1Vvs8QjLtHMfYkGj4",
+      "etag": "kLRIviRTED0jafHgurz3KTJJBeI",
+      "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkROWGtGN1EzbDlZ",
+      "snippet": {
+        "publishedAt": "2026-08-31T17:30:06Z",
+        "channelId": "UCB52lQ_buqcN4OPceA-c-Iw",
+        "title": "The rest Christ gives - Alin Tase",
+        "description": "https://lifeinchrist.nl\n\nLife in Christ Community Church was founded on the 15th of April 2025 with the purpose of glorifying the triune God of the Bible through:\n\n🙏 The promotion of His worship\n📢 The proclaiming of the Gospel\n🛠️ The edification of the believers\n\nWe recognize Jesus Christ as our Lord and Saviour and as the Head of the Church. Therefore, His Word is our final authority and our only true and infallible rule of all saving knowledge, faith, and obedience.\n\nHowever, we are also a confessional church, recognizing the need to systematize biblical teachings to give a comprehensive expression of what we believe the Word of God teaches.\n\nAs an international Baptist Reformed congregation, Life in Christ Community Church declares that the London Baptist Confession of Faith of 1689 is a faithful expression of the set of truths that we believe and proclaim.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DNXkF7Q3l9Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DNXkF7Q3l9Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DNXkF7Q3l9Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DNXkF7Q3l9Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DNXkF7Q3l9Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Life in Christ Community Church",
+        "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "DNXkF7Q3l9Y"
+        },
+        "videoOwnerChannelTitle": "Life in Christ Community Church",
+        "videoOwnerChannelId": "UCB52lQ_buqcN4OPceA-c-Iw"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "7erHcR8HkOh3z2lxvMCgl5Hx7QQ",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LndmMVR5dE5QVXBN",
       "snippet": {
         "publishedAt": "2026-08-24T18:00:16Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "wf1TytNPUpM"
@@ -52,7 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "SOq1vP3ibgOyvsuJbO-0YcdxWV0",
+      "etag": "d6PHLp_-tKokQO0HZnEFv3TylsQ",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Ll9kVzZQOE1QNTZ3",
       "snippet": {
         "publishedAt": "2026-08-24T12:44:15Z",
@@ -88,7 +135,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_dW6P8MP56w"
@@ -99,7 +146,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "b5G8iWimWem7kOVKEzWUejmbKqo",
+      "etag": "rDoePYBlO8bZzXBHqNwUf1Qffos",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LnVhQTVpU0xubGF3",
       "snippet": {
         "publishedAt": "2026-08-20T10:21:58Z",
@@ -135,7 +182,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uaA5iSLnlaw"
@@ -146,7 +193,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "IcPZPosUNnnwSgFO2_0VJC_4wyQ",
+      "etag": "cKhQiJxS7Mdxkrm5elzxsjxnqU4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Ll9DOGdKNGxFenQw",
       "snippet": {
         "publishedAt": "2026-08-17T17:30:06Z",
@@ -182,7 +229,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 3,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_C8gJ4lEzt0"
@@ -193,7 +240,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uyuPJ-VOdXXhKeX4q7L5_8wP4G4",
+      "etag": "MjeUoq2_QrrZfygEP3Lu0s4JG98",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LndLM041U2xwbVo0",
       "snippet": {
         "publishedAt": "2026-08-13T13:49:34Z",
@@ -229,7 +276,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 4,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "wK3N5SlpmZ4"
@@ -240,7 +287,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "_JDszcOy6KiBEbGtP8zYLZNjlyQ",
+      "etag": "sUw3X-j7w3cuEuSlHm3A156iIWg",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lk03Y0hxcUlPLWdB",
       "snippet": {
         "publishedAt": "2026-08-10T17:30:06Z",
@@ -276,7 +323,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 5,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "M7cHqqIO-gA"
@@ -287,7 +334,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9U4w477NmDiJx9aG6KXsQuWr2fM",
+      "etag": "-qj6EW_ZrnNH_-3ZZfkY8dqg_OQ",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkhBUjlpekRYSzB3",
       "snippet": {
         "publishedAt": "2026-08-04T13:48:37Z",
@@ -323,7 +370,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 6,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "HAR9izDXK0w"
@@ -334,7 +381,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "qKLp25_g-o_k1WK_lh89ELfuVwM",
+      "etag": "9okvOVMIBUM9qtuuVg2dP0R8xQM",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlpBY3V6NXR3TTZF",
       "snippet": {
         "publishedAt": "2026-08-03T18:30:06Z",
@@ -370,7 +417,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 7,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ZAcuz5twM6E"
@@ -381,7 +428,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "0plOYHny4Px9ZkiyaT0CjdXNNDY",
+      "etag": "7n5MTpvyRSrWtbOGBoc691C5CQw",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlFaNUlTV2lId3JV",
       "snippet": {
         "publishedAt": "2026-07-30T14:22:07Z",
@@ -417,7 +464,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 8,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QZ5ISWiHwrU"
@@ -428,7 +475,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "AmUCNleFyLapWnRMJE4k4t7CBnE",
+      "etag": "vGqEeQkILKn_lALFnkRuxA8hJPs",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lk1SQXR1Y0RXUmtJ",
       "snippet": {
         "publishedAt": "2026-07-27T16:42:04Z",
@@ -464,7 +511,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 9,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MRAtucDWRkI"
@@ -475,7 +522,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "LDlMS4-bvJMx0wGKcu47HMNUvgs",
+      "etag": "pyKNr7bYA6Mgiey0hMbY8_bJhIk",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkdVNlhTOUpBdk1V",
       "snippet": {
         "publishedAt": "2026-07-27T12:46:11Z",
@@ -511,7 +558,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 10,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "GU6XS9JAvMU"
@@ -522,7 +569,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gsUzeviJDabXTQ1S0K3-JTelizM",
+      "etag": "4wOfCBXAMEjN7Lua_FCXIHInN3U",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LnlVNzJ0aGEwUTJ3",
       "snippet": {
         "publishedAt": "2026-07-23T19:25:54Z",
@@ -558,7 +605,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 11,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "yU72tha0Q2w"
@@ -569,7 +616,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "sHNM4IfILTZ5Wv4-OJ_TnbKE8ZA",
+      "etag": "oQ7x_o_dXEemnAXJELwdIA_nT8s",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjZEWm5wYjktWjNN",
       "snippet": {
         "publishedAt": "2026-07-23T19:07:45Z",
@@ -601,11 +648,16 @@
             "url": "https://i.ytimg.com/vi/6DZnpb9-Z3M/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/6DZnpb9-Z3M/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 12,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6DZnpb9-Z3M"
@@ -616,7 +668,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "3tAjd7-rGTGzuS1NnC8lrEOavb4",
+      "etag": "AIjgIQehcAVT-9rjv9upzJ3euV4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkZpbV90RFdSNmJJ",
       "snippet": {
         "publishedAt": "2026-07-20T18:28:06Z",
@@ -652,7 +704,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 13,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Fim_tDWR6bI"
@@ -663,7 +715,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Csa7WRoroYH2VRr15TWcPoYOPfg",
+      "etag": "rZ1Fgh-5Fhu-YspcGBF0UG8DTQs",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkxkV1Q5OXBRWDNn",
       "snippet": {
         "publishedAt": "2026-07-17T20:09:33Z",
@@ -699,7 +751,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 14,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "LdWT99pQX3g"
@@ -710,7 +762,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "_Bx39FbDjuK7YnuquoXdIJgxGzU",
+      "etag": "x84GITrgdBJt5aGW56Y9DFcdjLE",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LnlpbkN6NllhaWNV",
       "snippet": {
         "publishedAt": "2026-07-16T17:30:06Z",
@@ -742,11 +794,16 @@
             "url": "https://i.ytimg.com/vi/yinCz6YaicU/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/yinCz6YaicU/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 15,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "yinCz6YaicU"
@@ -757,7 +814,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pFpK319ScyjLRrX2mwGl9uDJI2M",
+      "etag": "AeJ785nZEVX6fmVXhMtWAWfaOWw",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjBaNzM5aExXZlIw",
       "snippet": {
         "publishedAt": "2026-07-14T15:58:58Z",
@@ -793,7 +850,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 16,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0Z739hLWfR0"
@@ -804,7 +861,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "rmYfn4kei17jSK0cWoKw0vv1t9M",
+      "etag": "BoRFXRuxXE3pTtjX8c2BTi_ZSuk",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjJUMExmUFhkMldN",
       "snippet": {
         "publishedAt": "2026-07-09T19:55:38Z",
@@ -840,7 +897,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 17,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "2T0LfPXd2WM"
@@ -851,7 +908,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "K0zqIu8ah93N3fLDyJg_pkkLxsQ",
+      "etag": "0oFA0PaBk8sr6eWejL65UOGfAZ4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LmlpMXpVNGNyOXo4",
       "snippet": {
         "publishedAt": "2026-07-09T16:35:33Z",
@@ -883,11 +940,16 @@
             "url": "https://i.ytimg.com/vi/ii1zU4cr9z8/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/ii1zU4cr9z8/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 18,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ii1zU4cr9z8"
@@ -898,7 +960,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ajJ3OX2D-M7bJr0Y93uHio9motk",
+      "etag": "et-LrOIvvIt_BSVKV9-LXRFuqs4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjVQdzJhWEJNZWIw",
       "snippet": {
         "publishedAt": "2026-07-06T17:34:49Z",
@@ -934,7 +996,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 19,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5Pw2aXBMeb0"
@@ -945,7 +1007,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "g4TpWN30FMa0ds89rF7zC7XKlA0",
+      "etag": "LKCz907ZWPtua1HoRxFpY00Ggfs",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LmROWmxxUnBHVDJr",
       "snippet": {
         "publishedAt": "2026-07-05T07:26:38Z",
@@ -981,7 +1043,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 20,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "dNZlqRpGT2k"
@@ -992,7 +1054,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ybS-IJGLm93mrRvCev25JDsp0_8",
+      "etag": "_GlS8BoAYoSZPSdcReQoz0xd1rM",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LmZXUFBkYTlsU0hB",
       "snippet": {
         "publishedAt": "2026-07-04T21:22:06Z",
@@ -1028,7 +1090,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 21,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fWPPda9lSHA"
@@ -1039,7 +1101,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "xl-wN2EKtqH6pwfdBrrgv4Kk2eo",
+      "etag": "u5pBm0RgsHVAEHc9yS0O4sMMlP4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Li15RkttMnpaSWpv",
       "snippet": {
         "publishedAt": "2026-07-02T15:12:41Z",
@@ -1071,11 +1133,16 @@
             "url": "https://i.ytimg.com/vi/-yFKm2zZIjo/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/-yFKm2zZIjo/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 22,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "-yFKm2zZIjo"
@@ -1086,7 +1153,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "wwPCasJx3vASd9c-w4E2oizoUGY",
+      "etag": "bG8WCiaIkGsxieGzH4Zndukq2zk",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjBYdzY1Qm9SOWtn",
       "snippet": {
         "publishedAt": "2026-06-29T14:03:59Z",
@@ -1122,7 +1189,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 23,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0Xw65BoR9kg"
@@ -1133,7 +1200,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "D8yTAUKXjKYhGlRsQe6ouE2A8x8",
+      "etag": "OdkLheHkG8CjCbglSnss8T9l_YY",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lm9DM1RSb051QW9R",
       "snippet": {
         "publishedAt": "2026-06-26T17:30:06Z",
@@ -1165,11 +1232,16 @@
             "url": "https://i.ytimg.com/vi/oC3TRoNuAoQ/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/oC3TRoNuAoQ/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 24,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "oC3TRoNuAoQ"
@@ -1180,7 +1252,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "qo6Tg5IpqFn13l8nNMvMhyQ-tIY",
+      "etag": "jiTUazvch2x9kE8DcATJgBcmZ-E",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjQ1bVhsenZRVE1R",
       "snippet": {
         "publishedAt": "2026-06-25T20:04:30Z",
@@ -1216,7 +1288,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 25,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "45mXlzvQTMQ"
@@ -1227,7 +1299,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ONj_P5_7aMr3K_NhTQ_3qLy8X74",
+      "etag": "k2_-aGCwrERjq1_W9uUvObriD08",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkFIMUNtR2RxbEJR",
       "snippet": {
         "publishedAt": "2026-06-23T17:31:16Z",
@@ -1263,7 +1335,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 26,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AH1CmGdqlBQ"
@@ -1274,7 +1346,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "mcBhAaiEQU6hkcRk3ZxzRYvli_0",
+      "etag": "B1e73B4lQY28iKrh54jJouM2W4w",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LmZkeDU3SHJ0MHhN",
       "snippet": {
         "publishedAt": "2026-06-18T21:17:20Z",
@@ -1310,7 +1382,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 27,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fdx57Hrt0xM"
@@ -1321,7 +1393,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ky6EDT1hLinIAcRCpo0IKa19f5c",
+      "etag": "WiA9GP8BAJMhW_MNEJrrS9NqJGw",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlZtQ2MwU3VFRkpB",
       "snippet": {
         "publishedAt": "2026-06-18T17:30:06Z",
@@ -1353,11 +1425,16 @@
             "url": "https://i.ytimg.com/vi/VmCc0SuEFJA/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/VmCc0SuEFJA/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 28,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VmCc0SuEFJA"
@@ -1368,7 +1445,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dSob8u7uDOd_vQMuZpv02KiSRBE",
+      "etag": "GljbBw27qXxMQLO3dNq_9QUeFgo",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkRKUy1nbkNKaFdZ",
       "snippet": {
         "publishedAt": "2026-06-16T17:42:55Z",
@@ -1404,7 +1481,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 29,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "DJS-gnCJhWY"
@@ -1415,7 +1492,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vOD2YzOxkvgNENWYSjE-0-c_wDc",
+      "etag": "NRlIEOpt56Mj_vMTBpNuZ66HMCM",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LklNVmxFS19BR0k0",
       "snippet": {
         "publishedAt": "2026-06-12T11:57:40Z",
@@ -1451,7 +1528,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 30,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "IMVlEK_AGI4"
@@ -1462,7 +1539,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "HPDwX_sRUHlJ9X_BxXfBulnk6v4",
+      "etag": "z_cCsMJ4HI1r7te0gryPlenvBVQ",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LnlBZFNQMGZMUXpr",
       "snippet": {
         "publishedAt": "2026-06-09T17:30:06Z",
@@ -1494,11 +1571,16 @@
             "url": "https://i.ytimg.com/vi/yAdSP0fLQzk/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/yAdSP0fLQzk/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 31,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "yAdSP0fLQzk"
@@ -1509,7 +1591,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GgMG8pOl4uGaG74mRkd5N6cacCk",
+      "etag": "XMQx6obX2lD7YOr9SAlWXJKb394",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkxQeDU2b1kzMWVn",
       "snippet": {
         "publishedAt": "2026-06-09T11:03:00Z",
@@ -1545,7 +1627,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 32,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "LPx56oY31eg"
@@ -1556,7 +1638,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "37qd5VmYtDm33IZu8uqRXXlYZiA",
+      "etag": "QI5VZew4Kv8JAKbfLvdE_Z0ZEng",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lmx2Nl9oVE45ZXRB",
       "snippet": {
         "publishedAt": "2026-06-04T18:21:30Z",
@@ -1592,7 +1674,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 33,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "lv6_hTN9etA"
@@ -1603,7 +1685,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vu4Lw88ml-8y3TwfNU_dnhHK5YU",
+      "etag": "e7OrcIW0vphNJL81v6ny1DlgdX0",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjhwbUxMcm5GVWN3",
       "snippet": {
         "publishedAt": "2026-06-02T18:10:23Z",
@@ -1639,7 +1721,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 34,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "8pmLLrnFUcw"
@@ -1650,7 +1732,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "p6paUunihdjYAo9QVw5l-NNiCx8",
+      "etag": "fQFF1GpNItqLIPc3dYDxcQvyCRE",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjV5YVlNTnlwSFFJ",
       "snippet": {
         "publishedAt": "2026-06-01T17:30:06Z",
@@ -1682,11 +1764,16 @@
             "url": "https://i.ytimg.com/vi/5yaYMNypHQI/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/5yaYMNypHQI/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 35,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5yaYMNypHQI"
@@ -1697,7 +1784,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "moJBb2fygrfPlcGESqGTaLzcUR4",
+      "etag": "M6sYOMuefWZGt447IKynzlMYPu8",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjJ4RDRQZU1oTVB3",
       "snippet": {
         "publishedAt": "2026-05-28T18:09:36Z",
@@ -1733,7 +1820,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 36,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "2xD4PeMhMPw"
@@ -1744,7 +1831,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "5sqvXu3QKBJBMpSYisrn1oEO1nc",
+      "etag": "AzupEKGQ87NedSRq23yxUuxbcW4",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlB3SU50M3dDYTdv",
       "snippet": {
         "publishedAt": "2026-05-26T17:30:06Z",
@@ -1776,11 +1863,16 @@
             "url": "https://i.ytimg.com/vi/PwINt3wCa7o/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/PwINt3wCa7o/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 37,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "PwINt3wCa7o"
@@ -1791,7 +1883,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "wbN3nmxlmz9aNHuFF7vwlGm4Jwk",
+      "etag": "ZpvIn8Qw3iGajUpZjNgEvbJmnms",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjhGY2sxOU9GRUI4",
       "snippet": {
         "publishedAt": "2026-05-26T12:03:34Z",
@@ -1827,7 +1919,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 38,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "8Fck19OFEB8"
@@ -1838,7 +1930,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "_IuZkCllj1RxMi5A9xSe5vEhLJc",
+      "etag": "cte51wpe_gqxAuiHn-GggcU0GfM",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LmhNTEdrTWxGQmIw",
       "snippet": {
         "publishedAt": "2026-05-21T18:09:21Z",
@@ -1874,7 +1966,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 39,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "hMLGkMlFBb0"
@@ -1885,7 +1977,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "W5BuFBfrRwxq9ym93qE0uoedTAU",
+      "etag": "TCExURQ15olxt_0zlwcoW-XQ8NA",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lm1aOUlackdxQ0ZV",
       "snippet": {
         "publishedAt": "2026-05-19T10:55:37Z",
@@ -1921,7 +2013,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 40,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "mZ9IZrGqCFU"
@@ -1932,7 +2024,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "kMh4YCK7ggCixnfev1NuhUrC0NA",
+      "etag": "OHEhQaejLIZC9U7A1neMylJnCMw",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlR4b0FvNDJUM3pJ",
       "snippet": {
         "publishedAt": "2026-05-18T17:30:06Z",
@@ -1964,11 +2056,16 @@
             "url": "https://i.ytimg.com/vi/TxoAo42T3zI/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/TxoAo42T3zI/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 41,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "TxoAo42T3zI"
@@ -1979,7 +2076,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "mIsVPLfOy5ZgZ7gvJlOc9VYTnwk",
+      "etag": "KORKKRUofqY2M-CgU6vw4ljSzvM",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkJuM0tTR2ZmM2pV",
       "snippet": {
         "publishedAt": "2026-05-12T17:55:35Z",
@@ -2015,7 +2112,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 42,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Bn3KSGff3jU"
@@ -2026,7 +2123,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "nS-vW2JkzhEYCSA7uIk5pr_umD0",
+      "etag": "B3Y0a_N71vRyO_1Xm3ENGOPPEIU",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LklqYzdoLUJTWW04",
       "snippet": {
         "publishedAt": "2026-05-11T17:30:06Z",
@@ -2058,11 +2155,16 @@
             "url": "https://i.ytimg.com/vi/Ijc7h-BSYm8/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/Ijc7h-BSYm8/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 43,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Ijc7h-BSYm8"
@@ -2073,7 +2175,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "syUo9P-ipwIMC8yHHrP-Ao8JJM4",
+      "etag": "EDC6B_N_Vmt2wZ2hlJ0djJyiAWU",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Ll9pblZSa0dCVDhB",
       "snippet": {
         "publishedAt": "2026-05-05T07:42:11Z",
@@ -2109,7 +2211,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 44,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_inVRkGBT8A"
@@ -2120,7 +2222,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "6cfN_HSPUXLPierRZQx0oH8ULvY",
+      "etag": "6U0amjcs_pZICtQ5N-2nBFDw1_o",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LlVIRlB3NFVlRmtV",
       "snippet": {
         "publishedAt": "2026-05-04T18:30:06Z",
@@ -2152,11 +2254,16 @@
             "url": "https://i.ytimg.com/vi/UHFPw4UeFkU/maxresdefault.jpg",
             "width": 1280,
             "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/UHFPw4UeFkU/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 45,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "UHFPw4UeFkU"
@@ -2167,7 +2274,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Z2rmT37RydQfe2phF20u533z5mc",
+      "etag": "Eh1swTBxp9NxVOvoovteUIKG9OI",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LnQ5RGZFbV9obWFr",
       "snippet": {
         "publishedAt": "2026-04-30T17:37:32Z",
@@ -2203,7 +2310,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 46,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "t9DfEm_hmak"
@@ -2214,7 +2321,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "3y6K9m6L-4XgM2YIT8h7MKjZkWs",
+      "etag": "vG6-MWcu_5QRRB8ksNIlvWCmKAI",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LjJ1Q2ZaRHJZV3p3",
       "snippet": {
         "publishedAt": "2026-04-28T17:12:09Z",
@@ -2250,7 +2357,7 @@
         },
         "channelTitle": "Life in Christ Community Church",
         "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 47,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "2uCfZDrYWzw"
@@ -2261,7 +2368,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PFyjcQQXOTyHRZ4wWqBMqodxeiM",
+      "etag": "DWnxtB1pZ8GJEaE-dY1wHBPFRiU",
       "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3LkVIbkJ4YW1rLWxZ",
       "snippet": {
         "publishedAt": "2026-04-27T17:30:06Z",
@@ -2293,53 +2400,11 @@
             "url": "https://i.ytimg.com/vi/EHnBxamk-lY/maxresdefault.jpg",
             "width": 1280,
             "height": 720
-          }
-        },
-        "channelTitle": "Life in Christ Community Church",
-        "playlistId": "UUB52lQ_buqcN4OPceA-c-Iw",
-        "position": 48,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "EHnBxamk-lY"
-        },
-        "videoOwnerChannelTitle": "Life in Christ Community Church",
-        "videoOwnerChannelId": "UCB52lQ_buqcN4OPceA-c-Iw"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "39XUdBFlcyDrxMtth4reK60orCs",
-      "id": "VVVCNTJsUV9idXFjTjRPUGNlQS1jLUl3Lndkc1NRMWIzWTNZ",
-      "snippet": {
-        "publishedAt": "2026-04-26T12:26:42Z",
-        "channelId": "UCB52lQ_buqcN4OPceA-c-Iw",
-        "title": "Why do people reject Christianity? / Highlight #atheism #christianity #apostasy #salvation",
-        "description": "The rejection of God is a moral issue, not an intelectual one.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/wdsSQ1b3Y3Y/default.jpg",
-            "width": 120,
-            "height": 90
           },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/wdsSQ1b3Y3Y/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/wdsSQ1b3Y3Y/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/wdsSQ1b3Y3Y/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/wdsSQ1b3Y3Y/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/EHnBxamk-lY/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
           }
         },
         "channelTitle": "Life in Christ Community Church",
@@ -2347,7 +2412,7 @@
         "position": 49,
         "resourceId": {
           "kind": "youtube#video",
-          "videoId": "wdsSQ1b3Y3Y"
+          "videoId": "EHnBxamk-lY"
         },
         "videoOwnerChannelTitle": "Life in Christ Community Church",
         "videoOwnerChannelId": "UCB52lQ_buqcN4OPceA-c-Iw"
@@ -2355,7 +2420,7 @@
     }
   ],
   "pageInfo": {
-    "totalResults": 174,
+    "totalResults": 175,
     "resultsPerPage": 50
   }
 }
